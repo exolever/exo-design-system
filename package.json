@@ -1,56 +1,24 @@
 {
-  "name": "exo-design-systems",
+  "name": "html-story",
   "version": "1.0.0",
-  "description": "design overrides for Material Web Components flowing the ExOLever design guidelines",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node scripts.js --task build",
-    "format": "node scripts.js --task format",
-    "deploy": "node scripts.js --task deploy",
-    "clean": "node scripts.js --task clean",
-    "translations": "node scripts.js --task translations",
-    "pre:deploy": "npm run clean && npm run build",
-    "create": "node scripts.js --task create --name",
-    "info": "node scripts.js --task info",
-    "install:components": "node scripts.js --task install",
-    "lint-staged": "lint-staged",
-    "lint-pass": "echo '\\033[4;32m♡' Format complete ♡' \\033[0m'",
-    "change-log": "auto-changelog --template ./node/templates/change-log.hbs",
-    "mono": "./node_modules/.bin/lerna bootstrap",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/exolever/exo-design-systems.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/exolever/exo-design-systems/issues"
-  },
-  "homepage": "https://github.com/exolever/exo-design-systems#readme",
   "dependencies": {
-    "@material/button": "^0.40.0",
+    "@material/mwc-button": "^0.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
     "@storybook/addon-actions": "^3.4.11",
-    "@storybook/addon-links": "^3.4.11",
-    "@storybook/addons": "^3.4.11",
-    "@storybook/html": "^4.0.0-alpha.11",
-    "@storybook/react": "^3.4.11",
-    "@webcomponents/webcomponentsjs": "git+https://git@github.com/exolever/material-components-web-components.git",
-    "auto-changelog": "^1.8.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.2",
-    "babel-runtime": "^6.26.0",
-    "del": "^3.0.0",
-    "lerna": "^3.0.0-rc.0",
-    "lint-staged": "^7.0.4",
-    "lodash": "^4.17.10",
-    "pre-commit": "^1.2.2",
-    "prettier": "1.10.2",
-    "s3-directory-uploader": "^1.0.0",
-    "typescript": "^3.0.1",
-    "yargs": "^12.0.1"
+    "@storybook/addon-knobs": "^3.4.11",
+    "@storybook/html": "^4.0.0-alpha.23",
+    "babel-loader": "^8.0.4"
   }
 }

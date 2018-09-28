@@ -1,3 +1,5 @@
+import { action } from '@storybook/addon-actions';
+
 export function knobToggleAttr(tag, knob, attr) {
   if (knob) {
     tag.setAttribute(attr, true)

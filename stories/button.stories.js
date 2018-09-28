@@ -1,7 +1,6 @@
 import { document, console } from 'global';
 import { storiesOf, addDecorator } from '@storybook/html';
 import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
-import { action, withActions } from '@storybook/addon-actions';
 import { knobToggleAttr, bindEvent } from '../storybook-utils/knobUtils';
 import '@material/mwc-button';
 

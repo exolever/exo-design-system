@@ -1,5 +1,5 @@
 {
-  "name": "html-story",
+  "name": "exo-design-system",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,14 +12,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@material/mwc-button": "^0.2.1"
+    "@material/mwc-button": "^0.2.1",
+    "moment": "^2.22.2",
+    "react-datetime": "^2.15.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
     "@storybook/addon-actions": "^3.4.11",
-    "@storybook/addon-knobs": "^3.4.11",
+    "@storybook/addon-knobs": "^4.0.0-alpha.23",
+    "@storybook/addon-options": "^4.0.0-alpha.23",
     "@storybook/html": "^4.0.0-alpha.23",
-    "babel-loader": "^8.0.4",
-    "storybook-addon-smart-knobs": "^3.3.1"
+    "babel-loader": "^8.0.4"
   }
 }

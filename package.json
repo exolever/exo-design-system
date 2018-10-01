@@ -1,6 +1,6 @@
 {
-  "name": "html-story",
-  "version": "1.0.0",
+  "name": "exo-design-system",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,9 +15,12 @@
     "@material/mwc-button": "^0.2.1"
   },
   "devDependencies": {
+    "moment": "^2.22.2",
+    "react-datetime": "^2.15.0",
     "@babel/core": "^7.1.0",
     "@storybook/addon-actions": "^3.4.11",
-    "@storybook/addon-knobs": "^3.4.11",
+    "@storybook/addon-knobs": "^4.0.0-alpha.23",
+    "@storybook/addon-options": "^4.0.0-alpha.23",
     "@storybook/html": "^4.0.0-alpha.23",
     "babel-loader": "^8.0.4"
   }

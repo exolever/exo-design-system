@@ -3,7 +3,6 @@ export const FONT_FAMILY = {
   secondary: 'Roboto, san-serif',
 };
 
-// TODO: Confirm values are correct
 export const EXO_CONFIG = {
   xxxs: '4px',
   xxs: '8px',

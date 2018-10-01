@@ -1,6 +1,7 @@
 import { addDecorator, configure } from '@storybook/html';
 import { withOptions } from '@storybook/addon-options';
-import '@src/index';
+import '../src/registry.ts';
+import 'custom-elements-es5-adapter';
 // Option defaults:
 addDecorator(
   withOptions({

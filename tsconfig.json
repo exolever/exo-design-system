@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "build/lib",
     "module": "es6",
-    "target": "es5",
+    "target": "es6",
     "lib": ["es5", "es6", "es7", "es2017", "dom"],
     "sourceMap": true,
     "allowJs": true,
@@ -13,12 +13,12 @@
     "paths": {
         "@base": ["."],
         "@src": ["./src"],
-        "@components": ["./src/components"],
+        "@components": ["./src/components/"],
+        "@assets": ["./src/assets/"],
     },
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "noImplicitAny": true,
     "strictNullChecks": true,
     "skipLibCheck": true,
     "suppressImplicitAnyIndexErrors": true,
@@ -27,6 +27,6 @@
     "allowSyntheticDefaultImports": true,
 
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", ".storybook"],
   "exclude": ["node_modules", "build", "scripts"]
 }

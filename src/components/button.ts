@@ -4,7 +4,6 @@ import { PURPLE, WHITE, GREY } from 'src/assets/colors';
 import * as colorUtils from 'color';
 export class ExoButton extends Button {
   renderStyle(){
-    console.log(super.renderStyle().strings[0])
     return html`
     ${super.renderStyle()}
     <style>

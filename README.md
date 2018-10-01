@@ -26,3 +26,31 @@ stories
 
 ```
 
+
+
+# Suggested Element Structure
+
+```javascript
+import { html } from '@polymer/lit-element/lit-element.js';
+// for rendering templates
+import { Button } from 'material-components-web-components/packages/button';
+// the mwc you wish to extend
+
+export class ExoButton extends Button {
+  renderStyle(){
+    return html`
+    ${super.renderStyle()} <!-- Old Styles -->
+    <style>
+     .mdc-button {
+      	/* new overrides */
+		/* please follow */
+		/* https://material.io/develop/web/docs/theming/ */
+      }
+    </style>`;
+  }
+}
+
+customElements.define('exo-button', ExoButton);
+
+```
+

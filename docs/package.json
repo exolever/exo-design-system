@@ -1,7 +1,7 @@
 {
-  "name": "exo-design-system",
+  "name": "exo-design-language",
   "version": "0.0.1",
-  "description": "",
+  "description": "the storybook to display the library",
   "main": "src/registry.ts",
   "scripts": {
     "start": "npm run storybook",
@@ -11,15 +11,8 @@
     "build-storybook": "build-storybook"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alexander King",
   "license": "ISC",
-  "dependencies": {
-    "@material/mwc-icon": "^0.2.1",
-    "@material/mwc-ripple": "^0.2.1",
-    "@webcomponents/custom-elements": "^1.2.1",
-    "custom-elements-es5-adapter": "^1.0.0",
-    "material-components-web-components": "git+https://github.com/exolever/material-components-web-components.git"
-  },
   "devDependencies": {
     "@babel/core": "^7.1.0",
     "@storybook/addon-a11y": "4.0.0-alpha.22",
@@ -39,7 +32,6 @@
     "@types/storybook__addon-info": "^3.4.1",
     "@types/storybook__addon-knobs": "^3.4.1",
     "@types/storybook__react": "^3.0.9",
-    "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.4",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-styled-components": "1.5.1",
@@ -50,11 +42,7 @@
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2017": "^6.24.1",
-    "color": "^3.0.0",
-    "lit-element": "^0.5.0",
     "moment": "^2.22.2",
-    "react-datetime": "^2.15.0",
-    "tsconfig-paths-webpack-plugin": "^3.2.0",
-    "typescript": "^3.1.1"
+    "react-datetime": "^2.15.0"
   }
 }

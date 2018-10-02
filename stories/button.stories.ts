@@ -1,7 +1,7 @@
 import { document } from 'global';
 import { storiesOf } from '@storybook/html';
 import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
-import { knobToggleAttr, bindEvent } from '../storybook-utils/knobUtils';
+import { knobToggleAttr, bindEvent } from '../.storybook/knobUtils';
 const storyFrame = document.createElement('div');
 storyFrame.innerHTML = `
     <div class="Frame">

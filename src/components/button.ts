@@ -1,5 +1,5 @@
 import { html } from '@polymer/lit-element/lit-element.js';
-import { Button } from 'material-components-web-components/packages/button';
+import { Button } from 'mwc/packages/button';
 import { PURPLE, WHITE, GREY } from 'src/assets/colors';
 import * as colorUtils from 'color';
 export class ExoButton extends Button {

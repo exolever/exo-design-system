@@ -16,6 +16,7 @@
     "@storybook/addon-a11y": "4.0.0-alpha.22",
     "@storybook/addon-actions": "^3.4.11",
     "@storybook/addon-backgrounds": "4.0.0-alpha.22",
+    "@storybook/addon-centered": "^3.4.11",
     "@storybook/addon-knobs": "^4.0.0-alpha.23",
     "@storybook/addon-links": "4.0.0-alpha.22",
     "@storybook/addon-options": "^4.0.0-alpha.23",
@@ -41,6 +42,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2017": "^6.24.1",
     "moment": "^2.22.2",
+    "nanohtml": "^1.2.5",
     "react-datetime": "^2.15.0"
   }
 }

@@ -4,9 +4,13 @@
   "description": "",
   "main": "src/registry.ts",
   "scripts": {
-    "build": "webpack --config webpack.config.js --mode production",
-    "start": "webpack-dev-server --content-base dist --hot --inline --mode development",
     "install": "npm run material:remove; npm run material:get",
+    "start": "webpack-dev-server --content-base dist --hot --inline --mode development",
+    "build": "webpack --config webpack.config.js --mode production",
+    "start:storybook": "cd docs; npm run start",
+    "install:storybook": "cd docs; npm install",
+    "build:storybook": "cd docs; npm run build",
+    "remove:storybook": "cd docs; rm -rf storybook-static",
     "material:remove": "rm -rf mwc",
     "material:refresh": "npm run material:remove; npm run material:get",
     "material:get": "git clone https://github.com/exolever/material-components-web-components.git mwc"

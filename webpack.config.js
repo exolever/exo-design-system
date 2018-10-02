@@ -6,12 +6,16 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: 'http://localhost:9000',
-    filename:'exo-design-system.js', //TODO add version
-    jsonpFunction: 'exo-design-system-jsonp'// TODO add version
+    filename:'exo-design-system.js',
+    jsonpFunction: 'exo-design-system-jsonp'
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json'],
-    modules: ['node_modules']
+    modules: ['node_modules'],
+    alias: {
+      src: path.resolve(__dirname, 'src'),
+      mwc: path.resolve(__dirname, 'mwc'),
+    }
   },
   module: {
     rules: [

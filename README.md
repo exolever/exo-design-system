@@ -9,9 +9,8 @@ following the ExOLever design guidelines.
 ```
 npm install   // installs npm and mwc
 npm run start // runs browser.ts at localhost:9000
-cd docs
-npm run start // runs storybook and loads components from locahost:9000
-
+npm run install:storybook // install storybook npm deps
+npm run start:storyboook // starts storybook listening to localhost:9000
 ```
 
 

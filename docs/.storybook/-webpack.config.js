@@ -9,6 +9,7 @@ module.exports = (baseConfig, env, config) => {
   config.resolve.alias = {
     ...config.resolve.alias,
     "src": path.resolve(__dirname, '../src/'),
+    "mwc": path.resolve(__dirname, '../mwc/'),
   }
   config.resolve.extensions.push('.ts', '.tsx');
   console.log(config.resolve);

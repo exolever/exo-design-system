@@ -1,32 +1,23 @@
 {
   "compilerOptions": {
-    "outDir": "build/lib",
-    "module": "es6",
-    "target": "es6",
-    "lib": ["es5", "es6", "es7", "es2017", "dom"],
-    "sourceMap": true,
-    "allowJs": true,
-    "jsx": "react",
-    "moduleResolution": "node",
-    "rootDirs": ["src", "stories"],
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-        "@base": ["."],
-        "@src": ["./src"],
-        "@components": ["./src/components/"],
-        "@assets": ["./src/assets/"],
+      "*": ["*"]
     },
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "strictNullChecks": true,
-    "skipLibCheck": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": false,
-    "experimentalDecorators": true,
+    "target": "es2015",
+    "lib": ["es5", "es6", "es7", "es2017", "dom"],
     "allowSyntheticDefaultImports": true,
-
+    "jsx": "react",
+    "module": "esnext",
+    "declaration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node"
   },
-  "include": ["src/**/*", ".storybook"],
-  "exclude": ["node_modules", "build", "scripts"]
+  "include": [
+    "src",
+    "mwc"
+  ],
+  "exclude": [
+    "docs"
+  ],
 }

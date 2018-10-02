@@ -5,14 +5,22 @@ import * as colorUtils from 'color';
 const defaultTheme = html`
   <style>
     :host {
-    --mdc-font-family:  Roboto, sans-serif;
+    /* mat-raised-button */
+    --primary-default: ${PURPLE[500]};
+    --primary-hover: ${PURPLE[700]};
+    --primary-text: ${WHITE[500]};
+
+    /* mat-button */
     --mdc-theme-primary: ${PURPLE[500]};
     --mdc-theme-disabled-bg: ${GREY['900-016']};
-    --mdc-theme-disabled-text: ${colorUtils(PURPLE[500]).alpha(0.4)};
+    --mdc-theme-disabled-text: ${GREY['500']};
+    --mdc-theme-hover-bg: ${PURPLE[500]};
+    --mdc-theme-hover-text: ${PURPLE[500]};
     --mdc-theme-border-radius: 30px;
+    --
     }
   </style>
-`
+`;
 
 const projectTheme = html`
   <style>
@@ -25,116 +33,43 @@ const projectTheme = html`
     }
   </style>
 `;
+
 const darkTheme = html`
   <style>
     :host {
     --mdc-font-family:  Roboto, sans-serif;
     --mdc-theme-primary: ${PURPLE[500]};
-    --mdc-theme-disabled-bg: ${GREY['900-016']};
-    --mdc-theme-disabled-text: ${colorUtils(PURPLE[500]).alpha(0.4)};
+    --mdc-theme-disabled-bg: ${GREY['900-024']};
+    --mdc-theme-disabled-text: ${WHITE[900]};
     --mdc-theme-border-radius: 30px;
-    /* UNSUED VARS
-    --mdc-ripple-fg-opacity
-    --mdc-icon-font
-    --mdc-icon-size
-    --mdc-theme-on-primary
-    --mdc-theme-button-psudeo
-    */
+    --mdc-theme-button-psudeo: ${WHITE['900']};
     }
   </style>
 `
 
 const overrides = html`
 <style>
-  .mdc-button {
-       /* SECONDARY */
-      box-shadow: 0px 0px 0px;
-      font-family: var(--mdc-font-family);
+      .mdc-button {
+        box-shadow: 0px 0px 0px;
       }
       .mdc-button:disabled {
-        /* DISABLED */
         background-color: var(--mdc-theme-disabled-bg);
         color:  var(--mdc-theme-disabled-text);
       }
 
+      /* TODO - Change to attr */
+      /* PRIMARY */
       .mdc-button--raised {
-        /* PRIMARY BUTTON */
-        background-color: var(--mdc-theme-primary);
+        background-color: var(--primary-default);
+        color: var(--primary-text);
         border-radius: var(--mdc-theme-border-radius);
       }
-
-      .material-icons {}
-
-      .mdc-button {}
-
-      .mdc-button::before,
-      .mdc-button::after {}
-      .mdc-button::before {}
-
-
-      .mdc-button::before,
-      .mdc-button::after {}
-
-      .mdc-button::-moz-focus-inner {}
-      .mdc-button:active {}
-      .mdc-button:hover {}
-      .mdc-button:disabled {}
-      .mdc-button:not(:disabled) {}
-      .mdc-button:not(:disabled) {}
-
-      .mdc-button::before,
-      .mdc-button::after {}
-
-
-      .mdc-button:hover::before {}
-
-      .mdc-button .mdc-button__icon {}
-
-      .mdc-button svg.mdc-button__icon {}
-
-      .mdc-button--raised .mdc-button__icon,
-      .mdc-button--unelevated .mdc-button__icon,
-      .mdc-button--outlined .mdc-button__icon {}
-
-      .mdc-button--raised,
-      .mdc-button--unelevated {}
-
-      .mdc-button--raised:disabled,
-      .mdc-button--unelevated:disabled {}
-
-      .mdc-button--raised:not(:disabled),
-      .mdc-button--unelevated:not(:disabled) {}
-
-      .mdc-button--raised:not(:disabled),
-      .mdc-button--unelevated:not(:disabled) {}
-
-      .mdc-button--raised::before,
-      .mdc-button--raised::after,
-      .mdc-button--unelevated::before,
-      .mdc-button--unelevated::after {}
-
-      .mdc-button--raised:hover::before,
-      .mdc-button--unelevated:hover::before {}
-
-
-      .mdc-button--raised {}
-
-      .mdc-button--raised:hover,
-      .mdc-button--raised:focus {}
-
-      .mdc-button--raised:active {}
-
-      .mdc-button--raised:disabled {}
-
-      .mdc-button--outlined {}
-
-      .mdc-button--outlined:disabled {}
-
-      .mdc-button--outlined.mdc-button--dense {}
-
-      .mdc-button--outlined:not(:disabled) {}
-
-      .mdc-button--dense {}
+      .mdc-button--raised:hover {
+        background-color: var(--primary-hover);
+        color: var(--primary-text);
+        border-radius: var(--mdc-theme-border-radius);
+        /* box-shadow: 0px 0px 0px; */
+      }
 </style>
 `;
 

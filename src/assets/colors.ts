@@ -45,6 +45,7 @@ export const PURPLE = {
   100: '#C29FF',
   50: '#D9C5FF'
 };
+PURPLE['500-024'] = 'rgba(111, 35, 255, 0.24)';
 PURPLE['A700'] = PURPLE[600];
 PURPLE['A400'] = PURPLE[500];
 PURPLE['A200'] = PURPLE[400];
@@ -127,6 +128,7 @@ export const GREY = {
 export const WHITE = {
   900: '#FFFFFF',
   '900-075': 'rgba(225, 225, 225, 0.75)',
+  '900-024': 'rgba(225, 225, 225, 0.24)',
   '900-038': 'rgba(225, 225, 225, 0.38)',
   '900-008': 'rgba(225, 225, 225, 0.08)',
   '900-016': 'rgba(225, 225, 225, 0.16)',

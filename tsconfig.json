@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "outDir": "build/lib",
+    "module": "es6",
+    "target": "es6",
+    "lib": ["es5", "es6", "es7", "es2017", "dom"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDirs": ["src", "stories"],
+    "baseUrl": ".",
+    "paths": {
+        "@base": ["."],
+        "@src": ["./src"],
+        "@components": ["./src/components/"],
+        "@assets": ["./src/assets/"],
+    },
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": false,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+
+  },
+  "include": ["src/**/*", ".storybook"],
+  "exclude": ["node_modules", "build", "scripts"]
+}

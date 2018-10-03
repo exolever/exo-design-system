@@ -8,7 +8,7 @@ function toggle(check, attr) {
 }
 
 const themeOptions = {
-    'eco': 'eco',
+    'ecosystem': 'ecosystem',
     'dark': 'dark',
     'project': 'project'
 }
@@ -24,7 +24,7 @@ buttonStories.addDecorator(withKnobs);
 buttonStories.add('Primary Button', () => {
     // Side toggles
     const toggles = {
-        theme: select('theme', themeOptions, 'eco'),
+        theme: select('theme', themeOptions, 'ecosystem'),
         label: text('Label text', 'Hello World'),
         icon: text('Icon', 'star'),
         disabled: toggle(boolean('disabled', false), 'disabled'),
@@ -32,55 +32,14 @@ buttonStories.add('Primary Button', () => {
         onclick: action('click'),
         onmouseover: action('mouseover'),
     }
+
     return html`
     <div>
-        <style>
-            header {
-
-            margin: 32px 0 24px 0;
-            }
-        h1 {
-            margin: 0;
-            font-size: 32px;
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            color: #46464b;
-            clear: both;
-            width: 100%;
-            display:block;
-        }
-        small {
-            font-size: 14px;
-            font-weight: 500;
-            font-style: normal;
-            text-transform: uppercase;
-            font-stretch: normal;
-            line-height: 1.5;
-            letter-spacing: normal;
-            text-align: center;
-            clear: both;
-            width: 100%;
-            display:block;
-            color: #6f23ff;
-        }
-        .card {
-            text-align: center;
-            padding: 48px 15px;
-            margin: 15px;
-            border-radius: 8px;
-            background-color: #ffffff;
-            box-shadow: 0 2px 8px 0 #00000051;
-        }
-        </style>
     <header>
       <small>exo-button</small>
       <h1>Primary Button</h1>
     </header>
-    <div class="card">
+    <div class="card ${toggles.theme}">
        <exo-button
         theme="${toggles.theme}"
         emphasis="${toggles.emphasis}"
@@ -94,17 +53,16 @@ buttonStories.add('Primary Button', () => {
        <small>exo-button</small>
        <h1>Primary Button with icon</h1>
      </header>
-     <div class="card">
-       <exo-button
-        theme="${toggles.theme}"
-        emphasis="${toggles.emphasis}"
-        label="${toggles.label}"
-        icon="${toggles.icon}"
-        ${toggles.disabled}
-        onclick="${toggles.onclick}"
-        onmouseover="${toggles.onmouseover}"
-       />
-        </exo-button>
+     <div class="card ${toggles.theme}">
+        <exo-button
+            theme="${toggles.theme}"
+            emphasis="${toggles.emphasis}"
+            label="${toggles.label}"
+            icon="${toggles.icon}"
+            ${toggles.disabled}
+            onclick="${toggles.onclick}"
+            onmouseover="${toggles.onmouseover}"
+       /></exo-button>
      </div>
     </div>
     `;

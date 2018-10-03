@@ -1,12 +1,21 @@
-import { document } from 'global';
 import { storiesOf } from '@storybook/html';
-import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
+import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
-import { knobToggleAttr, bindEvent } from '../.storybook/knobUtils';
 const html = require('nanohtml');
 
 function toggle(check, attr) {
     return check ? attr : '';
+}
+
+const themeOptions = {
+    'eco': 'eco',
+    'dark': 'dark',
+    'project': 'project'
+}
+const emphasisOptions = {
+    'primary': 'primary',
+    'secondary': 'secondary',
+    'text': 'text'
 }
 
 const buttonStories = storiesOf('Calls to Action', module);
@@ -15,11 +24,11 @@ buttonStories.addDecorator(withKnobs);
 buttonStories.add('Primary Button', () => {
     // Side toggles
     const toggles = {
-        theme: text('Theme', 'light'),
+        theme: select('theme', themeOptions, 'eco'),
         label: text('Label text', 'Hello World'),
         icon: text('Icon', 'star'),
         disabled: toggle(boolean('disabled', false), 'disabled'),
-        raised: toggle(boolean('raised', true), 'raised'),
+        emphasis: select('emphasis', emphasisOptions, 'primary'),
         onclick: action('click'),
         onmouseover: action('mouseover'),
     }
@@ -68,30 +77,30 @@ buttonStories.add('Primary Button', () => {
         }
         </style>
     <header>
-      <small>mat-raised-button</small>
+      <small>exo-button</small>
       <h1>Primary Button</h1>
     </header>
     <div class="card">
        <exo-button
         theme="${toggles.theme}"
+        emphasis="${toggles.emphasis}"
         label="${toggles.label}"
         ${toggles.disabled}
-        ${toggles.raised}
         onclick="${toggles.onclick}"
         onmouseover="${toggles.onmouseover}"
        /></exo-button>
      </div>
      <header>
-       <small>mat-raised-button</small>
+       <small>exo-button</small>
        <h1>Primary Button with icon</h1>
      </header>
      <div class="card">
        <exo-button
         theme="${toggles.theme}"
+        emphasis="${toggles.emphasis}"
         label="${toggles.label}"
         icon="${toggles.icon}"
         ${toggles.disabled}
-        ${toggles.raised}
         onclick="${toggles.onclick}"
         onmouseover="${toggles.onmouseover}"
        />

@@ -43,6 +43,9 @@ import { Button } from 'mwc/packages/button';
 // the mwc you wish to extend
 
 export class ExoButton extends Button {
+  @property
+  theme = 'dark';
+
   renderStyle(){
     return html`
     ${super.renderStyle()} <!-- Old Styles -->

@@ -9,7 +9,7 @@
     "allowSyntheticDefaultImports": true,
     "jsx": "react",
     "module": "esnext",
-    "declaration": true,
+    "declaration": false,
     "experimentalDecorators": true,
     "moduleResolution": "node"
   },

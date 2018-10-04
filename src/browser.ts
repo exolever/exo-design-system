@@ -1,1 +1,1 @@
-import 'src/components/button';
+import 'src/components/button/button';

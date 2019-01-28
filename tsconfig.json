@@ -1,23 +1,29 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "paths": {
-      "*": ["*"]
-    },
-    "target": "es2015",
-    "lib": ["es5", "es6", "es7", "es2017", "dom"],
-    "allowSyntheticDefaultImports": true,
-    "jsx": "react",
-    "module": "esnext",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
     "declaration": false,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "moduleResolution": "node"
-  },
-  "include": [
-    "src",
-    "mwc"
-  ],
-  "exclude": [
-    "docs"
-  ],
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "@openexo/design-system": [
+        "dist/design-system"
+      ],
+      "@openexo/design-system/*": [
+        "dist/design-system/*"
+      ]
+    }
+  }
 }

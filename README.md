@@ -1,66 +1,34 @@
-# Exo Design Systems
-Design overides for [Material Web Components](https://github.com/material-components/material-components-web-components)
-following the ExOLever design guidelines.
+# DevIntent Application Development Tools
 
-# Setup
+This root project contains a demo app, in [src/](src/), that demonstrates the features of the
+[@devintent/dev](projects/dev) application development library.
 
-```
-npm install   // installs npm and mwc
-npm run start // runs browser.ts at localhost:9000
-npm run install:storybook // install storybook npm deps
-npm run start:storyboook // starts storybook listening to localhost:9000
-```
+## Development server
 
+Run `npm start` to serve the demo app in a dev server.
+Navigate to `http://localhost:4200/`.
+The app will automatically reload if you change any of the source files.
 
-# Structure
+## Code scaffolding
 
-```
-mwc - a gitignored clone of exolever/material-web-components
-src
- |- components // new custom elements
- |- assets // JSS and values
- |- module.ts //TODO export defaults eg. export {default as Button } 'component/button';
- |_ browser.ts // defines custom element on DOMRegistry
-docs
- |- stories
- |     |- 0-intro.stories.ts  // 0 is to place it at the top of the menu
- |     |_ button.stories.ts   // setup button section
- |   .storybook
- |     |- addons.js           // add new panels
- |     |- config.js           // storybook settings
- |_    |_ webpack.config.js   // config for webpack...
+Run `ng generate component component-name` to generate a new component. You can also use
+`ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+## Build
 
-```
+- Run `npm run build` to build the demo project.
+The build artifacts will be stored in the `dist/dev-demo` directory.
+- Run `npm run build:lib` to build the library project.
+The build artifacts will be stored in the `dist/dev` directory.
 
+## Running unit tests
 
-# Suggested Element Structure
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-```javascript
-import { html } from '@polymer/lit-element/lit-element.js';
-// for rendering templates
-import { Button } from 'mwc/packages/button';
-// the mwc you wish to extend
+## Running end-to-end tests
 
-export class ExoButton extends Button {
-  @property
-  theme = 'dark';
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-  renderStyle(){
-    return html`
-    ${super.renderStyle()} <!-- Old Styles -->
-    <style>
-     .mdc-button {
-      	/* new overrides */
-		/* please follow */
-		/* https://material.io/develop/web/docs/theming/ */
-      }
-    </style>`;
-  }
-}
+## Further help
 
-customElements.define('exo-button', ExoButton);
-
-```
-
-#
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

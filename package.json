@@ -1,12 +1,13 @@
 {
-  "name": "OpenExO-ToolKit",
-  "description": "OpenExO Brand Guildelines and ToolKit",
+  "name": "openexo-toolkit",
+  "description": "OpenExO Brand Guidelines and ToolKit",
   "version": "0.0.1",
   "repository": "https://github.com/DevIntent/dev",
   "homepage": "https://devintent-dev.firebaseapp.com/",
   "bugs": "https://github.com/DevIntent/dev/issues",
   "engines": {
-    "node": ">=8"
+    "node": ">=8",
+    "npm": ">=6"
   },
   "scripts": {
     "ng": "ng",
@@ -18,9 +19,11 @@
     "publish:lib": "npm run lint && npm run build:lib && npm publish ./dist/design-system --access public",
     "test": "ng test",
     "lint": "ng lint",
+    "lint:prettier": "npm run lint && npm run format:check",
     "e2e": "ng e2e",
     "smex": "source-map-explorer",
-    "update": "npm-check -u"
+    "update": "npm-check -u",
+    "format:check": "./node_modules/.bin/prettier --config ./.prettierrc --write \"projects/**/*{.ts,.js,.json,.css,.scss}\""
   },
   "private": true,
   "dependencies": {
@@ -62,6 +65,7 @@
     "karma-jasmine-html-reporter": "~1.4.0",
     "ng-packagr": "^4.6.0",
     "npm-check": "~5.9.0",
+    "prettier": "^1.16.4",
     "protractor": "~5.4.2",
     "rxjs-tslint": "~0.1.6",
     "scss-bundle": "^2.4.0",
@@ -70,6 +74,9 @@
     "tsickle": "~0.34.0",
     "tslib": "~1.9.3",
     "tslint": "^5.12.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
     "typescript": "~3.2.4"
   }
 }

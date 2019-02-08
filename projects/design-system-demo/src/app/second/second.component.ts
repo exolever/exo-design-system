@@ -1,16 +1,11 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'dev-second',
   templateUrl: './second.component.html',
-  styleUrls: ['./second.component.scss']
+  styleUrls: ['./second.component.scss'],
 })
 export class SecondComponent implements OnInit {
+  constructor() {}
 
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

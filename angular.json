@@ -21,7 +21,7 @@
             "index": "projects/design-system-demo/src/index.html",
             "main": "projects/design-system-demo/src/main.ts",
             "polyfills": "projects/design-system-demo/src/polyfills.ts",
-            "tsConfig": "projects/design-system-demo/src/tsconfig.app.json",
+            "tsConfig": "projects/design-system-demo/tsconfig.app.json",
             "assets": [
               "projects/design-system-demo/src/favicon.ico",
               "projects/design-system-demo/src/assets"
@@ -96,8 +96,8 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/design-system-demo/src/tsconfig.app.json",
-              "projects/design-system-demo/src/tsconfig.spec.json"
+              "projects/design-system-demo/tsconfig.app.json",
+              "projects/design-system-demo/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -107,14 +107,14 @@
       }
     },
     "design-system-demo-e2e": {
-      "root": "projects/demo-e2e/",
+      "root": "projects/e2e/",
       "projectType": "application",
       "prefix": "",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "projects/demo-e2e/protractor.conf.js",
+            "protractorConfig": "projects/e2e/protractor.conf.js",
             "devServerTarget": "design-system-demo:serve"
           },
           "configurations": {
@@ -126,7 +126,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": "projects/demo-e2e/tsconfig.e2e.json",
+            "tsConfig": "projects/e2e/tsconfig.e2e.json",
             "exclude": [
               "**/node_modules/**"
             ]

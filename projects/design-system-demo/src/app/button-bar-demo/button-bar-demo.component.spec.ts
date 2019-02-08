@@ -1,6 +1,6 @@
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {ButtonBarDemoComponent} from './button-bar-demo.component';
+import { ButtonBarDemoComponent } from './button-bar-demo.component';
 
 describe('ButtonBarDemoComponent', () => {
   let component: ButtonBarDemoComponent;
@@ -8,9 +8,8 @@ describe('ButtonBarDemoComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-        declarations: [ButtonBarDemoComponent]
-      })
-      .compileComponents();
+      declarations: [ButtonBarDemoComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

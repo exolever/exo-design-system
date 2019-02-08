@@ -1,9 +1,9 @@
-import {CommonModule} from '@angular/common';
-import {NgModule} from '@angular/core';
-import {FlexLayoutModule} from '@angular/flex-layout';
-import {MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule, MatTooltipModule} from '@angular/material';
-import {RouterModule} from '@angular/router';
-import {ButtonBarComponent} from './button-bar/button-bar.component';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule, MatTooltipModule } from '@angular/material';
+import { RouterModule } from '@angular/router';
+import { ButtonBarComponent } from './button-bar/button-bar.component';
 
 @NgModule({
   imports: [
@@ -14,11 +14,9 @@ import {ButtonBarComponent} from './button-bar/button-bar.component';
     MatToolbarModule,
     MatTooltipModule,
     FlexLayoutModule,
-    RouterModule
+    RouterModule,
   ],
-  declarations: [
-    ButtonBarComponent
-  ],
+  declarations: [ButtonBarComponent],
   exports: [
     ButtonBarComponent,
     CommonModule,
@@ -27,8 +25,7 @@ import {ButtonBarComponent} from './button-bar/button-bar.component';
     MatButtonModule,
     MatToolbarModule,
     MatTooltipModule,
-    FlexLayoutModule
-  ]
+    FlexLayoutModule,
+  ],
 })
-export class DevintentModule {
-}
+export class DevintentModule {}

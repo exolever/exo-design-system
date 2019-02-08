@@ -17,10 +17,10 @@ If you'd like to contribute, you can create an [issue](https://github.com/exolev
 ## Development
 
 #### Getting started
-Firstly you need run `npm run build:lib`
-Run `npm start` to serve the demo app in a dev server.
-Navigate to `http://localhost:4200/`.
-The app will automatically reload if you change any of the source files.
+- Run `npm run build:lib` to generate the UI library.
+- Run `npm start` to serve the demo app in a dev server.
+- Navigate to `http://localhost:4200/`.
+- The app will automatically reload if you change any of the source files.
 
 #### Code scaffolding
 Run `ng generate component component-name` to generate a new component. You can also use

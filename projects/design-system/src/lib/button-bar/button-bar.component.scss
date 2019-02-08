@@ -4,17 +4,19 @@
   padding-top: 2px;
 
   button {
-    opacity: 0.6;
+    opacity: .6;
     text-transform: uppercase;
 
     &.active {
       opacity: 1;
     }
+
     &.mat-icon-button {
       margin-right: 8px;
     }
   }
 }
+
 .dev-button-bar-menu-item {
   &.active {
     opacity: 1;

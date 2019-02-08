@@ -4,7 +4,6 @@ import { NavItem } from '../nav-item';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'exo-button-bar',
   templateUrl: './button-bar.component.html',
   styleUrls: ['./button-bar.component.scss'],
 })

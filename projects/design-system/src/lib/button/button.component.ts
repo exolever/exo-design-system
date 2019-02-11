@@ -57,14 +57,4 @@ export class ExoButtonComponent extends MatButton implements OnInit {
     (this._elementRef.nativeElement.firstElementChild as HTMLElement).classList.add(this.selector);
   }
 
-  constructor(
-    platform: Platform,
-    focusMonitor: FocusMonitor,
-    elementRef: ElementRef,
-    // @breaking-change 8.0.0 `animationMode` parameter to be made required.
-    @Optional() @Inject(ANIMATION_MODULE_TYPE) animationMode?: string,
-  ) {
-    super(elementRef, platform, focusMonitor, animationMode);
-  }
-
 }

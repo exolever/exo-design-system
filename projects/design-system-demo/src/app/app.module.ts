@@ -9,8 +9,9 @@ import { ExoButtonModule } from '@openexo/design-system';
 import { AppComponent } from './app.component';
 
 export const AppRoutes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'buttons' },
+  { path: '', pathMatch: 'full', redirectTo: 'toolbar' },
   { path: 'buttons', loadChildren: './buttons/buttons.module#ButtonsModule' },
+  { path: 'toolbar', loadChildren: './toolbar/toolbar.module#ToolbarModule' },
 ];
 
 @NgModule({

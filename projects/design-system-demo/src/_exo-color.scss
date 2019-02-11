@@ -1,6 +1,3 @@
-$dark-primary-text: rgba(black, 0.87);
-$light-primary-text: white;
-
 $exo-red: (
   50: #ffe6e6,
   100: #ffd9d9,
@@ -237,12 +234,4 @@ $exo-blue: (
     A400: $light-primary-text,
     A700: $light-primary-text
   )
-);
-
-$resource-color: (
-  pdf: map_get($exo-red, 700),
-  spreadsheet: map_get($exo-teal, 600),
-  document: map_get($exo-blue, 700),
-  slides: map_get($exo-amber, 700),
-  form: map_get($exo-purple, 700)
 );

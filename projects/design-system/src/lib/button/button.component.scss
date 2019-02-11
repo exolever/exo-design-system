@@ -1,5 +1,6 @@
 @import "../theming/abstracts/variables";
 
+// Don't add properties to fab and mini-fab buttons.
 button {
   border-radius: map-get($componentMeasure, '1x');
   margin: map-get($componentMeasure, '1x') map-get($spaceMeasures, 'xs');

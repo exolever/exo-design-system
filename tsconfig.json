@@ -23,6 +23,9 @@
       ],
       "@openexo/design-system/*": [
         "dist/design-system/*"
+      ],
+      "@openexo/design/*": [
+        "projects/design-system/src/lib/*"
       ]
     }
   }

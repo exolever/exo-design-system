@@ -1,0 +1,9 @@
+@import "../theming/abstracts/variables";
+
+button {
+  border-radius: map-get($componentMeasure, '1x');
+  margin: map-get($componentMeasure, '1x') map-get($spaceMeasures, 'xs');
+  padding: 0 map-get($spaceMeasures, 'xs');
+  min-width: calc(2 * #{map-get($componentMeasure, '1x')});
+  max-width: calc(6 * #{map-get($componentMeasure, '1x')});
+}

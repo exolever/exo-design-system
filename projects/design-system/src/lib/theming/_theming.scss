@@ -1,5 +1,4 @@
 // Import library functions for theme creation.
-@import '../button-bar/button-bar-theme';
 
 // Define a mixin that accepts a theme and outputs the theme-specific styles.
 @mixin openexo-theme($theme) {
@@ -11,7 +10,7 @@
   //$foreground: map-get($theme, foreground);
   //$background: map-get($theme, background);
 
-  @include dev-button-bar-theme($theme);
+  // @include dev-button-bar-theme($theme);
 }
 
 // TODO allow customizing some component typography

@@ -16,8 +16,9 @@ import {
 import { ExoToolbarModule } from '@openexo/design/toolbar';
 
 export const AppRoutes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'menu' },
+  { path: '', pathMatch: 'full', redirectTo: 'button-toggle' },
   { path: 'buttons', loadChildren: './buttons/buttons.module#ButtonsModule' },
+  { path: 'button-toggle', loadChildren: './button-toggle/button-toggle.module#ButtonToggleModule' },
   { path: 'toolbar', loadChildren: './toolbar/toolbar.module#ToolbarModule' },
   { path: 'menu', loadChildren: './menu/menu.module#MenuModule' },
 ];

@@ -1,3 +1,10 @@
-.container {
+.sidenav-content {
   padding: 32px;
+  flex: 1;
+}
+
+.sidenav-container {
+  display: flex;
+  min-height: 92vh;
+  flex-direction: column;
 }

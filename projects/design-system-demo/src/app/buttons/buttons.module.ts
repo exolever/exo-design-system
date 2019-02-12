@@ -5,7 +5,7 @@ import { MatIconModule } from '@angular/material';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
-export const ROUTES: Routes = [
+const ROUTES: Routes = [
   { path: '', component: ButtonsComponent },
 ];
 

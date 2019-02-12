@@ -1,0 +1,23 @@
+.mat-button-toggle-checked {
+  // TODO: Get from theme
+  &.primary {
+    background-color: #6f23ff;
+  }
+
+  &.accent {
+    background-color: #00cfb3;
+  }
+
+  &.warn {
+    background-color: #ff7273;
+  }
+  color: white;
+}
+
+:host {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  overflow: hidden;
+}

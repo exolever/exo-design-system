@@ -1,15 +1,15 @@
 // Import library functions for theme creation.
+@import 'base/normalize';
 
 // Define a mixin that accepts a theme and outputs the theme-specific styles.
 @mixin openexo-theme($theme) {
   // In your component theme files, extract the palettes you need from the theme definition.
-  //$primary: map-get($theme, primary);
-  //$accent: map-get($theme, accent);
-  //$warn: map-get($theme, warn);
-  //$is-dark: map-get($theme, is-dark);
-  //$foreground: map-get($theme, foreground);
-  //$background: map-get($theme, background);
-
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $is-dark: map-get($theme, is-dark);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
   // @include dev-button-bar-theme($theme);
 }
 

@@ -7,9 +7,11 @@ Our goal is create a library for building reusable components to build faster, m
 * **IT:** Build UI components to manage their own state, then compose them to make complex UIs.
 
 #### Available features
-| Feature          | Notes                                                  | Docs         |
-|------------------|--------------------------------------------------------|--------------|
-| example          | Notes of the feature                                   | Link to docs |
+| Feature          | Notes                                                  | Docs  |
+|------------------|--------------------------------------------------------|------ |
+| Button           |                                                        | Docs  |
+| Button-toggle    |                                                        | Docs  |
+| toolbar          |                                                        | Docs  |
 
 #### Contributing
 If you'd like to contribute, you can create an [issue](https://github.com/exolever/exo-design-system/issues) or contribute with a [Pull request](https://github.com/exolever/exo-design-system/pulls)

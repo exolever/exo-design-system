@@ -1,18 +1,4 @@
-.mat-button-toggle-checked {
-  // TODO: Get from theme
-  &.primary {
-    background-color: #6f23ff;
-  }
-
-  &.accent {
-    background-color: #00cfb3;
-  }
-
-  &.warn {
-    background-color: #ff7273;
-  }
-  color: white;
-}
+@import "~@angular/material/theming";
 
 :host {
   position: relative;
@@ -20,4 +6,26 @@
   flex-direction: column;
   white-space: nowrap;
   overflow: hidden;
+}
+
+@mixin button-toggle-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+
+  .mat-button-toggle-checked {
+
+    &.primary {
+      background-color: mat-color($primary);
+    }
+
+    &.accent {
+      background-color: mat-color($accent);
+    }
+
+    &.warn {
+      background-color: mat-color($warn);
+    }
+  }
+
 }

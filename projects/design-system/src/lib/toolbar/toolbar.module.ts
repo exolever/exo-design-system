@@ -13,6 +13,7 @@ import { ExoToolbarComponent } from '@openexo/design/toolbar/toolbar.component';
   ],
   exports: [
     ExoToolbarComponent,
+    MatToolbarModule,
   ],
 })
 export class ExoToolbarModule {}

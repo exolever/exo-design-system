@@ -2,9 +2,11 @@
 
 // Don't add properties to fab and mini-fab buttons.
 button {
+  &:not(.mat-fab):not(.mat-mini-fab):not(.mat-icon-button) {
+    padding: 0 map-get($spaceMeasures, 'xs');
+    min-width: calc(2 * #{map-get($componentMeasure, '1x')});
+    max-width: calc(6 * #{map-get($componentMeasure, '1x')});
+  }
   border-radius: map-get($componentMeasure, '1x');
   margin: map-get($componentMeasure, '1x') map-get($spaceMeasures, 'xs');
-  padding: 0 map-get($spaceMeasures, 'xs');
-  min-width: calc(2 * #{map-get($componentMeasure, '1x')});
-  max-width: calc(6 * #{map-get($componentMeasure, '1x')});
 }

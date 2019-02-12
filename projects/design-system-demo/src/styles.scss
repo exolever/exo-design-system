@@ -10,9 +10,10 @@
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($demo-theme);
+@include openexo-theme($demo-theme);
 .alternate-theme {
   @include angular-material-theme($alternate-theme);
+  @include openexo-theme($alternate-theme);
 }
-// Pass the theme into the @devintent/dev components.
-@include openexo-theme($demo-theme);
+
 // @include openexo-typography($demo-typography);

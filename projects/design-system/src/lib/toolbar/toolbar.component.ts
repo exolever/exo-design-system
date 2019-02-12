@@ -8,4 +8,7 @@ import { MatToolbar, ThemePalette } from '@angular/material';
 export class ExoToolbarComponent extends MatToolbar {
   @Input()
   color: ThemePalette = 'primary';
+
+  @Input()
+  classes: string[];
 }

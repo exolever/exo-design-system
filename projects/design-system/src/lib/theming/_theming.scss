@@ -1,5 +1,6 @@
 // Import library functions for theme creation.
 @import 'base/normalize';
+@import '../button-toggle/button-toggle.component';
 
 // Define a mixin that accepts a theme and outputs the theme-specific styles.
 @mixin openexo-theme($theme) {
@@ -10,7 +11,7 @@
   $is-dark: map-get($theme, is-dark);
   $foreground: map-get($theme, foreground);
   $background: map-get($theme, background);
-  // @include dev-button-bar-theme($theme);
+  @include button-toggle-theme($theme);
 }
 
 // TODO allow customizing some component typography

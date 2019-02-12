@@ -1,43 +1,29 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
-import { ExoButtonModule } from '@openexo/design-system';
+import { ExoButtonModule, ExoToolbarModule } from '@openexo/design-system';
 import { AppComponent } from './app.component';
-import {
-  MatIconModule,
-  MatListModule,
-  MatNativeDateModule,
-  MatSidenavModule,
-} from '@angular/material';
-import { ExoToolbarModule } from '@openexo/design/toolbar';
+import { NavbarComponent } from './layout/navbar/navbar.component';
 
 export const AppRoutes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'button-toggle' },
-  { path: 'buttons', loadChildren: './buttons/buttons.module#ButtonsModule' },
-  { path: 'button-toggle', loadChildren: './button-toggle/button-toggle.module#ButtonToggleModule' },
-  { path: 'toolbar', loadChildren: './toolbar/toolbar.module#ToolbarModule' },
-  { path: 'menu', loadChildren: './menu/menu.module#MenuModule' },
+  { path: '', pathMatch: 'full', redirectTo: 'components' },
+  { path: 'components', loadChildren: './components/components.module#ComponentsModule' },
+  { path: 'guides', loadChildren: './guides/guides.module#GuidesModule' },
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
   ],
   imports: [
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
-    FlexLayoutModule,
     ReactiveFormsModule,
-    ExoButtonModule,
-    MatNativeDateModule,
-    MatIconModule,
-    MatSidenavModule,
-    MatListModule,
     ExoToolbarModule,
     RouterModule.forRoot(AppRoutes, { useHash: false }),
   ],

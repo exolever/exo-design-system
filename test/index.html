@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Openexo system design</title>
-  <base href="/">
-
+  <base href="/design-system-demo/">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,8 +18,17 @@
   <link rel="dns-prefetch" href="https://apis.google.com">
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-</head>
+  <script>
+    (function(){
+      const redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+<link rel="stylesheet" href="styles.09a84b536a5e5f919502.css"></head>
 <body>
   <exo-root></exo-root>
-</body>
+<script type="text/javascript" src="runtime.9534b3f09067380fc5f5.js"></script><script type="text/javascript" src="polyfills.f6d1b6da235fd2843e9d.js"></script><script type="text/javascript" src="main.231521b4b0c51c54be62.js"></script></body>
 </html>

@@ -1,4 +1,4 @@
 {
-  "entry": "./projects/design-system/src/lib/theming/_theming.scss",
+  "entry": "./projects/design-system/src/theming/_theming.scss",
   "dest": "dist/design-system/_theming.scss"
 }

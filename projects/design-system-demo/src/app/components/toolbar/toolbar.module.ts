@@ -1,8 +1,8 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { ExoToolbarModule } from '../../../../../design-system/src/lib/toolbar';
 import { CommonModule } from '@angular/common';
 import { ToolbarComponent } from './toolbar.component';
+import { ExoToolbarModule } from '@openexo/design-system';
 
 export const ROUTES: Routes = [
   { path: '', component: ToolbarComponent },

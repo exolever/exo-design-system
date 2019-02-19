@@ -5,7 +5,7 @@ import {
   MatRippleModule,
 } from '@angular/material';
 import { CommonModule } from '@angular/common';
-import { ExoButtonToggleComponent } from '@openexo/design/button-toggle/button-toggle.component';
+import { ExoButtonToggleComponent } from './button-toggle.component';
 
 @NgModule({
   imports: [

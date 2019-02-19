@@ -1,19 +1,1 @@
-@import 'theme';
 @import '../../../dist/design-system/theming';
-
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once!
-@include mat-core($demo-typography);
-
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
-@include angular-material-theme($demo-theme);
-@include openexo-theme($demo-theme);
-.alternate-theme {
-  @include angular-material-theme($alternate-theme);
-  @include openexo-theme($alternate-theme);
-}
-
-// @include openexo-typography($demo-typography);

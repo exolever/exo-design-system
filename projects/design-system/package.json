@@ -1,6 +1,6 @@
 {
   "name": "@openexo/design-system",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Application Development Library",
   "keywords": [
     "material",
@@ -12,10 +12,9 @@
   ],
   "author": "OpenExo",
   "license": "MIT",
-  "private": false,
   "homepage": "http://www.openexo.com",
-  "repository": "",
-  "bugs": "",
+  "repository": "https://github.com/exolever/exo-design-system",
+  "bugs": "https://github.com/exolever/exo-design-system/issues",
   "dependencies": {
     "tslib": "^1.9.3"
   },

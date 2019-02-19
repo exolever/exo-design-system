@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ComponentsComponent } from './components.component';
 import { MatIconModule, MatListModule, MatSidenavModule } from '@angular/material';
-import { ExoToolbarModule } from '@openexo/design/toolbar';
-import { ExoButtonModule } from '@openexo/design/button';
+import { ExoToolbarModule } from '@openexo/design-system';
+import { ExoButtonModule } from '@openexo/design-system';
 
 const componentRoutes: Routes = [
   {

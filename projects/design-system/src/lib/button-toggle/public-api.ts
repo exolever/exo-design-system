@@ -1,2 +1,2 @@
-export * from './button-toggle.module';
-export * from './button-toggle.component';
+export { ExoButtonToggleModule } from './button-toggle.module';
+export { ExoButtonToggleComponent }from './button-toggle.component';

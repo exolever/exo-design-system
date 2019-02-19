@@ -1,6 +1,5 @@
-@import "../theming/abstracts/variables";
+@import "../../theming/abstracts/variables";
 
-// Don't add properties to fab and mini-fab buttons.
 button {
   &:not(.mat-fab):not(.mat-mini-fab):not(.mat-icon-button) {
     padding: 0 map-get($spaceMeasures, 'xs');

@@ -2,5 +2,6 @@
  * Public API Surface of Library
  */
 
-export * from '@openexo/design/button';
-export * from '@openexo/design/toolbar';
+export * from './lib/button';
+export * from './lib/button-toggle';
+export * from './lib/toolbar';

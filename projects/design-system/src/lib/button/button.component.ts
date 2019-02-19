@@ -1,18 +1,12 @@
 import {
   Component,
-  ElementRef,
   EventEmitter,
   HostListener,
-  Inject,
   Input,
   OnInit,
-  Optional,
   Output,
 } from '@angular/core';
 import { MatButton, ThemePalette } from '@angular/material';
-import { Platform } from '@angular/cdk/platform';
-import { FocusMonitor } from '@angular/cdk/a11y';
-import { ANIMATION_MODULE_TYPE } from '@angular/platform-browser/animations';
 
 export enum ButtonHostAttributes {
   MatButton = 'mat-button',

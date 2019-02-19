@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { MenuComponent } from './menu.component';
-import { ExoButtonModule } from '../../../../../design-system/src/lib/button';
+import { ExoButtonModule } from '@openexo/design-system';
 import { MatMenuModule } from '@angular/material';
 
 export const ROUTES: Routes = [

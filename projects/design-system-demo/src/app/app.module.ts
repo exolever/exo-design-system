@@ -4,7 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
-import { ExoButtonModule, ExoToolbarModule } from '@openexo/design-system';
+import { ExoToolbarModule } from '@openexo/design-system';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 
@@ -21,10 +21,10 @@ export const AppRoutes: Routes = [
   ],
   imports: [
     CommonModule,
+    ExoToolbarModule,
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    ExoToolbarModule,
     RouterModule.forRoot(AppRoutes, { useHash: false }),
   ],
   providers: [],

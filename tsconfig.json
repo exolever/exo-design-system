@@ -13,6 +13,9 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    "plugins": [
+      { "name": "@angular/language-service" }
+    ],
     "lib": [
       "es2018",
       "dom"
@@ -20,12 +23,6 @@
     "paths": {
       "@openexo/design-system": [
         "dist/design-system"
-      ],
-      "@openexo/design-system/*": [
-        "dist/design-system/*"
-      ],
-      "@openexo/design/*": [
-        "projects/design-system/src/lib/*"
       ]
     }
   }

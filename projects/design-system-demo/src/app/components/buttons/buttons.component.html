@@ -6,6 +6,24 @@
 <button mat-button disabled>Disabled</button>
 <a mat-button routerLink=".">Link</a>
 
+<h3>Buttons with Icons</h3>
+<button mat-raised-button color="primary">
+  <mat-icon>mode_edit</mat-icon>
+  Raised
+</button>
+<button mat-button color="primary">
+  <mat-icon>home</mat-icon>
+  Basic
+</button>
+<button mat-flat-button color="accent">
+  <mat-icon>check</mat-icon>
+  Flat
+</button>
+<button mat-stroked-button color="warn">
+  <mat-icon>account_circle</mat-icon>
+  Stroked
+</button>
+
 <h3>Loading Buttons</h3>
 <button mat-button color="primary" exoButtonLoading [isLoading]="loading" (click)="isLoading('loading')">Primary</button>
 <button mat-raised-button color="accent" exoButtonLoading [isLoading]="loadingRaised" (click)="isLoading('loadingRaised')">Accent</button>

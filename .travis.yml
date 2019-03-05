@@ -1,0 +1,11 @@
+dist: trusty
+language: node_js
+node_js:
+  - "11"
+env:
+    - FOO=bar
+
+install:
+    - npm install
+script:
+    - echo "Hello world"

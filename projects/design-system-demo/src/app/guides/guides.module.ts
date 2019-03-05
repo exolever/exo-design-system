@@ -3,7 +3,7 @@ import { GuidesComponent } from './guides.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ExoToolbarModule } from '@openexo/design-system';
-import { MarkdownModule } from "ngx-markdown";
+import { MarkdownModule } from 'ngx-markdown';
 
 const guidesRoutes: Routes = [
   {

@@ -29,7 +29,7 @@ export const AppRoutes: Routes = [
     ReactiveFormsModule,
     HttpClientModule,
     MarkdownModule.forRoot({
-      loader: HttpClient
+      loader: HttpClient,
     }),
     RouterModule.forRoot(AppRoutes, { useHash: false }),
   ],

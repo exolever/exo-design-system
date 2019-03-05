@@ -4,4 +4,3 @@
 
 export * from './lib/button';
 export * from './lib/button-toggle';
-export * from './lib/toolbar';

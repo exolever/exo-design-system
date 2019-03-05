@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { GuidesComponent } from './guides.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { ExoToolbarModule } from '@openexo/design-system';
 import { MarkdownModule } from 'ngx-markdown';
+import { MatToolbarModule } from '@angular/material';
 
 const guidesRoutes: Routes = [
   {
@@ -18,7 +18,7 @@ const guidesRoutes: Routes = [
     CommonModule,
     RouterModule.forChild(guidesRoutes),
     MarkdownModule.forChild(),
-    ExoToolbarModule,
+    MatToolbarModule,
   ],
   declarations: [
     GuidesComponent,

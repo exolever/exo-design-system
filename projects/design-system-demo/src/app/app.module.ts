@@ -4,11 +4,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
-import { ExoToolbarModule } from '@openexo/design-system';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { MarkdownModule } from 'ngx-markdown';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { MatToolbarModule } from '@angular/material';
 
 export const AppRoutes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'guides' },
@@ -23,7 +23,7 @@ export const AppRoutes: Routes = [
   ],
   imports: [
     CommonModule,
-    ExoToolbarModule,
+    MatToolbarModule,
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,

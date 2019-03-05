@@ -22,7 +22,7 @@
     ],
     "paths": {
       "@openexo/design-system": [
-        "dist/design-system"
+        "projects/design-system"
       ]
     }
   }

@@ -2,7 +2,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ToolbarComponent } from './toolbar.component';
-import { ExoToolbarModule } from '@openexo/design-system';
+import { MatToolbarModule } from '@angular/material';
 
 export const ROUTES: Routes = [
   { path: '', component: ToolbarComponent },
@@ -10,7 +10,7 @@ export const ROUTES: Routes = [
 
 @NgModule({
   imports: [
-    ExoToolbarModule,
+    MatToolbarModule,
     CommonModule,
     RouterModule.forChild(ROUTES),
   ],

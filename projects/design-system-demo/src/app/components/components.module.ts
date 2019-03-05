@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ComponentsComponent } from './components.component';
-import { MatIconModule, MatListModule, MatSidenavModule } from '@angular/material';
-import { ExoToolbarModule, ExoButtonModule } from '@openexo/design-system';
+import { MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
+import { ExoButtonModule } from '@openexo/design-system';
 
 const componentRoutes: Routes = [
   {
@@ -14,7 +14,6 @@ const componentRoutes: Routes = [
       { path: 'buttons', loadChildren: './buttons/buttons.module#ButtonsModule' },
       { path: 'button-toggle', loadChildren: './button-toggle/button-toggle.module#ButtonToggleModule' },
       { path: 'toolbar', loadChildren: './toolbar/toolbar.module#ToolbarModule' },
-      { path: 'menu', loadChildren: './menu/menu.module#MenuModule' },
     ],
   },
 ];
@@ -23,8 +22,8 @@ const componentRoutes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(componentRoutes),
+    MatToolbarModule,
     MatSidenavModule,
-    ExoToolbarModule,
     ExoButtonModule,
     MatIconModule,
     MatListModule,

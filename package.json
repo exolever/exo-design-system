@@ -25,7 +25,8 @@
     "e2e": "ng e2e",
     "smex": "source-map-explorer",
     "update": "npm-check -u",
-    "format:check": "./node_modules/.bin/prettier --config ./.prettierrc --write \"projects/**/*{.ts,.js,.json,.css,.scss}\""
+    "format:check": "./node_modules/.bin/prettier --config ./.prettierrc --write \"projects/**/*{.ts,.js,.json,.css,.scss}\"",
+    "deploy:gh-page": "ng build --prod design-system-demo --output-path docs --base-href /https://exolever.github.io/exo-design-system//"
   },
   "private": true,
   "dependencies": {

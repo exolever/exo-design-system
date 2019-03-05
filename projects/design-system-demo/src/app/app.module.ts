@@ -7,8 +7,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ExoToolbarModule } from '@openexo/design-system';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
-import { MarkdownModule } from "ngx-markdown";
-import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { MarkdownModule } from 'ngx-markdown';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 export const AppRoutes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'guides' },

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule, MatIconModule } from '@angular/material';
-import { ExoButtonComponent } from './button.component';
+import { ButtonLoadingDirective } from './button-loading.directive';
 
 @NgModule({
   imports: [
@@ -10,10 +10,11 @@ import { ExoButtonComponent } from './button.component';
     MatIconModule,
   ],
   declarations: [
-    ExoButtonComponent,
+    ButtonLoadingDirective,
   ],
   exports: [
-    ExoButtonComponent,
+    ButtonLoadingDirective,
+    MatButtonModule,
   ],
 })
 export class ExoButtonModule {}

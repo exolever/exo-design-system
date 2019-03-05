@@ -1,2 +1,2 @@
 export { ExoButtonModule } from './button.module';
-export { ExoButtonComponent } from './button.component';
+export { ButtonLoadingDirective } from './button-loading.directive';

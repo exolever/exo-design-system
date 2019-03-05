@@ -1,0 +1,15 @@
+@import '../../theming/abstracts/variables';
+
+@mixin _exo-button {
+  button.mat-button, button.mat-raised-button, button.mat-stroked-button, button.mat-flat-button, button.mat-icon-button, button.mat-fab, button.mat-mini-fab {
+    &:not(.mat-fab):not(.mat-mini-fab):not(.mat-icon-button) {
+      padding: 0 map-get($spaceMeasures, 'xs');
+      min-width: calc(2 * #{map-get($componentMeasure, '1x')});
+      max-width: calc(6 * #{map-get($componentMeasure, '1x')});
+      height: 48px;
+    }
+
+    border-radius: map-get($componentMeasure, '1x');
+    margin: 0 map-get($spaceMeasures, 'xs');
+  }
+}

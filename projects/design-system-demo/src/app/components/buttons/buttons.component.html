@@ -1,86 +1,82 @@
 <h3>Basic Buttons</h3>
-<exo-button selector="mat-button" (clicked)="clicked()">
-  Basic
-</exo-button>
-<exo-button selector="mat-button" color="primary" (clicked)="clicked()">
-  Primary
-</exo-button>
-<exo-button selector="mat-button" color="accent" (clicked)="clicked()">
-  Accent
-</exo-button>
-<exo-button selector="mat-button" color="warn" (clicked)="clicked()">
-  Warn
-</exo-button>
-<exo-button selector="mat-button" [disabled]="true " (clicked)="clicked()">
-  Disabled
-</exo-button>
+<button mat-button>Basic</button>
+<button mat-button color="primary">Primary</button>
+<button mat-button color="accent">Accent</button>
+<button mat-button color="warn">Warn</button>
+<button mat-button disabled>Disabled</button>
+<a mat-button routerLink=".">Link</a>
+
+<h3>Loading Buttons</h3>
+<button mat-button color="primary" exoButtonLoading [isLoading]="loading" (click)="isLoading('loading')">Primary</button>
+<button mat-raised-button color="accent" exoButtonLoading [isLoading]="loadingRaised" (click)="isLoading('loadingRaised')">Accent</button>
+<button mat-stroked-button color="warn" exoButtonLoading [isLoading]="loadingStroked" (click)="isLoading('loadingStroked')">Warn</button>
 
 <h3>Raised Buttons</h3>
 <div class="example-button-row">
-  <exo-button selector="mat-raised-button" (clicked)="clicked()">Basic</exo-button>
-  <exo-button selector="mat-raised-button" color="primary" (clicked)="clicked()">Primary</exo-button>
-  <exo-button selector="mat-raised-button" color="accent" (clicked)="clicked()">Accent</exo-button>
-  <exo-button selector="mat-raised-button" color="warn" (clicked)="clicked()">Warn</exo-button>
-  <exo-button selector="mat-raised-button" [disabled]="true" (clicked)="clicked()">Disabled</exo-button>
+  <button mat-raised-button (click)="clicked()">Basic</button>
+  <button mat-raised-button color="primary" (click)="clicked()">Primary</button>
+  <button mat-raised-button color="accent" (click)="clicked()">Accent</button>
+  <button mat-raised-button color="warn" (click)="clicked()">Warn</button>
+  <button mat-raised-button [disabled]="true" (click)="clicked()">Disabled</button>
 </div>
 
 <h3>Stroked Buttons</h3>
 <div class="example-button-row">
-  <exo-button selector="mat-stroked-button" (clicked)="clicked()">Basic</exo-button>
-  <exo-button selector="mat-stroked-button" color="primary" (clicked)="clicked()">Primary</exo-button>
-  <exo-button selector="mat-stroked-button" color="accent" (clicked)="clicked()">Accent</exo-button>
-  <exo-button selector="mat-stroked-button" color="warn" (clicked)="clicked()">Warn</exo-button>
-  <exo-button selector="mat-stroked-button" disabled (clicked)="clicked()">Disabled</exo-button>
+  <button mat-stroked-button (click)="clicked()">Basic</button>
+  <button mat-stroked-button color="primary" (click)="clicked()">Primary</button>
+  <button mat-stroked-button color="accent" (click)="clicked()">Accent</button>
+  <button mat-stroked-button color="warn" (click)="clicked()">Warn</button>
+  <button mat-stroked-button disabled (click)="clicked()">Disabled</button>
 </div>
 
 <h3>Flat Buttons</h3>
 <div class="example-button-row">
-  <exo-button selector="mat-flat-button" (clicked)="clicked()">Basic</exo-button>
-  <exo-button selector="mat-flat-button" color="primary" (clicked)="clicked()">Primary</exo-button>
-  <exo-button selector="mat-flat-button" color="accent" (clicked)="clicked()">Accent</exo-button>
-  <exo-button selector="mat-flat-button" color="warn" (clicked)="clicked()">Warn</exo-button>
-  <exo-button selector="mat-flat-button" disabled (clicked)="clicked()">Disabled</exo-button>
+  <button mat-flat-button (click)="clicked()">Basic</button>
+  <button mat-flat-button color="primary" (click)="clicked()">Primary</button>
+  <button mat-flat-button color="accent" (click)="clicked()">Accent</button>
+  <button mat-flat-button color="warn" (click)="clicked()">Warn</button>
+  <button mat-flat-button disabled (click)="clicked()">Disabled</button>
 </div>
 
 <h3>Icon Buttons</h3>
 <div class="example-button-row">
-  <exo-button selector="mat-icon-button" (clicked)="clicked()">
+  <button mat-icon-button (click)="clicked()">
     <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </exo-button>
-  <exo-button selector="mat-icon-button" color="primary" (clicked)="clicked()">
+  </button>
+  <button mat-icon-button color="primary" (click)="clicked()">
     <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </exo-button>
-  <exo-button selector="mat-icon-button" color="accent" (clicked)="clicked()">
+  </button>
+  <button mat-icon-button color="accent" (click)="clicked()">
     <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </exo-button>
-  <exo-button selector="mat-icon-button" color="warn" (clicked)="clicked()">
+  </button>
+  <button mat-icon-button color="warn" (click)="clicked()">
     <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </exo-button>
-  <exo-button selector="mat-icon-button" disabled (clicked)="clicked()">
+  </button>
+  <button mat-icon-button disabled (click)="clicked()">
     <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </exo-button>
+  </button>
 </div>
 
 <h3>Fab Buttons</h3>
 <div class="example-button-row">
-  <exo-button selector="mat-fab" (clicked)="clicked()">Basic</exo-button>
-  <exo-button selector="mat-fab" color="primary" (clicked)="clicked()">Primary</exo-button>
-  <exo-button selector="mat-fab" color="accent" (clicked)="clicked()">Accent</exo-button>
-  <exo-button selector="mat-fab" color="warn" (clicked)="clicked()">Warn</exo-button>
-  <exo-button selector="mat-fab" disabled (clicked)="clicked()">Disabled</exo-button>
-  <exo-button selector="mat-fab" (clicked)="clicked()">
+  <button mat-fab (click)="clicked()">Basic</button>
+  <button mat-fab color="primary" (click)="clicked()">Primary</button>
+  <button mat-fab color="accent" (click)="clicked()">Accent</button>
+  <button mat-fab color="warn" (click)="clicked()">Warn</button>
+  <button mat-fab disabled (click)="clicked()">Disabled</button>
+  <button mat-fab (click)="clicked()">
     <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </exo-button>
+  </button>
 </div>
 
 <h3>Mini Fab Buttons</h3>
 <div class="example-button-row">
-  <exo-button selector="mat-mini-fab" (clicked)="clicked()">Basic</exo-button>
-  <exo-button selector="mat-mini-fab" color="primary" (clicked)="clicked()">Primary</exo-button>
-  <exo-button selector="mat-mini-fab" color="accent" (clicked)="clicked()">Accent</exo-button>
-  <exo-button selector="mat-mini-fab" color="warn" (clicked)="clicked()">Warn</exo-button>
-  <exo-button selector="mat-mini-fab" disabled (clicked)="clicked()">Disabled</exo-button>
-  <exo-button selector="mat-mini-fab" (clicked)="clicked()">
+  <button mat-mini-fab (click)="clicked()">Basic</button>
+  <button mat-mini-fab color="primary" (click)="clicked()">Primary</button>
+  <button mat-mini-fab color="accent" (click)="clicked()">Accent</button>
+  <button mat-mini-fab color="warn" (click)="clicked()">Warn</button>
+  <button mat-mini-fab disabled (click)="clicked()">Disabled</button>
+  <button mat-mini-fab (click)="clicked()">
     <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </exo-button>
+  </button>
 </div>

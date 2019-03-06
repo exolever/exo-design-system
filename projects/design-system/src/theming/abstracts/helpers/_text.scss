@@ -1,0 +1,41 @@
+@mixin text-helpers() {
+  body {
+    .text-center {
+      text-align: center;
+    }
+
+    .text-left {
+      text-align: left;
+    }
+
+    .text-right {
+      text-align: right;
+    }
+
+    .text-upper {
+      text-transform: uppercase;
+    }
+
+    .text-lower {
+      text-transform: lowercase;
+    }
+
+    .text-truncate {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .text-nodecoration {
+      text-decoration: none;
+    }
+
+    .capitalize {
+      text-transform: capitalize;
+    }
+
+    .upper-first-letter::first-letter {
+      text-transform: uppercase;
+    }
+  }
+}

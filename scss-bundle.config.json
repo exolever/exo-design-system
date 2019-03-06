@@ -1,0 +1,4 @@
+{
+  "entry": "./projects/design-system/src/theming/_theming.scss",
+  "dest": "dist/design-system/_theming.scss"
+}

@@ -1,0 +1,30 @@
+@mixin general-helpers() {
+
+  // Clear inner floats
+  .clearfix::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+
+  .inline-block {
+    display: inline-block;
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
+
+  .w-100 {
+    width: 100%;
+  }
+
+  .radius-100 {
+    border-radius: 100%;
+  }
+
+  .slight-opacity {
+    opacity: 0.64;
+  }
+
+}

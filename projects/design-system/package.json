@@ -1,0 +1,27 @@
+{
+  "name": "@openexo/design-system",
+  "version": "0.0.9-alpha",
+  "description": "Application Development Library",
+  "keywords": [
+    "material",
+    "design",
+    "angular",
+    "material design",
+    "components",
+    "openexo"
+  ],
+  "author": "OpenExo",
+  "license": "MIT",
+  "homepage": "http://www.openexo.com",
+  "repository": "https://github.com/exolever/exo-design-system",
+  "bugs": "https://github.com/exolever/exo-design-system/issues",
+  "dependencies": {
+    "tslib": "^1.9.3"
+  },
+  "peerDependencies": {
+    "@angular/cdk": "^7.0.0",
+    "@angular/common": "^7.0.0",
+    "@angular/core": "^7.0.0",
+    "@angular/material": "^7.0.0"
+  }
+}

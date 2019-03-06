@@ -1,5 +1,3 @@
-[Tutorial - Mastering markdown](https://guides.github.com/features/mastering-markdown/)
-
 # Voice and tone
 
 **Voice** reflects our personality. It’s **_what_ we say.** Our voice is:

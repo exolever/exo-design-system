@@ -22,8 +22,11 @@
     ],
     "paths": {
       "@openexo/design-system": [
-        "projects/design-system"
+        "dist/design-system"
       ]
     }
+  },
+  "angularCompilerOptions": {
+    "strictMetadataEmit": true
   }
 }

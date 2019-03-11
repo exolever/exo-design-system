@@ -1,4 +1,10 @@
-{
-  "entry": "./projects/design-system/src/theming/_theming.scss",
-  "dest": "dist/design-system/_theming.scss"
-}
+[
+  {
+    "entry": "./projects/design-system/src/theming/_theming.scss",
+    "dest": "dist/design-system/_theming.scss"
+  },
+  {
+    "entry": "./projects/design-system/src/theming/abstracts/_mixins.scss",
+    "dest": "dist/design-system/_mixins.scss"
+  }
+]

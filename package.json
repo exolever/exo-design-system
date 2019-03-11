@@ -16,7 +16,7 @@
     "build": "ng build design-system-demo",
     "build:prod": "ng build design-system-demo --prod",
     "build:lib": "ng build design-system && npm run build:lib:scss",
-    "build:lib:scss": "scss-bundle -c scss-bundle.config.json",
+    "build:lib:scss": "node bundle-scss.js",
     "publish:lib": "npm run lint && npm run build:lib && npm publish ./dist/design-system --access public",
     "test": "ng test",
     "lint": "ng lint",

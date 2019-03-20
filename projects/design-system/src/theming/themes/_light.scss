@@ -2,7 +2,7 @@
 @import 'colors';
 
 $primary: mat-palette($exo-purple);
-$secondary: mat-palette($exo-grey, 100);
+$secondary: mat-palette($exo-indigo, '0.08');
 $warn: mat-palette($exo-red);
 
 $light-theme: mat-light-theme($primary, $secondary, $warn);

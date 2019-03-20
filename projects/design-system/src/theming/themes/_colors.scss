@@ -1,4 +1,6 @@
 $purple-primary-text: #6f23ff;
+$dark-primary-text: rgba(black, 0.87);
+$light-primary-text: white;
 
 $exo-red: (
   50: #ffe6e6,
@@ -83,6 +85,8 @@ $exo-indigo: (
   A200: #8699ad,
   A400: #6c859c,
   A700: #526f8b,
+  '0.08': rgba(#001846, 0.08),
+  '0.16': rgba(#001846, 0.16),
   contrast:
   (
     50: $dark-primary-text,
@@ -98,7 +102,9 @@ $exo-indigo: (
     A100: $dark-primary-text,
     A200: $light-primary-text,
     A400: $light-primary-text,
-    A700: $light-primary-text
+    A700: $light-primary-text,
+    '0.08': $purple-primary-text,
+    '0.16': $purple-primary-text,
   )
 );
 

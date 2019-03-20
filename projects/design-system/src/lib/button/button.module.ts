@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatButtonModule, MatIconModule } from '@angular/material';
+import { MAT_RIPPLE_GLOBAL_OPTIONS, MatButtonModule, MatIconModule, RippleGlobalOptions } from '@angular/material';
 import { ButtonLoadingDirective } from './button-loading.directive';
+
+const globalRippleConfig: RippleGlobalOptions = {
+  disabled: true,
+};
 
 @NgModule({
   imports: [
@@ -15,6 +19,9 @@ import { ButtonLoadingDirective } from './button-loading.directive';
   exports: [
     ButtonLoadingDirective,
     MatButtonModule,
+  ],
+  providers: [
+    { provide: MAT_RIPPLE_GLOBAL_OPTIONS, useValue: globalRippleConfig },
   ],
 })
 export class ExoButtonModule {}

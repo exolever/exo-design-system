@@ -5,4 +5,4 @@
 @include mat-core($typography);
 @include angular-material-theme($light-theme);
 
-@include exo-abstracts($light-theme);
+@include exo-abstracts();

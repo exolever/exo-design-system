@@ -1,100 +1,58 @@
-<h3>Basic Buttons</h3>
-<button mat-button>Basic</button>
-<button mat-button color="primary">Primary</button>
-<button mat-button color="accent">Accent</button>
-<button mat-button color="warn">Warn</button>
-<button mat-button disabled>Disabled</button>
-<a mat-button routerLink=".">Link</a>
+<h3>Primary buttons</h3>
+<button mat-flat-button color="primary">
+  cta text
+</button>
+<button mat-flat-button color="primary" disabled>
+  Disabled
+</button>
+<a mat-flat-button routerLink="." color="primary">Anchor</a>
+
+<h3>Secondary buttons</h3>
+<button mat-flat-button color="accent">
+  cta text
+</button>
+<button mat-flat-button color="accent" disabled>
+  disabled
+</button>
+
+<h3>Tertiary buttons</h3>
+<button mat-button color="primary">
+  cta text
+</button>
+<button mat-button color="primary" disabled>
+  disabled
+</button>
 
 <h3>Buttons with Icons</h3>
-<button mat-raised-button color="primary">
-  <mat-icon>mode_edit</mat-icon>
-  Raised
+<button mat-flat-button color="primary">
+  <mat-icon>home</mat-icon>
+  <span>primary</span>
+</button>
+<button mat-flat-button color="accent">
+  <mat-icon>home</mat-icon>
+  <span>secondary</span>
 </button>
 <button mat-button color="primary">
   <mat-icon>home</mat-icon>
-  Basic
-</button>
-<button mat-flat-button color="accent">
-  <mat-icon>check</mat-icon>
-  Flat
-</button>
-<button mat-stroked-button color="warn">
-  <mat-icon>account_circle</mat-icon>
-  Stroked
+  <span>tertiary</span>
 </button>
 
-<h3>Loading Buttons</h3>
-<button mat-button color="primary" exoButtonLoading [isLoading]="loading" (click)="isLoading('loading')">Primary</button>
-<button mat-raised-button color="accent" exoButtonLoading [isLoading]="loadingRaised" (click)="isLoading('loadingRaised')">Accent</button>
-<button mat-stroked-button color="warn" exoButtonLoading [isLoading]="loadingStroked" (click)="isLoading('loadingStroked')">Warn</button>
-
-<h3>Raised Buttons</h3>
+<h3>Rounded primary button</h3>
 <div class="example-button-row">
-  <button mat-raised-button (click)="clicked()">Basic</button>
-  <button mat-raised-button color="primary" (click)="clicked()">Primary</button>
-  <button mat-raised-button color="accent" (click)="clicked()">Accent</button>
-  <button mat-raised-button color="warn" (click)="clicked()">Warn</button>
-  <button mat-raised-button [disabled]="true" (click)="clicked()">Disabled</button>
-</div>
-
-<h3>Stroked Buttons</h3>
-<div class="example-button-row">
-  <button mat-stroked-button (click)="clicked()">Basic</button>
-  <button mat-stroked-button color="primary" (click)="clicked()">Primary</button>
-  <button mat-stroked-button color="accent" (click)="clicked()">Accent</button>
-  <button mat-stroked-button color="warn" (click)="clicked()">Warn</button>
-  <button mat-stroked-button disabled (click)="clicked()">Disabled</button>
-</div>
-
-<h3>Flat Buttons</h3>
-<div class="example-button-row">
-  <button mat-flat-button (click)="clicked()">Basic</button>
-  <button mat-flat-button color="primary" (click)="clicked()">Primary</button>
-  <button mat-flat-button color="accent" (click)="clicked()">Accent</button>
-  <button mat-flat-button color="warn" (click)="clicked()">Warn</button>
-  <button mat-flat-button disabled (click)="clicked()">Disabled</button>
-</div>
-
-<h3>Icon Buttons</h3>
-<div class="example-button-row">
-  <button mat-icon-button (click)="clicked()">
-    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+  <button mat-icon-button color="primary">
+    <mat-icon aria-label="Example icon-button with a heart icon">attach_file</mat-icon>
   </button>
-  <button mat-icon-button color="primary" (click)="clicked()">
-    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </button>
-  <button mat-icon-button color="accent" (click)="clicked()">
-    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </button>
-  <button mat-icon-button color="warn" (click)="clicked()">
-    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-  </button>
-  <button mat-icon-button disabled (click)="clicked()">
-    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+  <button mat-icon-button disabled>
+    <mat-icon aria-label="Example icon-button with a heart icon">attach_file</mat-icon>
   </button>
 </div>
 
-<h3>Fab Buttons</h3>
+<h3>Rounded secondary button</h3>
 <div class="example-button-row">
-  <button mat-fab (click)="clicked()">Basic</button>
-  <button mat-fab color="primary" (click)="clicked()">Primary</button>
-  <button mat-fab color="accent" (click)="clicked()">Accent</button>
-  <button mat-fab color="warn" (click)="clicked()">Warn</button>
-  <button mat-fab disabled (click)="clicked()">Disabled</button>
-  <button mat-fab (click)="clicked()">
+  <button mat-icon-button color="accent">
     <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
   </button>
-</div>
-
-<h3>Mini Fab Buttons</h3>
-<div class="example-button-row">
-  <button mat-mini-fab (click)="clicked()">Basic</button>
-  <button mat-mini-fab color="primary" (click)="clicked()">Primary</button>
-  <button mat-mini-fab color="accent" (click)="clicked()">Accent</button>
-  <button mat-mini-fab color="warn" (click)="clicked()">Warn</button>
-  <button mat-mini-fab disabled (click)="clicked()">Disabled</button>
-  <button mat-mini-fab (click)="clicked()">
+  <button mat-icon-button disabled>
     <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
   </button>
 </div>

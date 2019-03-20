@@ -1,7 +1,7 @@
 {
   "name": "@openexo/design-system",
-  "version": "0.0.12-alpha",
-  "description": "Application Development Library",
+  "version": "0.0.13-alpha",
+  "description": "OpenExO design system",
   "keywords": [
     "material",
     "design",

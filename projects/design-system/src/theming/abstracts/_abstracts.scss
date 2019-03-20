@@ -3,7 +3,7 @@
 @import 'mixins';
 @import 'variables';
 
-@mixin exo-abstracts($light-theme) {
+@mixin exo-abstracts() {
   @include exo-helpers();
-  @include exo-mixins($light-theme);
+  @include exo-mixins();
 }

@@ -12,8 +12,6 @@ const ROUTES: Routes = [
     children: [
       { path: '', pathMatch: 'full', redirectTo: 'buttons' },
       { path: 'buttons', loadChildren: './buttons/buttons.module#ButtonsModule' },
-      { path: 'button-toggle', loadChildren: './button-toggle/button-toggle.module#ButtonToggleModule' },
-      { path: 'toolbar', loadChildren: './toolbar/toolbar.module#ToolbarModule' },
     ],
   },
 ];

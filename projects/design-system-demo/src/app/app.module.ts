@@ -11,7 +11,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MatToolbarModule } from '@angular/material';
 
 export const AppRoutes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'guides' },
+  { path: '', pathMatch: 'full', redirectTo: 'components' },
   { path: 'components', loadChildren: './components/components.module#ComponentsModule' },
   { path: 'brand-guides', loadChildren: './brand-guides/brand-guides.module#BrandGuidesModule' },
   { path: 'content-guides', loadChildren: './content-guides/content-guides.module#ContentGuidesModule' },

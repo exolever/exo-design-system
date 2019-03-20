@@ -1,11 +1,13 @@
+import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { MarkdownModule } from 'ngx-markdown';
-import { RouterModule, Routes } from '@angular/router';
-import { VoiceComponent } from './voice.component';
+
+import { TypographyComponent } from './typography.component';
 
 const ROUTES: Routes = [
-  { path: '', component: VoiceComponent },
+  { path: '', component: TypographyComponent },
 ];
 
 @NgModule({
@@ -15,7 +17,7 @@ const ROUTES: Routes = [
     MarkdownModule.forChild(),
   ],
   declarations: [
-    VoiceComponent,
+    TypographyComponent,
   ],
 })
-export class VoiceModule { }
+export class TypographyModule { }

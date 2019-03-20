@@ -11,8 +11,6 @@ const ROUTES: Routes = [
     children: [
       { path: '', pathMatch: 'full', redirectTo: 'getting-started' },
       { path: 'getting-started', loadChildren: './getting-started/getting-started.module#GettingStartedModule' },
-      { path: 'voice', loadChildren: './voice/voice.module#VoiceModule' },
-      { path: 'brand', loadChildren: './brand/brand.module#BrandModule' },
     ],
   },
 ];

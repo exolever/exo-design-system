@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { ButtonsComponent } from './buttons.component';
 import { ExoButtonModule } from '@openexo/design-system';
-import { MatIconModule } from '@angular/material';
+import { MatIconModule, MatTabsModule } from "@angular/material";
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -15,6 +15,7 @@ const ROUTES: Routes = [
     MatIconModule,
     RouterModule.forChild(ROUTES),
     CommonModule,
+    MatTabsModule
   ],
   declarations: [
     ButtonsComponent,

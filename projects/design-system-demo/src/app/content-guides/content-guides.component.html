@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+  Content Guidelines
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav mode="side" role="navigation" opened>
+    <mat-nav-list>
+      <a mat-list-item routerLink='./voice-tone'>Voice & Tone</a>
+      <a mat-list-item routerLink='./writing-principles'>Writing Principles</a>
+      <a mat-list-item routerLink='./grammar-punctuation'>Grammar & Punctuation</a>
+      <a mat-list-item routerLink='./writing-guides-area'>Writing guides per area</a>
+      <a mat-list-item routerLink='./common-terms'>Common terms</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="sidenav-content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,1 +1,12 @@
 @import '../../../dist/design-system/theming';
+
+body {
+  background-color: rgba(250, 250, 250, 1);
+}
+
+// Responsive img to markdowns.
+markdown {
+  img {
+    width: 100%;
+  }
+}

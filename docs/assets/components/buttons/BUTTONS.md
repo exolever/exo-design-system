@@ -1,12 +1,8 @@
-# Primary 
-
 ![Primary button](assets/components/buttons/img/primary_buttons.png "Primary buttons")
 
 **Tips**:
 
 ![Tips primary button](assets/components/buttons/img/primary_buttons_tips.png "Tips primary buttons")
-
-## Primary with Icon
 
 ![Primary button with icon](assets/components/buttons/img/primary_icon.png "Primary buttons with icon")
 
@@ -14,15 +10,12 @@
 
 ![Primary button with icon](assets/components/buttons/img/primary_icon_tips.png "Primary with icon tips")
 
-# Secondary
-
 ![Secondary button](assets/components/buttons/img/secondary_buttons.png "Secondary buttons")
 
 **Tips**
 
 ![Tips Secondary button](assets/components/buttons/img/secondary_buttons_tips.png "Tips Secondary buttons")
 
-## Secondary with Icon
 
 ![Secondary button with icon](assets/components/buttons/img/secondary_icon.png "Secondary buttons with icon")
 
@@ -30,7 +23,6 @@
 
 ![Tips Secondary button icon](assets/components/buttons/img/secondary_icon_tips.png "Tips Secondary buttons with icon")
 
-# Tertiary
 
 ![Tertiary button](assets/components/buttons/img/third_buttons.png "Tertiary buttons")
 
@@ -38,7 +30,6 @@
 
 ![Tips Tertiary button](assets/components/buttons/img/third_buttons_tips.png "Tips tertiary buttons")
 
-# Rounded Primary
 
 ![Rounded Primary Button](assets/components/buttons/img/rounded_primary.png "Rounded primary buttons")
 
@@ -46,7 +37,6 @@
 
 ![Tips Rounded Primary Button](assets/components/buttons/img/rounded_primary_tips.png "Tips rounded primary buttons")
 
-# Rounded Secondary
 
 ![Rounded Secondary Button](assets/components/buttons/img/rounded_secondary.png "Rounded secondary buttons")
 

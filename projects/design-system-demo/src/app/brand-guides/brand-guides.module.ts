@@ -11,6 +11,7 @@ const ROUTES: Routes = [
     children: [
       { path: '', pathMatch: 'full', redirectTo: 'brand' },
       { path: 'brand', loadChildren: './brand/brand.module#BrandModule' },
+      { path: 'colors', loadChildren: './colors/colors.module#ColorsModule' },
       { path: 'typography', loadChildren: './typography/typography.module#TypographyModule' },
     ],
   },

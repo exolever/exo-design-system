@@ -1,0 +1,10 @@
+.text-styles {
+  text-align: center;
+  &--card {
+    border: 1px solid #f1f1f1;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0 10px 20px #f1f1f1, 0 6px 6px rgba(0,0,0,0.23);
+    margin-bottom: 54px;
+  }
+}

@@ -9,7 +9,7 @@ install:
   - npm install
   
 script:
-  - npm deploy:gh-pages
+  - npm run deploy:gh-pages
 
 deploy:
   provider: pages

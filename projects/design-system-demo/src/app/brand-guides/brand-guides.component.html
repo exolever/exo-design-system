@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  Brand Guidelines
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav mode="side" role="navigation" opened>
+    <mat-nav-list>
+      <a mat-list-item routerLink='./brand'>Brand</a>
+      <a mat-list-item routerLink='./colors'>Colors</a>
+      <a mat-list-item routerLink='./typography'>Typography</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="sidenav-content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,66 @@
+$retina: 'only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)';
+@import '../../lib/button/button';
+
+@mixin retina-background-image($file, $type, $width, $height) {
+  background: url($file + '.' + $type) no-repeat;
+  @media #{$retina} {
+    background-image: url($file + '@2x.' + $type);
+    background-size: $width $height;
+  }
+}
+
+@mixin text-truncate() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin vertical-text-truncate($lines: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}
+
+//  @param {Integer} $item-count - Number of items on the circle
+//  @param {Length} $circle-size - Large circle size
+//  @param {Length} $item-size - Single item size
+@mixin on-circle($item-count, $circle-size, $item-size) {
+  width:  $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+  position: absolute;
+
+  > * {
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - .9em);
+    left: 50%;
+    max-width: $item-size;
+    margin: 0;
+
+    $angle: (360 / $item-count);
+    $rotation: -90;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rotation * 1deg) translate($circle-size / 2) rotate($rotation * -1deg);
+        @if($i == 1) {
+          left: calc(50% - 3);
+        }
+        @if($i > $item-count/2 + 1) {
+          left: calc(50% - 5em);
+        }
+      }
+
+      $rotation: $rotation + $angle;
+    }
+  }
+}
+
+@mixin exo-mixins() {
+  @include _exo-button();
+}

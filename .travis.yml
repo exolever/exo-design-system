@@ -1,0 +1,20 @@
+dist: trusty
+language: node_js
+node_js:
+  - "11"
+env:
+    - FOO=bar
+
+install:
+  - npm install
+  
+script:
+  - npm run deploy:gh-pages
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master

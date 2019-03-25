@@ -1,8 +1,0 @@
-@import 'base/base';
-@import 'abstracts/abstracts';
-@import 'themes/themes';
-
-@include mat-core($typography);
-@include angular-material-theme($light-theme);
-
-@include exo-abstracts();

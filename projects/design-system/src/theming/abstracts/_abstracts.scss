@@ -1,9 +1,0 @@
-@import 'helpers/helpers';
-@import 'functions';
-@import 'mixins';
-@import 'variables';
-
-@mixin exo-abstracts() {
-  @include exo-helpers();
-  @include exo-mixins();
-}

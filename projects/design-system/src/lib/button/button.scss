@@ -31,7 +31,7 @@
       background-color: transparent !important;
     }
     &:hover:not([disabled]) {
-      &[color="primary"] {
+      &[color='primary'], &[ng-reflect-color='primary'] {
         color: mat-color($exo-purple, 700);
       }
     }
@@ -39,10 +39,10 @@
 
   button.mat-flat-button:not([disabled]), a.mat-flat-button:not([disabled]) {
     &:hover {
-      &[color="primary"] {
+      &[color="primary"], &[ng-reflect-color='primary'] {
         background-color: mat-color($exo-purple, 700);
       }
-      &[color="accent"] {
+      &[color="accent"], &[ng-reflect-color='accent'] {
         background-color: mat-color($exo-indigo, '0.16');
       }
     }
@@ -51,14 +51,14 @@
   button.mat-icon-button:not([disabled]) {
     width: map-get($componentMeasure, '1x');
     height: map-get($componentMeasure, '1x');
-    &[color="primary"] {
+    &[color="primary"], &[ng-reflect-color='primary'] {
       color: white;
       background-color: mat-color($exo-purple, 500);
       &:hover {
         background-color: mat-color($exo-purple, 700);
       }
     }
-    &[color="accent"] {
+    &[color="accent"], &[ng-reflect-color='accent'] {
       color: mat-color($exo-purple, 500);
       background-color: mat-color($exo-indigo, '0.08');
       &:hover {

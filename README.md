@@ -1,4 +1,4 @@
-# [openexo design system](https://www.openexo.com/) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]() [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/exolever/exo-design-system/pulls)
+# [openexo design system](https://www.openexo.com/) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]() [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/exolever/exo-design-system/pulls) [![Build Status](https://travis-ci.org/exolever/exo-design-system.svg?branch=master)](https://travis-ci.org/exolever/exo-design-system)
 
 #### The goal of Openexo design system
 Our goal is create a library for building reusable components to build faster, more autonomously and keep the consistency in the whole platform.

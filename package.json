@@ -26,7 +26,7 @@
     "smex": "source-map-explorer",
     "update": "npm-check -u",
     "format:check": "./node_modules/.bin/prettier --config ./.prettierrc --write \"projects/**/*{.ts,.js,.json,.css,.scss}\"",
-    "deploy:gh-page": "npm run build:lib && ng build --prod design-system-demo --output-path docs --base-href https://exolever.github.io/exo-design-system/ && cd docs && cp index.html 404.html"
+    "deploy:gh-pages": "npm run build:lib && ng build --prod design-system-demo --output-path docs --base-href https://exolever.github.io/exo-design-system/ && cd docs && cp index.html 404.html"
   },
   "private": true,
   "dependencies": {

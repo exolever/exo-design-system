@@ -6,6 +6,15 @@ env:
     - FOO=bar
 
 install:
-    - npm install
+  - npm install
+  
 script:
-    - echo "Hello world"
+  - npm deploy:gh-pages
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master

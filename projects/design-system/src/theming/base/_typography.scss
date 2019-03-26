@@ -1,17 +1,129 @@
 @import '~@angular/material/theming';
 
-$typography: mat-typography-config(
+$normal: 400;
+$bold: 700;
+$grotesk: 'HKGrotesk';
+$roboto: 'Roboto';
+
+$exo-typography: mat-typography-config(
   $font-family: 'HKGrotesk',
-  $display-1: mat-typography-level(48px, 56px, 700, 'HKGrotesk'),
-  $headline: mat-typography-level(32px, 1.5, 700, 'HKGrotesk'),
-  $title: mat-typography-level(24px, 1.5, 700, 'HKGrotesk'),
-  $subheading-2: mat-typography-level(18px, 1.5, 700, 'HKGrotesk'),
-  $body-1: mat-typography-level(16px, 1.5, 400, 'Roboto'),
-  $body-2: mat-typography-level(16px, 1.5, 700, 'Roboto'),
-  $caption: mat-typography-level(14px, 1.5, 400, 'Roboto'),
-  $button: mat-typography-level(14px, 1.5, 700, 'HKGrotesk'),
-  $input: mat-typography-level(20px, 1.5, 400, 'Roboto')
+  $display-1: mat-typography-level(48px, 56px, $bold, $grotesk),
+  $headline: mat-typography-level(32px, 1.5, $bold, $grotesk),
+  $title: mat-typography-level(24px, 1.5, $bold, $grotesk),
+  $subheading-2: mat-typography-level(18px, 1.5, $bold, $grotesk),
+  $body-1: mat-typography-level(16px, 1.5, $normal, $roboto),
+  $body-2: mat-typography-level(16px, 1.5, $bold, $roboto),
+  // For design people this will be caption-1 instead caption, i create an alias to be able use .caption-1
+  $caption: mat-typography-level(14px, 1.5, $normal, $roboto),
+  $button: mat-typography-level(14px, 1.5, $bold, $grotesk),
+  $input: mat-typography-level(20px, 1.5, $normal, $roboto)
 );
 
 // Section - Mini-caption - caption 2
-@include angular-material-typography($typography);
+@include angular-material-typography($exo-typography);
+
+// MIXINS
+@mixin section() {
+  font-family: $grotesk;
+  font-weight: $bold;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+@mixin big-body() {
+  font-family: $roboto;
+  font-weight: $normal;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+@mixin caption-2() {
+  font-family: $roboto;
+  font-weight: $bold;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+@mixin mini-caption() {
+  font-family: $roboto;
+  font-weight: $normal;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+h1 {
+  @include mat-typography-level-to-styles($exo-typography, headline);
+}
+
+h2 {
+  @include mat-typography-level-to-styles($exo-typography, title);
+}
+
+h3 {
+  @include mat-typography-level-to-styles($exo-typography, subheading-2);
+}
+
+p {
+  @include mat-typography-level-to-styles($exo-typography, body-1);
+}
+
+a {
+  text-decoration: underline;
+}
+
+.display-1 {
+  @include mat-typography-level-to-styles($exo-typography, display-1);
+}
+
+.title {
+  @include mat-typography-level-to-styles($exo-typography, title);
+}
+
+.headline {
+  @include mat-typography-level-to-styles($exo-typography, headline);
+}
+
+.subheading-2 {
+  @include mat-typography-level-to-styles($exo-typography, subheading-2);
+}
+
+.body-1 {
+  @include mat-typography-level-to-styles($exo-typography, body-1);
+}
+
+.body-2 {
+  @include mat-typography-level-to-styles($exo-typography, body-2);
+}
+
+.section {
+  @include section();
+}
+
+.big-body {
+  @include big-body();
+}
+
+.caption-1 {
+  @include mat-typography-level-to-styles($exo-typography, caption);
+}
+
+.caption-2 {
+  @include caption-2();
+}
+
+.mini-caption {
+  @include mini-caption();
+}
+
+/********************************
+* Font weight
+********************************/
+.weight-regular {
+  font-weight: $normal !important;
+}
+
+.weight-bold {
+  font-weight: $bold !important;
+}

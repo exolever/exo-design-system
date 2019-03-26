@@ -6,3 +6,13 @@ $secondary: mat-palette($exo-indigo, '0.08');
 $warn: mat-palette($exo-red);
 
 $light-theme: mat-light-theme($primary, $secondary, $warn);
+
+// Custom colors for some classes.
+
+.section {
+  color: mat-color($exo-purple, 500);
+}
+
+a {
+  color: mat-color($exo-blue, 700);
+}

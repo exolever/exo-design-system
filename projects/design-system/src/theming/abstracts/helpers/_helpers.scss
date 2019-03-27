@@ -7,6 +7,7 @@
 @import 'pull';
 @import 'push';
 @import 'text';
+@import 'font';
 
 @mixin exo-helpers() {
   @include general-helpers();

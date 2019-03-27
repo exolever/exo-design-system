@@ -1,41 +1,65 @@
-@mixin text-helpers() {
-  body {
-    .text-center {
-      text-align: center;
-    }
+@mixin transform($property: '') {
+  .text-transform-#{$property} {
+    text-transform: $property;
+  }
+};
 
-    .text-left {
-      text-align: left;
-    }
+@mixin transform-helpers() {
+    @include transform(none);
+    @include transform(capitalize);
+    @include transform(uppercase);
+    @include transform(lowercase);
+    @include transform(initial);
+    @include transform(inherit);
+};
 
-    .text-right {
-      text-align: right;
-    }
+@mixin align($property: '') {
+  .text-align-#{$property} {
+    text-align: $property;
+  }
+};
 
-    .text-upper {
-      text-transform: uppercase;
-    }
+@mixin align-helpers() {
+  @include align(left);
+  @include align(right);
+  @include align(center);
+  @include align(justify);
+  @include align(initial);
+  @include align(inherit);
+};
 
-    .text-lower {
-      text-transform: lowercase;
-    }
+@mixin decoration($property: '') {
+  .text-decoration-#{$property} {
+    text-decoration: $property
+  }
+};
 
+@mixin decoration-helpers() {
+  @include decoration(overline);
+  @include decoration(underline);
+  @include decoration(none);
+  @include decoration(line-through);
+  @include decoration(initial);
+  @include decoration(inherit);
+};
+
+@mixin text-truncate() {
+  .text-truncate {
     .text-truncate {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
+  }
+};
 
-    .text-nodecoration {
-      text-decoration: none;
-    }
-
-    .capitalize {
-      text-transform: capitalize;
-    }
-
+@mixin text-helpers() {
+  body {
     .upper-first-letter::first-letter {
       text-transform: uppercase;
     }
+    @include decoration-helpers();
+    @include transform-helpers();
+    @include align-helpers();
   }
 }

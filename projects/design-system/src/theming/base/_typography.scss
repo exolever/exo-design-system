@@ -19,7 +19,6 @@ $exo-typography: mat-typography-config(
   $input: mat-typography-level(20px, 1.5, $normal, $roboto)
 );
 
-// Section - Mini-caption - caption 2
 @include angular-material-typography($exo-typography);
 
 // MIXINS
@@ -53,19 +52,26 @@ $exo-typography: mat-typography-config(
   line-height: 1.5em;
 }
 
-h1 {
+h1, .headline {
   @include mat-typography-level-to-styles($exo-typography, headline);
+  margin: 0 0 16px;
 }
 
-h2 {
+h2, .title {
   @include mat-typography-level-to-styles($exo-typography, title);
+  margin: 0 0 16px;
 }
 
-h3 {
+h3, .subheading-2 {
   @include mat-typography-level-to-styles($exo-typography, subheading-2);
+  margin: 0 0 16px;
 }
 
 p {
+  margin: 0 0 12px
+}
+
+p, .body-1 {
   @include mat-typography-level-to-styles($exo-typography, body-1);
 }
 
@@ -75,22 +81,7 @@ a {
 
 .display-1 {
   @include mat-typography-level-to-styles($exo-typography, display-1);
-}
-
-.title {
-  @include mat-typography-level-to-styles($exo-typography, title);
-}
-
-.headline {
-  @include mat-typography-level-to-styles($exo-typography, headline);
-}
-
-.subheading-2 {
-  @include mat-typography-level-to-styles($exo-typography, subheading-2);
-}
-
-.body-1 {
-  @include mat-typography-level-to-styles($exo-typography, body-1);
+  margin: 0 0 56px;
 }
 
 .body-2 {
@@ -120,10 +111,4 @@ a {
 /********************************
 * Font weight
 ********************************/
-.weight-regular {
-  font-weight: $normal !important;
-}
 
-.weight-bold {
-  font-weight: $bold !important;
-}

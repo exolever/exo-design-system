@@ -1,8 +1,8 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatListModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
 import { BrandGuidesComponent } from './brand-guides.component';
+import { MainLayoutModule } from '../layout/main-layout/main-layout.module';
 
 const ROUTES: Routes = [
   {
@@ -21,9 +21,7 @@ const ROUTES: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(ROUTES),
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
+    MainLayoutModule,
   ],
   declarations: [
     BrandGuidesComponent,

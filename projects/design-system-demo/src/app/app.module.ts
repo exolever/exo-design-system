@@ -13,6 +13,7 @@ import { MatToolbarModule } from '@angular/material';
 export const AppRoutes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'components' },
   { path: 'components', loadChildren: './components/components.module#ComponentsModule' },
+  { path: 'utilities', loadChildren: './utilities/utilities.module#UtilitiesModule' },
   { path: 'brand-guides', loadChildren: './brand-guides/brand-guides.module#BrandGuidesModule' },
   { path: 'content-guides', loadChildren: './content-guides/content-guides.module#ContentGuidesModule' },
 ];

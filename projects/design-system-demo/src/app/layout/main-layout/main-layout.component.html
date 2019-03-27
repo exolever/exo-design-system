@@ -1,10 +1,13 @@
 <mat-toolbar color="primary">
-  Components
+  <ng-content select=".toolbar-section"></ng-content>
 </mat-toolbar>
+
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav mode="side" role="navigation" opened>
     <mat-nav-list>
-      <a mat-list-item routerLink='./buttons' routerLinkActive="active-link">Buttons</a>
+      <a *ngFor="let link of navList" mat-list-item [routerLink]="link.href" routerLinkActive="active-link">
+        {{link.copy}}
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="sidenav-content">

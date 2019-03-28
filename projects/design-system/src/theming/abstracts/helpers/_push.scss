@@ -1,35 +1,37 @@
 @mixin push($direction: '') {
+
+  .push#{$direction}-xxxs {
+    margin#{$direction}: 4px;
+  }
+
+  .push#{$direction}-xxs {
+    margin#{$direction}: 8px;
+  }
+
   .push#{$direction} {
     margin#{$direction}: 16px;
   }
 
-  .push#{$direction}-xxl {
-    margin#{$direction}: 56px;
-  }
-
-  .push#{$direction}-xl {
-    margin#{$direction}: 48px;
-  }
-
-  .push#{$direction}-lg {
-    margin#{$direction}: 32px;
-  }
-
-  .push#{$direction}-md {
-    margin#{$direction}: 24px;
+  .push#{$direction}-xs {
+    margin#{$direction}: 16px;
   }
 
   .push#{$direction}-sm {
-    margin#{$direction}: 8px;
+    margin#{$direction}: 24px;
   }
 
-  .push#{$direction}-xs {
-    margin#{$direction}: 4px;
+  .push#{$direction}-lg {
+    margin#{$direction}: 48px;
+  }
+
+  .push#{$direction}-xl {
+    margin#{$direction}: 72px;
   }
 
   .push#{$direction}-none {
-    margin#{$direction}: 0 !important;
+    margin#{$direction}: 0;
   }
+
 }
 
 @mixin pushing-helpers() {

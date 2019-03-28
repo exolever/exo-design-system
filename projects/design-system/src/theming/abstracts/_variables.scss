@@ -11,8 +11,9 @@ $componentMeasure: (
   '4x': 192px,
   '6x': 288px,
   '8x': 384px,
+  '18x': 864px,
   '20x': 960px,
-  '24x': 1152px
+  '24x': 1152px,
 );
 
 // Space measures
@@ -22,5 +23,5 @@ $spaceMeasures: (
   'xs': 16px,
   'sm': 24px,
   'lg': 48px,
-  'xl': 72px
+  'xl': 72px,
 );

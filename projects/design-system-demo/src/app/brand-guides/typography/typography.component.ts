@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { URLS } from './typography.config';
+import { CustomLink } from '../../shared/interfaces/interfaces';
 
 @Component({
   templateUrl: './typography.component.html',
@@ -7,12 +8,12 @@ import { URLS } from './typography.config';
 })
 export class TypographyComponent implements OnInit {
 
-  navLinks: { path: string, label: string }[];
+  navLinks: CustomLink[];
 
   ngOnInit(): void {
     this.navLinks = [
-      { path: URLS.overview, label: 'Overview' },
-      { path: URLS.examples, label: 'Examples' },
+      { href: URLS.overview, copy: 'Overview' },
+      { href: URLS.examples, copy: 'Examples' },
     ];
   }
 

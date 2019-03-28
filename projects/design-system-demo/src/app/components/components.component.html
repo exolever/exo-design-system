@@ -1,13 +1,3 @@
-<mat-toolbar color="primary">
-  Components
-</mat-toolbar>
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav mode="side" role="navigation" opened>
-    <mat-nav-list>
-      <a mat-list-item routerLink='./buttons' routerLinkActive="active-link">Buttons</a>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content class="sidenav-content">
-    <router-outlet></router-outlet>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<exo-main-layout [navList]="links">
+  <span class="toolbar-section">Components</span>
+</exo-main-layout>

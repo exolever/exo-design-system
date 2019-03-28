@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import { UtilitiesComponent } from './utilities.component';
-import { MainLayoutModule } from '../layout/main-layout/main-layout.module';
+import { MainLayoutModule } from '../shared/main-layout/main-layout.module';
 
 const ROUTES: Routes = [
   {

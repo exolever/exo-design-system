@@ -2,7 +2,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrandGuidesComponent } from './brand-guides.component';
-import { MainLayoutModule } from '../layout/main-layout/main-layout.module';
+import { MainLayoutModule } from '../shared/main-layout/main-layout.module';
 
 const ROUTES: Routes = [
   {
@@ -13,6 +13,7 @@ const ROUTES: Routes = [
       { path: 'brand', loadChildren: './brand/brand.module#BrandModule' },
       { path: 'colors', loadChildren: './colors/colors.module#ColorsModule' },
       { path: 'typography', loadChildren: './typography/typography.module#TypographyModule' },
+      { path: 'measures', loadChildren: './measures/measures.module#MeasuresModule' },
     ],
   },
 ];

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ContentGuidesComponent } from './content-guides.component';
-import { MainLayoutModule } from '../layout/main-layout/main-layout.module';
+import { MainLayoutModule } from '../shared/main-layout/main-layout.module';
 
 const ROUTES: Routes = [
   {

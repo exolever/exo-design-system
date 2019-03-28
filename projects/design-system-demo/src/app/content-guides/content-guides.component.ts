@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { CustomLink } from '../shared/interfaces/interfaces';
 
 @Component({
   templateUrl: './content-guides.component.html',
-  styleUrls: ['./content-guides.component.scss'],
 })
 export class ContentGuidesComponent {
-  links = [
+  links: CustomLink[] = [
     { href: './voice-tone', copy: 'Voice & Tone' },
     { href: './writing-principles', copy: 'Writing Principles' },
     { href: './grammar-punctuation', copy: 'Grammar & Punctuation' },

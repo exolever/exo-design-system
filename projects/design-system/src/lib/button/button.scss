@@ -1,6 +1,7 @@
 @import '../../theming/abstracts/variables';
 
 @mixin _exo-button {
+
   button.mat-button, button.mat-raised-button, button.mat-stroked-button, button.mat-flat-button,
   button.mat-icon-button, button.mat-fab, button.mat-mini-fab,
   a.mat-button, a.mat-flat-button, a.mat-icon-button
@@ -10,7 +11,8 @@
       min-width: map-get($componentMeasure, '2x');
       max-width: map-get($componentMeasure, '6x');
       height: map-get($componentMeasure, '1x');
-      line-height: map-get($componentMeasure, '1x');
+      line-height: map-get($componentMeasure, '0.5x');
+      font-size: map-get($componentMeasure, '0.3x');
       mat-icon.mat-icon {
         margin-right: map-get($spaceMeasures, 'xxs');
       }
@@ -21,9 +23,12 @@
     text-transform: uppercase;
 
     mat-icon.mat-icon {
-      font-size: map-get($componentMeasure, '0.5x');
       color:inherit;
     }
+  }
+
+  a.mat-button, a.mat-flat-button, a.mat-icon-button {
+    line-height: map-get($componentMeasure, '1x') !important;
   }
 
   button.mat-button, a.mat-button {

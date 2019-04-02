@@ -16,7 +16,7 @@ $exo-typography: mat-typography-config(
   // For design people this will be caption-1 instead caption, i create an alias to be able use .caption-1
   $caption: mat-typography-level(14px, 1.5, $normal, $roboto),
   $button: mat-typography-level(14px, 1.5, $bold, $grotesk),
-  $input: mat-typography-level(inherit, 1.125, 400, $roboto)
+  $input: mat-typography-level(16px, 1.5, 400, $roboto)
 );
 
 @include angular-material-typography($exo-typography);

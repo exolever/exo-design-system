@@ -1,0 +1,20 @@
+@mixin _exo-avatar-system {
+  .avatar-system__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    &.column {
+      flex-direction: column;
+    }
+    .avatar-system__data {
+      p {
+        margin: 0 0 0 #{map-get($spaceMeasures, 'xxs')};
+
+      }
+      &.column {
+        text-align: center;
+      }
+    }
+  }
+}

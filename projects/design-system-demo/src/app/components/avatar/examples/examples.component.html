@@ -1,56 +1,48 @@
-<h1>Avatars</h1>
 <section>
-  <h3>Mini Avatar</h3>
-  <exo-avatar src="https://www.placecage.com/100/100"
-              alt="calm cage"
-              tooltip="Calm cage"
-              tooltipPosition="right"
-              size="xs"
-  ></exo-avatar>
-</section>
-<section>
-  <h3>Regular Avatar</h3>
-  <exo-avatar src="https://www.fillmurray.com/150/150"
-              alt="fill murray"
-              tooltip="Fill murray"
-              tooltipPosition="above"
-  ></exo-avatar>
-</section>
-<section>
-  <h3>Big avatar</h3>
-  <exo-avatar src="https://www.stevensegallery.com/150/150"
-              alt="steven seagal"
-              tooltip="Steven Seagal"
-              size="lg"
-              tooltipPosition="left"
-  ></exo-avatar>
-</section>
-<section>
-  <h3>Super Avatar</h3>
-  <exo-avatar src="https://www.stevensegallery.com/200/200"
-              alt="super steven seagal"
-              tooltip="Steven Seagal"
-              size="xl">
-  </exo-avatar>
+  <h3>Mini</h3>
+  <exo-avatar-system name="Nicolas cage">
+    <exo-avatar src="https://www.placecage.com/100/100"
+                alt="calm cage"
+                tooltip="Calm cage"
+                tooltipPosition="right"
+                size="xs"
+    ></exo-avatar>
+  </exo-avatar-system>
 </section>
 
-<h2>With Certificates</h2>
 <section>
-  <h3>Regular Avatar</h3>
-  <exo-avatar src="https://www.fillmurray.com/150/150"
-              alt="fill murray"
-              tooltip="Fill murray"
-              tooltipPosition="above"
-              [certificates]="certifications"
-  ></exo-avatar>
+  <h3>Regular</h3>
+  <exo-avatar-system name="Fill murray" roles="American actor, comedian, and writer">
+    <exo-avatar src="https://www.fillmurray.com/150/150"
+                alt="fill murray"
+                tooltip="Fill murray"
+                tooltipPosition="above"
+                [certificates]="certifications2"
+    ></exo-avatar>
+  </exo-avatar-system>
 </section>
+
 <section>
-  <h3>Big avatar</h3>
-  <exo-avatar src="https://www.stevensegallery.com/150/150"
-              alt="steven seagal"
-              tooltip="Steven Seagal"
-              size="lg"
-              tooltipPosition="left"
-              [certificates]="certifications"
-  ></exo-avatar>
+  <h3>Big</h3>
+  <exo-avatar-system name="Steven Seagal" roles="actor, producer, screenwriter, martial artist, musician" direction="column">
+    <exo-avatar src="https://www.stevensegallery.com/150/150"
+                alt="steven seagal"
+                tooltip="Steven Seagal"
+                size="lg"
+                tooltipPosition="left"
+                [certificates]="certifications3"
+    ></exo-avatar>
+  </exo-avatar-system>
+</section>
+
+<section>
+  <h3>Super</h3>
+  <exo-avatar-system name="Steven Seagal" roles="actor, producer, screenwriter, martial artist, musician" direction="column">
+    <exo-avatar src="https://www.stevensegallery.com/200/200"
+                alt="super steven seagal"
+                tooltip="Steven Seagal"
+                size="xl"
+                [certificates]="certifications4"
+    ></exo-avatar>
+  </exo-avatar-system>
 </section>

@@ -7,3 +7,4 @@
 // https://github.com/ng-packagr/ng-packagr/issues/195
 export * from './lib/button/index';
 export * from './lib/avatar/index';
+export * from './lib/avatar-system/index';

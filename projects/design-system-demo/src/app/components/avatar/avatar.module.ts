@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MatTabsModule } from '@angular/material';
-import { ExOAvatarModule } from '@openexo/design-system';
+import { ExOAvatarModule, ExOAvatarSystemModule } from '@openexo/design-system';
 import { MarkdownModule } from 'ngx-markdown';
 import { AvatarComponent } from './avatar.component';
 import { URLS } from './avatar.config';
@@ -27,7 +27,9 @@ const ROUTES: Routes = [
     RouterModule.forChild(ROUTES),
     MarkdownModule.forChild(),
     ExOAvatarModule,
+    ExOAvatarSystemModule,
     MatTabsModule,
+    ExOAvatarSystemModule
   ],
   declarations: [
     AvatarComponent,

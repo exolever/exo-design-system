@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatIconModule, MatProgressSpinnerModule, MatTooltipModule } from '@angular/material';
 
 import { ExOAvatarComponent } from './avatar.component';
-import { MatIconModule, MatProgressSpinnerModule, MatTooltipModule } from '@angular/material';
 
 @NgModule({
   imports: [

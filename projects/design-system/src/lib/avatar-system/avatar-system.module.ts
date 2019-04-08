@@ -7,7 +7,7 @@ import { ExOAvatarModule } from '../avatar';
 @NgModule({
   imports: [
     CommonModule,
-    ExOAvatarModule
+    ExOAvatarModule,
   ],
   declarations: [
     ExoAvatarSystemComponent,

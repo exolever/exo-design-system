@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 enum ExOAvatarSystemDirectionEnum {
   row = 'row',
@@ -9,7 +9,7 @@ enum ExOAvatarSystemDirectionEnum {
   selector: 'exo-avatar-system',
   templateUrl: './avatar-system.component.html',
   styleUrls: ['./avatar-system.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ExoAvatarSystemComponent {
   @Input()
@@ -19,5 +19,5 @@ export class ExoAvatarSystemComponent {
   roles: string;
 
   @Input()
-  direction = ExOAvatarSystemDirectionEnum.row
+  direction = ExOAvatarSystemDirectionEnum.row;
 }

@@ -29,7 +29,6 @@ const ROUTES: Routes = [
     ExOAvatarModule,
     ExOAvatarSystemModule,
     MatTabsModule,
-    ExOAvatarSystemModule
   ],
   declarations: [
     AvatarComponent,

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from "@angular/core";
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 
 type SizeAvatar = 'xs' |  'sm' | 'lg' | 'xl';
 type ShapeType = 'circle' | 'rect';
@@ -32,7 +32,7 @@ enum CertificateEnum {
   selector: 'exo-avatar',
   templateUrl: './avatar.component.html',
   styleUrls: ['./avatar.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ExOAvatarComponent {
 
@@ -99,12 +99,12 @@ export class ExOAvatarComponent {
 
   sizeAvatar = SizeAvatarEnum;
   valuesCertification = [
-    100, 47, 30, 22
+    100, 47, 30, 22,
   ];
 
   /**
    * Sizes defined in the profile_picture array.
-   * @param size
+   * @param size Must be xs, sm, lg, xl. If you need other, talk with design.
    */
   static parseSizeToNumber(size: SizeAvatar): number {
     switch (size) {
@@ -133,7 +133,7 @@ export class ExOAvatarComponent {
 
   buildPicture(profilePictures) {
     const picture = profilePictures.find(
-      (pic) => pic.width === ExOAvatarComponent.parseSizeToNumber(this.size)
+      pic => pic.width === ExOAvatarComponent.parseSizeToNumber(this.size),
     );
 
     return picture ? picture.url : undefined;
@@ -165,7 +165,7 @@ export class ExOAvatarComponent {
 
   get certificateTooltip() {
     if (this.certificates) {
-      return this.certificates.map( certificate => {
+      return this.certificates.map((certificate: Certificate) => {
         return `${certificate.name}`;
       }).join('\n');
     }
@@ -176,4 +176,3 @@ export class ExOAvatarComponent {
   }
 
 }
-

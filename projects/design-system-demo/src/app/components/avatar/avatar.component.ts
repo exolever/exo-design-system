@@ -1,9 +1,9 @@
-import { Component } from "@angular/core";
-import { URLS } from "./avatar.config";
+import { Component } from '@angular/core';
+import { URLS } from './avatar.config';
 
 @Component({
   templateUrl: './avatar.component.html',
-  styleUrls: ['./avatar.component.scss']
+  styleUrls: ['./avatar.component.scss'],
 })
 export class AvatarComponent {
 

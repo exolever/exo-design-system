@@ -17,8 +17,8 @@ const ROUTES: Routes = [
       { path: '', pathMatch: 'full', redirectTo: URLS.overview },
       { path: URLS.overview, component: OverviewComponent },
       { path: URLS.examples, component: ExamplesComponent },
-    ]
-  }
+    ],
+  },
 ];
 
 @NgModule({

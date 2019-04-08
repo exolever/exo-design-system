@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ExoAvatarSystemComponent } from './avatar-system.component';
-import { ExOAvatarModule } from '../avatar';
+import { ExOAvatarModule } from '../avatar/avatar.module';
 
 @NgModule({
   imports: [

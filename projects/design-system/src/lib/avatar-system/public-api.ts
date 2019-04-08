@@ -1,1 +1,1 @@
-export { ExOAvatarSystemModule } from './avatar-system.module';
+export * from './avatar-system.module';

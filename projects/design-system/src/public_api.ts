@@ -8,4 +8,3 @@
 export * from './lib/button/index';
 export * from './lib/avatar/index';
 export * from './lib/avatar-system/index';
-export * from './lib/index';

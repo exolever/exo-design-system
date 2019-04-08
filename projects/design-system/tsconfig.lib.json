@@ -23,5 +23,10 @@
     "enableResourceInlining": true,
     "preserveSymlinks": true
   },
+  "paths": {
+    "lib/design": [
+      "src/lib"
+    ]
+  },
   "exclude": ["src/test.ts", "**/*.spec.ts"]
 }

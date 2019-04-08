@@ -10,9 +10,9 @@
     .avatar-system__data {
       p {
         margin: 0 0 0 #{map-get($spaceMeasures, 'xxs')};
-
       }
       &.column {
+        margin: #{map-get($spaceMeasures, 'xs')} 0 0 -#{map-get($spaceMeasures, 'xxs')};
         text-align: center;
       }
     }

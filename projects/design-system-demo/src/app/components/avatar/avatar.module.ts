@@ -28,7 +28,6 @@ const ROUTES: Routes = [
     MarkdownModule.forChild(),
     ExOAvatarModule,
     MatTabsModule,
-    ExOAvatarModule
   ],
   declarations: [
     AvatarComponent,

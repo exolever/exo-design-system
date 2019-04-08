@@ -163,6 +163,14 @@ export class ExOAvatarComponent {
     return undefined;
   }
 
+  get certificateTooltip() {
+    if (this.certificates) {
+      return this.certificates.map( certificate => {
+        return `${certificate.name}`;
+      }).join('\n');
+    }
+  }
+
   click(): void {
     this.onClick.emit(true);
   }

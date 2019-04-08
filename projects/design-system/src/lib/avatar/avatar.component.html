@@ -20,7 +20,7 @@
   </div>
 </ng-template>
 
-<div class="certificates">
+<div class="certificates" *ngIf="certificates">
   <ng-container [ngSwitch]="size">
     <div *ngSwitchCase="sizeAvatar.sm">
       <ng-container [ngTemplateOutlet]="certificateTpl" [ngTemplateOutletContext]="{class: 'medium-avatar', diameter: 56, stroke: 2}"></ng-container>
@@ -32,7 +32,7 @@
 </div>
 
 <ng-template #certificateTpl let-class="class" let-diameter="diameter" let-stroke="stroke">
-  <div [ngClass]="class">
+  <div [ngClass]="class" [matTooltip]="certificateTooltip" matTooltipClass="line-breaker">
     <mat-progress-spinner
       *ngFor="let certificate of certificates; let i=index;"
       [diameter]="diameter"

@@ -30,13 +30,13 @@
       stroke-linecap: round;
     }
     .T circle, .I circle { // For Trainer, Align Trainer
-      stroke: map_get($exo-teal, A400);
+      stroke: map_get($exo-teal, A100);
     }
     .K circle { // For Ambassador
       stroke: map_get($exo-amber, 700);
     }
     .X circle { // For Coach
-      stroke: map_get($exo-blue, A700);
+      stroke: map_get($exo-blue, 800);
     }
     $max-certifications: 4; // Until now only 4 certifications are allowed
     @for $i from 0 through $max-certifications {

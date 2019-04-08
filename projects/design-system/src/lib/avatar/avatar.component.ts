@@ -18,6 +18,7 @@ enum ShapeEnum {
 
 interface Certificate {
   code: CertificateEnum;
+  humanizedCode: string; // Review with Ana difference with name
   name: string;
 }
 
@@ -166,7 +167,12 @@ export class ExOAvatarComponent {
   get certificateTooltip() {
     if (this.certificates) {
       return this.certificates.map((certificate: Certificate) => {
-        return `${certificate.name}`;
+        if (certificate.name) {
+          return `${certificate.name}`;
+        }
+        if (certificate.humanizedCode) {
+          return `${certificate.humanizedCode}`;
+        }
       }).join('\n');
     }
   }

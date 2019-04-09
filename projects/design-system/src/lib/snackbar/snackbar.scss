@@ -1,0 +1,59 @@
+@import '../../theming/abstracts/variables';
+@import '../../theming/themes/colors';
+
+@mixin _exo-snackbar {
+
+  .mat-snack-bar-handset.mat-snack-bar-handset {
+    width: unset;
+  }
+
+  .mat-snack-bar-handset .mat-snack-bar-container.mat-snack-bar-container {
+    border-radius: 0;
+    margin: 0;
+    height: #{map-get($componentMeasure, '1x')};
+    width: 100vw;
+    @media screen and (min-width: 600px) {
+      border-radius: #{map-get($spaceMeasures, 'xxs')};
+      margin: calc(0.5 * #{map-get($componentMeasure, '1x')});
+    }
+  }
+
+  .mat-simple-snackbar-action.mat-simple-snackbar-action button {
+    max-height: 48px;
+  }
+
+  .snack {
+    &--success {
+      color: white;
+      background-color: map-get($exo-teal, A400);
+      .mat-simple-snackbar-action {
+        color: white;
+      }
+    }
+
+    &--error {
+      color: white;
+      background-color: map-get($exo-red, 500);
+      .mat-simple-snackbar-action {
+        color: white;
+      }
+    }
+
+    &--info {
+      color: white;
+      background-color: map-get($exo-blue, 500);
+      .mat-simple-snackbar-action {
+        color: white;
+      }
+    }
+
+    &--warning {
+      color: map-get($exo-grey, 900);
+      background-color: map-get($exo-amber, 500);
+      .mat-simple-snackbar-action {
+        color: map-get($exo-grey, 900);
+      }
+    }
+
+  }
+}

@@ -1,0 +1,22 @@
+<div>
+  <mat-form-field>
+    <input matInput value="Abundance" placeholder="Message" #message>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput value="Unlock" placeholder="Action" #action>
+  </mat-form-field>
+
+  <h4>Type of Snackbar</h4>
+  <mat-form-field>
+    <mat-label>Select an option</mat-label>
+    <mat-select [(value)]="selected">
+      <mat-option value="success">Success</mat-option>
+      <mat-option value="info">Info</mat-option>
+      <mat-option value="warning">Warning</mat-option>
+      <mat-option value="error">Error</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<button mat-flat-button color="primary" (click)="openSnackBar(message.value, action.value, selected)">Show snackbar</button>

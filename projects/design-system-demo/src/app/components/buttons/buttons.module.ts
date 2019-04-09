@@ -27,11 +27,11 @@ const ROUTES: Routes = [
 
 @NgModule({
   imports: [
+    CommonModule,
     ExoButtonModule,
     RouterModule.forChild(ROUTES),
     MarkdownModule.forChild(),
     MatIconModule,
-    CommonModule,
     MatTabsModule,
   ],
   declarations: [

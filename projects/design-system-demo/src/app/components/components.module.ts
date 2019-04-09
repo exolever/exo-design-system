@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ComponentsComponent } from './components.component';
 import { MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
-import { ExoButtonModule, ExOAvatarModule } from '@openexo/design-system';
+import { ExoButtonModule, ExOAvatarModule, ExOSnackbarModule } from '@openexo/design-system';
 
 const ROUTES: Routes = [
   {
@@ -13,6 +13,7 @@ const ROUTES: Routes = [
       { path: '', pathMatch: 'full', redirectTo: 'buttons' },
       { path: 'buttons', loadChildren: './buttons/buttons.module#ButtonsModule' },
       { path: 'avatars', loadChildren: './avatar/avatar.module#AvatarModule' },
+      { path: 'snackbar', loadChildren: './snackbar/snackbar.module#SnackbarModule' },
     ],
   },
 ];
@@ -25,6 +26,7 @@ const ROUTES: Routes = [
     MatSidenavModule,
     ExoButtonModule,
     ExOAvatarModule,
+    ExOSnackbarModule,
     MatIconModule,
     MatListModule,
   ],

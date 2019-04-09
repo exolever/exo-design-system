@@ -1,0 +1,11 @@
+<div class="avatar-system__container" [ngClass]="direction">
+  <ng-content select="exo-avatar"></ng-content>
+  <div class="avatar-system__data" [ngClass]="direction">
+    <p class="mat-body-2" [matTooltip]="name">
+      {{ name }}
+    </p>
+    <p class="caption-1">
+      {{ roles }}
+    </p>
+  </div>
+</div>

@@ -1,8 +1,10 @@
 @import 'base/base';
 @import 'abstracts/abstracts';
 @import 'themes/themes';
+@import 'components/components';
 
 @include mat-core($typography);
 @include angular-material-theme($light-theme);
 
 @include exo-abstracts();
+@include exo-mixins-components();

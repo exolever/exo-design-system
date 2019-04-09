@@ -1,0 +1,116 @@
+@import '../../theming/abstracts/variables';
+@import '../../theming/themes/colors';
+
+@mixin draw-certificates($current-certifications, $sizeCircumference) {
+  $init-degree: 5;
+  @for $i from 0 through $current-certifications {
+    &.certificate-#{$i}{
+      @if($i == 0) {
+        circle {
+          transform: rotate(($init-degree) * 1deg);
+        }
+      } @else {
+        svg {
+          margin-top: -$sizeCircumference * $i !important;
+        }
+        circle {
+          $degree: ($i / $current-certifications) * 360;
+          transform: rotate(($degree + $init-degree) * 1deg);
+        }
+      }
+    }
+  }
+}
+
+@mixin avatar-certificate($sizeCircumference) {
+  width: $sizeCircumference;
+  height: $sizeCircumference;
+  ::ng-deep {
+    circle {
+      stroke-linecap: round;
+    }
+    .T circle, .I circle { // For Trainer, Align Trainer
+      stroke: map_get($exo-teal, A100);
+    }
+    .K circle { // For Ambassador
+      stroke: map_get($exo-amber, 700);
+    }
+    .X circle { // For Coach
+      stroke: map_get($exo-blue, 800);
+    }
+    $max-certifications: 4; // Until now only 4 certifications are allowed
+    @for $i from 0 through $max-certifications {
+      &.number-certificates-#{$i}{
+        @include draw-certificates($i, $sizeCircumference);
+      }
+    }
+  }
+}
+
+@mixin _exo-avatar {
+  .avatar__figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: baseline;
+    border: 0 none;
+    outline: 0;
+    margin: 0;
+  }
+
+  .exo-image {
+    // TODO: Change to '0.5x' without calc when typography branch be merged.
+    &-xs {
+      width: calc(0.5 * #{map-get($componentMeasure, '1x')});
+      height: calc(0.5 * #{map-get($componentMeasure, '1x')});
+    }
+    &-sm {
+      width: #{map-get($componentMeasure, '1x')};
+      height: #{map-get($componentMeasure, '1x')};
+    }
+    &-lg {
+      width: calc(2 * #{map-get($componentMeasure, '1x')});
+      height: calc(2 * #{map-get($componentMeasure, '1x')});
+    }
+    &-xl {
+      width: calc(3 * #{map-get($componentMeasure, '1x')});
+      height: calc(3 * #{map-get($componentMeasure, '1x')});
+    }
+    &-shape-circle {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+  }
+
+  .icon {
+    opacity: .64;
+    &-size-xs {
+      font-size: calc(0.5 * #{map-get($componentMeasure, '1x')});
+    }
+    &-size-sm {
+      font-size: #{map-get($componentMeasure, '1x')};
+    }
+    &-size-lg {
+      font-size: calc(2 * #{map-get($componentMeasure, '1x')});
+    }
+    &-size-xl {
+      font-size: calc(3 * #{map-get($componentMeasure, '1x')});
+    }
+  }
+}
+
+.certificates {
+  .medium-avatar {
+    margin-top: -52px; // $sizeCircumference - gap
+    margin-left: -4px; // gap
+    @include avatar-certificate(56px); // 48 (1x - sm) avatar + 4 circumference + 4 gap
+  }
+
+  .big-avatar {
+    margin-top: -102px; // $sizeCircumference - gap
+    margin-left: -6px; // gap
+    @include avatar-certificate(108px); // 96 (2x - lg) $sizeCircumference + 6 circumference + 6 gap
+  }
+}

@@ -1,0 +1,44 @@
+<figure *ngIf="imageUrl; else icon"
+        (click)="click()"
+        class="avatar__figure"
+>
+  <img [src]="imageUrl"
+       [matTooltip]="imageTooltip"
+       [matTooltipPosition]="tooltipPosition"
+       [ngStyle]="{width: customizedSize?.width, height: customizedSize?.height}"
+       [ngClass]="['exo-image', 'exo-image-' + size, 'exo-image-shape-' + shape]"
+       [alt]="imageAlt"
+  >
+</figure>
+<ng-template #icon>
+  <div>
+    <mat-icon [ngClass]="['icon', 'icon-size-' + size]"
+              (click)="click()"
+              [matTooltip]="imageTooltip"
+              [matTooltipPosition]="tooltipPosition"
+    >account_circle</mat-icon>
+  </div>
+</ng-template>
+
+<div class="certificates" *ngIf="certificates">
+  <ng-container [ngSwitch]="size">
+    <div *ngSwitchCase="sizeAvatar.sm">
+      <ng-container [ngTemplateOutlet]="certificateTpl" [ngTemplateOutletContext]="{class: 'medium-avatar', diameter: 56, stroke: 2}"></ng-container>
+    </div>
+    <div *ngSwitchCase="sizeAvatar.lg">
+      <ng-container [ngTemplateOutlet]="certificateTpl" [ngTemplateOutletContext]="{class: 'big-avatar', diameter: 108, stroke: 3}"></ng-container>
+    </div>
+  </ng-container>
+</div>
+
+<ng-template #certificateTpl let-class="class" let-diameter="diameter" let-stroke="stroke">
+  <div [ngClass]="class" [matTooltip]="certificateTooltip" matTooltipClass="line-breaker">
+    <mat-progress-spinner
+      *ngFor="let certificate of certificates; let i=index;"
+      [diameter]="diameter"
+      [strokeWidth]="stroke"
+      [value]="valuesCertification[certificates.length - 1]"
+      [ngClass]="['certificate-' + i, certificate.code, 'number-certificates-' + certificates.length]"
+    ></mat-progress-spinner>
+  </div>
+</ng-template>

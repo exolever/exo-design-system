@@ -79,7 +79,6 @@
     ],
     "unified-signatures": true,
     "variable-name": false,
-    "no-output-on-prefix": true,
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,
     "use-host-property-decorator": true,

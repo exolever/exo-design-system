@@ -1,0 +1,9 @@
+@import '../../lib/button/button';
+@import '../../lib/avatar/avatar.component';
+@import '../../lib/avatar-system/avatar-system.component';
+
+@mixin exo-mixins-components() {
+  @include _exo-button();
+  @include _exo-avatar();
+  @include _exo-avatar-system();
+}

@@ -89,6 +89,10 @@ export class ExOAvatarComponent {
   @Input()
   tooltipPosition: TooltipPosition = 'below';
 
+  /**
+   * Certificates only will work with the standards sizes, so this input can't combine with customizedSize.
+   * In the same way, only will work with the default shape (circle).
+   */
   @Input()
   certificates: Certificate[];
 
@@ -146,10 +150,28 @@ export class ExOAvatarComponent {
     }
 
     if (this.item) {
+      this.buildNameItem(this.item);
+    }
+
+    return 'Avatar';
+  }
+
+  /**
+   * Return name, fullName or shortName(in that order) from items to use in the Alt attr from image and the tooltips.
+   * @param item
+   */
+  buildNameItem(item) {
+    if (item.name) {
       return this.item.name;
     }
 
-    return 'Avatar of item';
+    if (item.fullName) {
+      return this.item.fullName;
+    }
+
+    if (item.shortName) {
+      return this.item.shortName;
+    }
   }
 
   get imageTooltip() {
@@ -158,7 +180,7 @@ export class ExOAvatarComponent {
     }
 
     if (this.item) {
-      return this.item.name;
+      this.buildNameItem(this.item);
     }
 
     return undefined;

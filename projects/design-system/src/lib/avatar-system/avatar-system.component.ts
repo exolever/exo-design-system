@@ -16,7 +16,7 @@ export class ExoAvatarSystemComponent {
   name: string;
 
   @Input()
-  roles: string;
+  description: string;
 
   @Input()
   direction = ExOAvatarSystemDirectionEnum.row;

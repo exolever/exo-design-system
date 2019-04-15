@@ -6,7 +6,7 @@ $grotesk: 'HKGrotesk';
 $roboto: 'Roboto';
 
 $exo-typography: mat-typography-config(
-  $font-family: 'HKGrotesk',
+  $font-family: $roboto,
   $display-1: mat-typography-level(48px, 56px, $bold, $grotesk),
   $headline: mat-typography-level(32px, 1.5, $bold, $grotesk),
   $title: mat-typography-level(24px, 1.5, $bold, $grotesk),

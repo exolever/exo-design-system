@@ -243,3 +243,11 @@ $exo-blue: (
     A700: $exo-light-primary-text
   )
 );
+
+$resource-colors: (
+  pdf: map_get($exo-red, 700),
+  spreadsheet: map_get($exo-teal, 600),
+  document: map_get($exo-blue, 700),
+  slides: map_get($exo-amber, 700),
+  form: map_get($exo-purple, 700)
+);

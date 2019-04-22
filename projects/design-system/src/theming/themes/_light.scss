@@ -116,3 +116,7 @@ $light-theme: mat-light-theme($primary, $secondary, $warn);
 a {
   color: mat-color($exo-blue, 700);
 }
+
+.foreground-secondary-text {
+  color: mat_color($exo-grey, 900, 0.64);
+}

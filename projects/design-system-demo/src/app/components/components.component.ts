@@ -7,5 +7,6 @@ import { CustomLink } from '../shared/interfaces/interfaces';
 export class ComponentsComponent {
   links: CustomLink[] = [
     { href: './buttons', copy: 'Buttons' },
+    { href: './avatars', copy: 'Avatars' },
   ];
 }

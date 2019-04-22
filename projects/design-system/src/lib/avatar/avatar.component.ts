@@ -114,13 +114,13 @@ export class ExOAvatarComponent {
   static parseSizeToNumber(size: SizeAvatar): number {
     switch (size) {
       case SizeAvatarEnum.xs:
-        return 32;
+        return 24;
       case SizeAvatarEnum.sm:
-        return 56;
+        return 48;
       case SizeAvatarEnum.lg:
         return 96;
       case SizeAvatarEnum.xl:
-        return 150;
+        return 144;
     }
   }
 
@@ -158,7 +158,6 @@ export class ExOAvatarComponent {
 
   /**
    * Return name, fullName or shortName(in that order) from items to use in the Alt attr from image and the tooltips.
-   * @param item
    */
   buildNameItem(item) {
     if (item.name) {

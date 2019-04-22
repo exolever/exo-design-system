@@ -1,11 +1,11 @@
 <div class="avatar-system__container" [ngClass]="direction">
   <ng-content select="exo-avatar"></ng-content>
   <div class="avatar-system__data" [ngClass]="direction">
-    <p class="mat-body-2" [matTooltip]="name">
+    <p [ngClass]="{'subheading-2': avatar.size === 'lg', 'body-2': avatar.size !== 'lg'}" [matTooltip]="name">
       {{ name }}
     </p>
-    <p class="caption-1">
-      {{ roles }}
+    <p class="caption-1 foreground-secondary-text">
+      {{ description }}
     </p>
   </div>
 </div>

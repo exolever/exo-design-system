@@ -1,4 +1,10 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ContentChild,
+  Input
+} from '@angular/core';
+import { ExOAvatarComponent } from '../avatar/avatar.component';
 
 enum ExOAvatarSystemDirectionEnum {
   row = 'row',
@@ -20,4 +26,7 @@ export class ExoAvatarSystemComponent {
 
   @Input()
   direction = ExOAvatarSystemDirectionEnum.row;
+
+  @ContentChild(ExOAvatarComponent)
+  avatar: ExOAvatarComponent;
 }

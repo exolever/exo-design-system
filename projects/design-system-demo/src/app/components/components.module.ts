@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ComponentsComponent } from './components.component';
-import { MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
+import { MainLayoutModule } from '../shared/main-layout/main-layout.module';
 import { ExoButtonModule, ExOAvatarModule } from '@openexo/design-system';
 
 const ROUTES: Routes = [
@@ -21,12 +21,9 @@ const ROUTES: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(ROUTES),
-    MatToolbarModule,
-    MatSidenavModule,
+    MainLayoutModule,
     ExoButtonModule,
     ExOAvatarModule,
-    MatIconModule,
-    MatListModule,
   ],
   declarations: [ComponentsComponent],
   exports: [],

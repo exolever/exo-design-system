@@ -1,6 +1,6 @@
 $purple-primary-text: #6f23ff;
-$dark-primary-text: rgba(black, 0.87);
-$light-primary-text: white;
+$exo-dark-primary-text: #46464b;
+$exo-light-primary-text: white;
 
 $exo-red: (
   50: #ffe6e6,
@@ -19,20 +19,20 @@ $exo-red: (
   A700: #ef5d5e,
   contrast:
   (
-    50: $dark-primary-text,
-    100: $dark-primary-text,
-    200: $dark-primary-text,
-    300: $dark-primary-text,
-    400: $dark-primary-text,
-    500: $light-primary-text,
-    600: $light-primary-text,
-    700: $light-primary-text,
-    800: $light-primary-text,
-    900: $light-primary-text,
-    A100: $dark-primary-text,
-    A200: $light-primary-text,
-    A400: $light-primary-text,
-    A700: $light-primary-text
+    50: $exo-dark-primary-text,
+    100: $exo-dark-primary-text,
+    200: $exo-dark-primary-text,
+    300: $exo-dark-primary-text,
+    400: $exo-dark-primary-text,
+    500: $exo-light-primary-text,
+    600: $exo-light-primary-text,
+    700: $exo-light-primary-text,
+    800: $exo-light-primary-text,
+    900: $exo-light-primary-text,
+    A100: $exo-dark-primary-text,
+    A200: $exo-light-primary-text,
+    A400: $exo-light-primary-text,
+    A700: $exo-light-primary-text
   )
 );
 
@@ -53,20 +53,20 @@ $exo-purple: (
   A700: #6620ed,
   contrast:
   (
-    50: $dark-primary-text,
-    100: $dark-primary-text,
-    200: $dark-primary-text,
-    300: $dark-primary-text,
-    400: $dark-primary-text,
-    500: $light-primary-text,
-    600: $light-primary-text,
-    700: $light-primary-text,
-    800: $light-primary-text,
-    900: $light-primary-text,
-    A100: $dark-primary-text,
-    A200: $light-primary-text,
-    A400: $light-primary-text,
-    A700: $light-primary-text
+    50: $exo-dark-primary-text,
+    100: $exo-dark-primary-text,
+    200: $exo-dark-primary-text,
+    300: $exo-dark-primary-text,
+    400: $exo-dark-primary-text,
+    500: $exo-light-primary-text,
+    600: $exo-light-primary-text,
+    700: $exo-light-primary-text,
+    800: $exo-light-primary-text,
+    900: $exo-light-primary-text,
+    A100: $exo-dark-primary-text,
+    A200: $exo-light-primary-text,
+    A400: $exo-light-primary-text,
+    A700: $exo-light-primary-text
   )
 );
 
@@ -89,20 +89,20 @@ $exo-indigo: (
   '0.16': rgba(#001846, 0.16),
   contrast:
   (
-    50: $dark-primary-text,
-    100: $dark-primary-text,
-    200: $dark-primary-text,
-    300: $dark-primary-text,
-    400: $dark-primary-text,
-    500: $light-primary-text,
-    600: $light-primary-text,
-    700: $light-primary-text,
-    800: $light-primary-text,
-    900: $light-primary-text,
-    A100: $dark-primary-text,
-    A200: $light-primary-text,
-    A400: $light-primary-text,
-    A700: $light-primary-text,
+    50: $exo-dark-primary-text,
+    100: $exo-dark-primary-text,
+    200: $exo-dark-primary-text,
+    300: $exo-dark-primary-text,
+    400: $exo-dark-primary-text,
+    500: $exo-light-primary-text,
+    600: $exo-light-primary-text,
+    700: $exo-light-primary-text,
+    800: $exo-light-primary-text,
+    900: $exo-light-primary-text,
+    A100: $exo-dark-primary-text,
+    A200: $exo-light-primary-text,
+    A400: $exo-light-primary-text,
+    A700: $exo-light-primary-text,
     '0.08': $purple-primary-text,
     '0.16': $purple-primary-text,
   )
@@ -125,20 +125,20 @@ $exo-grey: (
   A700: #8a8a8d,
   contrast:
   (
-    50: $dark-primary-text,
+    50: $exo-dark-primary-text,
     100: $purple-primary-text,
-    200: $dark-primary-text,
-    300: $dark-primary-text,
-    400: $dark-primary-text,
-    500: $dark-primary-text,
-    600: $light-primary-text,
-    700: $light-primary-text,
-    800: $light-primary-text,
-    900: $light-primary-text,
-    A100: $dark-primary-text,
-    A200: $dark-primary-text,
-    A400: $dark-primary-text,
-    A700: $light-primary-text
+    200: $exo-dark-primary-text,
+    300: $exo-dark-primary-text,
+    400: $exo-dark-primary-text,
+    500: $exo-dark-primary-text,
+    600: $exo-light-primary-text,
+    700: $exo-light-primary-text,
+    800: $exo-light-primary-text,
+    900: $exo-light-primary-text,
+    A100: $exo-dark-primary-text,
+    A200: $exo-dark-primary-text,
+    A400: $exo-dark-primary-text,
+    A700: $exo-light-primary-text
   )
 );
 
@@ -159,20 +159,20 @@ $exo-amber: (
   A700: #ffab00,
   contrast:
   (
-    50: $dark-primary-text,
-    100: $dark-primary-text,
-    200: $dark-primary-text,
-    300: $dark-primary-text,
-    400: $dark-primary-text,
-    500: $dark-primary-text,
-    600: $dark-primary-text,
-    700: $dark-primary-text,
-    800: $dark-primary-text,
-    900: $dark-primary-text,
-    A100: $dark-primary-text,
-    A200: $dark-primary-text,
-    A400: $dark-primary-text,
-    A700: $dark-primary-text
+    50: $exo-dark-primary-text,
+    100: $exo-dark-primary-text,
+    200: $exo-dark-primary-text,
+    300: $exo-dark-primary-text,
+    400: $exo-dark-primary-text,
+    500: $exo-dark-primary-text,
+    600: $exo-dark-primary-text,
+    700: $exo-dark-primary-text,
+    800: $exo-dark-primary-text,
+    900: $exo-dark-primary-text,
+    A100: $exo-dark-primary-text,
+    A200: $exo-dark-primary-text,
+    A400: $exo-dark-primary-text,
+    A700: $exo-dark-primary-text
   )
 );
 
@@ -193,20 +193,20 @@ $exo-teal: (
   A700: #00bda3,
   contrast:
   (
-    50: $dark-primary-text,
-    100: $dark-primary-text,
-    200: $dark-primary-text,
-    300: $dark-primary-text,
-    400: $dark-primary-text,
-    500: $light-primary-text,
-    600: $light-primary-text,
-    700: $light-primary-text,
-    800: $light-primary-text,
-    900: $light-primary-text,
-    A100: $dark-primary-text,
-    A200: $dark-primary-text,
-    A400: $dark-primary-text,
-    A700: $dark-primary-text
+    50: $exo-dark-primary-text,
+    100: $exo-dark-primary-text,
+    200: $exo-dark-primary-text,
+    300: $exo-dark-primary-text,
+    400: $exo-dark-primary-text,
+    500: $exo-light-primary-text,
+    600: $exo-light-primary-text,
+    700: $exo-light-primary-text,
+    800: $exo-light-primary-text,
+    900: $exo-light-primary-text,
+    A100: $exo-dark-primary-text,
+    A200: $exo-dark-primary-text,
+    A400: $exo-dark-primary-text,
+    A700: $exo-dark-primary-text
   )
 );
 
@@ -227,19 +227,27 @@ $exo-blue: (
   A700: #00B4F7,
   contrast:
   (
-    50: $dark-primary-text,
-    100: $dark-primary-text,
-    200: $dark-primary-text,
-    300: $dark-primary-text,
-    400: $dark-primary-text,
-    500: $light-primary-text,
-    600: $light-primary-text,
-    700: $light-primary-text,
-    800: $light-primary-text,
-    900: $light-primary-text,
-    A100: $dark-primary-text,
-    A200: $light-primary-text,
-    A400: $light-primary-text,
-    A700: $light-primary-text
+    50: $exo-dark-primary-text,
+    100: $exo-dark-primary-text,
+    200: $exo-dark-primary-text,
+    300: $exo-dark-primary-text,
+    400: $exo-dark-primary-text,
+    500: $exo-light-primary-text,
+    600: $exo-light-primary-text,
+    700: $exo-light-primary-text,
+    800: $exo-light-primary-text,
+    900: $exo-light-primary-text,
+    A100: $exo-dark-primary-text,
+    A200: $exo-light-primary-text,
+    A400: $exo-light-primary-text,
+    A700: $exo-light-primary-text
   )
+);
+
+$resource-colors: (
+  pdf: map_get($exo-red, 700),
+  spreadsheet: map_get($exo-teal, 600),
+  document: map_get($exo-blue, 700),
+  slides: map_get($exo-amber, 700),
+  form: map_get($exo-purple, 700)
 );

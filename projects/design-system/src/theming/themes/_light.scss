@@ -5,4 +5,114 @@ $primary: mat-palette($exo-purple);
 $secondary: mat-palette($exo-indigo, '0.08');
 $warn: mat-palette($exo-red);
 
+$mat-light-theme-foreground: (
+  base:             map-get($exo-grey, 900),
+  divider:          rgba(70, 70, 75, 0.16),
+  dividers:         rgba(70, 70, 75, 0.16),
+  disabled:         rgba(70, 70, 75, 0.38),
+  disabled-button:  rgba(70, 70, 75, 0.38),
+  disabled-text:    rgba(70, 70, 75, 0.38),
+  hint-text:        rgba(70, 70, 75, 0.75),
+  secondary-text:   rgba(70, 70, 75, 0.75),
+  icon:             mat_color($exo-grey, 900, 0.64),
+  icons:            rgba(70, 70, 75, 0.75),
+  text:               rgba(70, 70, 75, 100),
+  slider-off:       rgba(70, 70, 75, 0.16),
+  slider-min:         rgba(70, 70, 75, 175),
+  slider-off-active:rgba(70, 70, 75, 0.38),
+
+  // custom var
+  // Icons
+  icon-success: map_get($exo-teal, A400),
+  feeling-icon-hover: white,
+
+  // Buttons
+  mat-raised-button: white,
+
+  // Chips
+  chip-remove-icon-hover: map-get($exo-purple, 500),
+
+  // DEPRECATED -- From old theme
+  exo-highlight-icon: map_get($exo-blue, 500),
+  exo-a: map_get($exo-blue, 700),
+  exo-snackbar-action: map-get($exo-red, 500),
+  exo-toolbar-icons: map-get($exo-grey, 900)
+);
+$mat-light-theme-background: (
+  raised-button:      map_get($exo-red, 500),
+  disabled-button:    map_get($exo-grey, 100),
+  unselected-chip:    rgba(70, 70, 75, 0.16),
+  dialog:             white,
+  card:               white,
+  background:         white,
+  app-bar:            map_get($exo-amber, 500),
+  status-bar:         map_get($exo-indigo, 900),
+  hover:              map_get($exo-grey, 100),
+  focused-button:     map_get($exo-red, 700),
+  selected-button:    map_get($exo-red, 500),
+  selected-disabled-button: rgba(70, 70, 75, 0.38),
+  disabled-button-toggle:   rgba(70, 70, 75, 0.38),
+  disabled-list-option:     rgba(70, 70, 75, 0.38),
+
+  // Custom var
+  service-header-assignments: map_get($exo-purple, 700),
+
+  // Buttons
+  mat-button-hover: mat-color($exo-grey, 900, 0.16),
+  mat-button-disabled: mat-color($exo-grey, 900, 0.38),
+  button-outlined-hover: mat-color($exo-red, 500, 0.24),
+  mat-raised-button: white,
+  mat-raised-button-hover: map_get($exo-red, 700),
+  mat-raised-button-disabled: mat-color($exo-grey, 900, 0.38),
+  feeling-buttons: map_get($exo-purple, 500),
+
+  // Cards
+  card-shadow: rgba(70, 70, 75, 0.16),
+  resource-color-pdf: map_get($resource-colors, pdf),
+  resource-color-spreadsheet: map_get($resource-colors, spreadsheet),
+  resource-color-document: map_get($resource-colors, document),
+  resource-color-slides: map_get($resource-colors, slides),
+  resource-color-form: map_get($resource-colors, form),
+  resource-rating-done: map_get($exo-teal, A400),
+
+  // Chips
+  chip-background: rgba(255, 255, 255, 0.16),
+
+  // Inputs
+  input-background: mat-color($exo-grey, 900, 0.08),
+
+  activities: mat-color($exo-grey, 900, 0.04),
+  activities-icon: mat-color($exo-grey, 900, 0.75),
+  activities-icon-active: mat-color($exo-blue, 500),
+  activities-toggle-active: mat-color($exo-blue, 700),
+
+  // Levels expertise areas
+  beginner: map_get($exo-amber, 200),
+  intermediate: map_get($exo-amber, 600),
+  advanced: map_get($exo-amber, 800),
+
+  // DEPRECATED: From old theme
+  exo-progress-bar-fill: map_get($mat-blue-grey, 300),
+  exo-progress-bar-buffer: map_get($mat-blue-grey, 50),
+  exo-chip-color: map_get($mat-blue-grey, 600),
+  exo-chip-outlined-border-color: map_get($mat-blue-grey, 300),
+  exo-chip-outlined-color: map_get($mat-blue-grey, 500),
+  exo-dark-dialog-header: map_get($mat-blue-grey, 50),
+  exo-dialog-actions: mat-color($exo-grey, 50),
+  exo-highlight-hover-background-color: map_get($mat-light-blue, 50),
+  exo-highlight-hover-color: map_get($exo-blue, 500),
+  exo-loader-circle: white,
+  exo-bullet: map_get($exo-red, 500)
+);
+
 $light-theme: mat-light-theme($primary, $secondary, $warn);
+
+// Custom colors for some classes.
+
+.section {
+  color: mat-color($exo-purple, 500);
+}
+
+a {
+  color: mat-color($exo-blue, 700);
+}

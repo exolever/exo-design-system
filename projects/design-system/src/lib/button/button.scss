@@ -2,16 +2,18 @@
 @import '../../theming/themes/colors';
 
 @mixin _exo-button {
+
   button.mat-button, button.mat-raised-button, button.mat-stroked-button, button.mat-flat-button,
   button.mat-icon-button, button.mat-fab, button.mat-mini-fab,
   a.mat-button, a.mat-flat-button, a.mat-icon-button
   {
     &:not(.mat-fab):not(.mat-mini-fab):not(.mat-icon-button) {
       padding: 0 map-get($spaceMeasures, 'xs');
-      min-width: calc(2 * #{map-get($componentMeasure, '1x')});
-      max-width: calc(6 * #{map-get($componentMeasure, '1x')});
+      min-width: map-get($componentMeasure, '2x');
+      max-width: map-get($componentMeasure, '6x');
       height: map-get($componentMeasure, '1x');
-      line-height: map-get($componentMeasure, '1x');
+      line-height: map-get($componentMeasure, '0.5x');
+      font-size: map-get($componentMeasure, '0.3x');
       mat-icon.mat-icon {
         margin-right: map-get($spaceMeasures, 'xxs');
       }
@@ -22,9 +24,12 @@
     text-transform: uppercase;
 
     mat-icon.mat-icon {
-      font-size: calc(0.5 * #{map-get($componentMeasure, '1x')});
-      color: inherit;
+      color:inherit;
     }
+  }
+
+  a.mat-button, a.mat-flat-button, a.mat-icon-button {
+    line-height: map-get($componentMeasure, '1x') !important;
   }
 
   button.mat-button, a.mat-button {

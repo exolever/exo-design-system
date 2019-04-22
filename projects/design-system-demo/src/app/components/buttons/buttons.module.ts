@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ExoButtonModule } from '@openexo/design-system';
 
+import { MarkdownModule } from 'ngx-markdown';
+
 // Config
 import { URLS } from './buttons.config';
 
@@ -11,7 +13,6 @@ import { URLS } from './buttons.config';
 import { ButtonsComponent } from './buttons.component';
 import { ButtonExamplesComponent } from './examples/examples.component';
 import { OverviewComponent } from './overview/overview.component';
-import { MarkdownModule } from 'ngx-markdown';
 
 const ROUTES: Routes = [
   {
@@ -28,10 +29,10 @@ const ROUTES: Routes = [
 @NgModule({
   imports: [
     ExoButtonModule,
+    CommonModule,
     RouterModule.forChild(ROUTES),
     MarkdownModule.forChild(),
     MatIconModule,
-    CommonModule,
     MatTabsModule,
   ],
   declarations: [

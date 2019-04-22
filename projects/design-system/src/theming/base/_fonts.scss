@@ -1,3 +1,38 @@
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
+
+@font-face {
+  font-family: HKGrotesk;
+  src: url('https://s3.amazonaws.com/exolever/static/fonts/HKGrotesk/HKGrotesk-Regular.woff2') format('woff');
+}
+
+@font-face {
+  font-family: HKGrotesk;
+  font-weight: 700;
+  src: url('https://s3.amazonaws.com/exolever/static/fonts/HKGrotesk/HKGrotesk-Bold.woff2') format('woff');
+}
+
+@font-face {
+  font-family: HKGrotesk;
+  font-weight: 300;
+  src: url('https://s3.amazonaws.com/exolever/static/fonts/HKGrotesk/HKGrotesk-Light.woff2') format('woff');
+}
+
+@font-face {
+  font-family: HKGroteskBold;
+  font-weight: 600;
+  src: url('https://s3.amazonaws.com/exolever/static/fonts/HKGrotesk/HKGrotesk-Bold.woff2') format('woff');
+}
+
+@font-face {
+  font-family: HKGroteskLight;
+  font-weight: 300;
+  src: url('https://s3.amazonaws.com/exolever/static/fonts/HKGrotesk/HKGrotesk-Light.woff2') format('woff');
+}
+
+@font-face {
+  font-family: HKGroteskItalic;
+  font-weight: 300;
+  src: url('https://s3.amazonaws.com/exolever/static/fonts/HKGrotesk/HKGrotesk-Italic.woff2') format('woff');
+}

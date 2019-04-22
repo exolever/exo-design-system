@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ContentGuidesComponent } from './content-guides.component';
-import { MatListModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
+import { MainLayoutModule } from '../shared/main-layout/main-layout.module';
 
 const ROUTES: Routes = [
   {
@@ -28,9 +28,7 @@ const ROUTES: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(ROUTES),
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
+    MainLayoutModule,
   ],
   declarations: [
     ContentGuidesComponent,

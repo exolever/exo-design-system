@@ -1,3 +1,11 @@
-<div>
-  <markdown [src]="'assets/brand-guides/TYPOGRAPHY.md'"></markdown>
-</div>
+<nav mat-tab-nav-bar class="stretched-tabs">
+  <a mat-tab-link
+     *ngFor="let link of navLinks"
+     [routerLink]="link.href"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive">
+    {{link.copy}}
+  </a>
+</nav>
+
+<router-outlet></router-outlet>

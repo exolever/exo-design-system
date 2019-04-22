@@ -3,7 +3,7 @@
 @import 'themes/themes';
 @import 'components/components';
 
-@include mat-core($typography);
+@include mat-core($exo-typography);
 @include angular-material-theme($light-theme);
 
 @include exo-abstracts();

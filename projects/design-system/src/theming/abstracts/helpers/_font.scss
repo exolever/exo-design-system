@@ -1,0 +1,18 @@
+/********************************
+* Weight
+********************************/
+@mixin font-weight($value: '') {
+  font-weight: $value !important;
+}
+
+.weight-normal {
+  @include font-weight(400)
+}
+
+.weight-bold {
+  @include font-weight(700)
+}
+
+.italic {
+  font-style: italic;
+}

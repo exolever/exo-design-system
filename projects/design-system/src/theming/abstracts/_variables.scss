@@ -2,7 +2,18 @@ $static-root: '/static/';
 
 // Component Measures
 $componentMeasure: (
-  '1x': 48px
+  '0.3x': 16px,
+  '0.5x': 24px,
+  '1x': 48px,
+  '1.5x': 72px,
+  '2x': 96px,
+  '3x': 144px,
+  '4x': 192px,
+  '6x': 288px,
+  '8x': 384px,
+  '18x': 864px,
+  '20x': 960px,
+  '24x': 1152px,
 );
 
 // Space measures
@@ -12,5 +23,5 @@ $spaceMeasures: (
   'xs': 16px,
   'sm': 24px,
   'lg': 48px,
-  'xl': 72px
+  'xl': 72px,
 );

@@ -1,45 +1,106 @@
-![Primary button](assets/components/buttons/img/primary_buttons.png "Primary buttons")
+# Buttons
 
-**Tips**:
+## Primary Button
 
-![Tips primary button](assets/components/buttons/img/primary_buttons_tips.png "Tips primary buttons")
+![primary_button](assets/components/buttons/img/01.png)
 
-![Primary button with icon](assets/components/buttons/img/primary_icon.png "Primary buttons with icon")
+- As a general rule, buttons use to show aligned to the right in their context
 
-**Tips**
+![primary_button_tip1](assets/components/buttons/img/02.png)
 
-![Primary button with icon](assets/components/buttons/img/primary_icon_tips.png "Primary with icon tips")
+- Primary Buttons always show to the right when it is adjacent to a Secondary Button.
 
-![Secondary button](assets/components/buttons/img/secondary_buttons.png "Secondary buttons")
+![primary_button_tip2](assets/components/buttons/img/03.png)
 
-**Tips**
+- If Primary + Secondary buttons don’t fit in one line, we place them one above the other, always locating Primary first.
 
-![Tips Secondary button](assets/components/buttons/img/secondary_buttons_tips.png "Tips Secondary buttons")
+![primary_button_tip3](assets/components/buttons/img/04.png)
 
+- If Primary + Secondary match in the same line with other kind of button, as a file attaching rounded button, and they don’t fin in it, both goes down a line
 
-![Secondary button with icon](assets/components/buttons/img/secondary_icon.png "Secondary buttons with icon")
+![primary_button_tip4](assets/components/buttons/img/05.png)
 
-**Tips**
+- Primary Buttons must always be active in edit forms and display validations when the user clicks on Primary Button.
 
-![Tips Secondary button icon](assets/components/buttons/img/secondary_icon_tips.png "Tips Secondary buttons with icon")
+- Copywriting for buttons can’t have more than 15 text characters.
 
+### Primary Button with Icon
 
-![Tertiary button](assets/components/buttons/img/third_buttons.png "Tertiary buttons")
+![primary_button_with_icon](assets/components/buttons/img/06.png)
 
-**Tips**:
+- Primary Buttons with icon should appear alone and related with a main action that implies edition, addition or creation by the user.
 
-![Tips Tertiary button](assets/components/buttons/img/third_buttons_tips.png "Tips tertiary buttons")
+- Copywriting for buttons with icons can’t have more than 12 text characters.
 
+### Rounded Primary Button
 
-![Rounded Primary Button](assets/components/buttons/img/rounded_primary.png "Rounded primary buttons")
+![rounded_primary](assets/components/buttons/img/12.png)
 
-**Tips**
+- Rounded Primary and Secondary Button needs a tooltip which describe the icon action to the user.
 
-![Tips Rounded Primary Button](assets/components/buttons/img/rounded_primary_tips.png "Tips rounded primary buttons")
+![rounded_primary_tip1](assets/components/buttons/img/13.png)
 
+## Secondary Button
 
-![Rounded Secondary Button](assets/components/buttons/img/rounded_secondary.png "Rounded secondary buttons")
+![secondary_button](assets/components/buttons/img/07.png)
 
-**Tips**
+- As a general rule, buttons use to show aligned to the right in their context
 
-![Tips Rounded Secondary Button](assets/components/buttons/img/rounded_secondary_tips.png "Tips rounded secondary buttons")
+![secondary_button_tip1](assets/components/buttons/img/02.png)
+
+- Secondary Buttons usually should be accompanied by Primary Button in the same context.
+*If you find a Secondary Button alone, please check it with the Design Team.*
+
+- Primary Buttons always show to the right when it is adjacent to a Secondary Button.
+
+![secondary_button_tip3](assets/components/buttons/img/03.png)
+
+- If Primary + Secondary buttons don’t fit in one line, we place them one above the other, always locating Primary first.
+
+![secondary_button_tip4](assets/components/buttons/img/04.png)
+
+- If Primary + Secondary match in the same line with other kind of button, as a file attaching rounded button, and they don’t fin in it, both goes down a line
+
+![secondary_button_tip5](assets/components/buttons/img/05.png)
+
+- Copywriting for buttons can’t have more than 15 text characters.
+
+### Secondary Button with Icon
+
+![secondary_button_with_icon_tip1](assets/components/buttons/img/18.png)
+
+- Copywriting for buttons with icons can’t have more than 12  text characters.
+
+- Down and Up Toggle Button are untapped by default and they can be tapped and untapped by the user at all times. In any case Up and Down Buttons can be tapped at the same time. It will also be possible to untapped both to return to the default state.
+
+![secondary_button_with_icon_tip2](assets/components/buttons/img/08.png)
+
+- Up Toggle Button always show to the right and Down Toggle Button always show to the left.
+
+![secondary_button_with_icon_tip3](assets/components/buttons/img/09.png)
+
+- Rating Toggle Button appears untapped by default and it will be able to change the status to tapped when the user gives a rating, never again being untapped.
+
+![secondary_button_with_icon_tip4](assets/components/buttons/img/10.png)
+
+### Rounded Secondary Button
+
+![rounded_secondary](assets/components/buttons/img/14.png)
+
+- Rounded Primary and Secondary Button needs a tooltip which describe the icon action to the user.
+
+![rounded_secondary_tip1](assets/components/buttons/img/15.png)
+
+- Down and Up Toggle Button are untapped by default and they can be tapped and untapped by the user at all times. In any case Up and Down Buttons can be tapped at the same time. It will also be possible to untapped both to return to the default state.
+
+![rounded_secondary_tip2](assets/components/buttons/img/16.png)
+
+- Up Toggle Button always show to the right and Down Toggle Button always show to the left.
+
+![rounded_secondary_tip3](assets/components/buttons/img/17.png)
+
+## Third Icon
+
+![third_icon](assets/components/buttons/img/11.png)
+
+- Third button is usually not found together with a Primary and Secondary button at the same level.

@@ -2,7 +2,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   ContentChild,
-  Input
+  Input,
 } from '@angular/core';
 import { ExOAvatarComponent } from '../avatar/avatar.component';
 

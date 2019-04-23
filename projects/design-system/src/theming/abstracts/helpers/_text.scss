@@ -30,7 +30,7 @@
 
 @mixin decoration($property: '') {
   .text-decoration-#{$property} {
-    text-decoration: $property
+    text-decoration: $property;
   }
 };
 
@@ -43,7 +43,7 @@
   @include decoration(inherit);
 };
 
-@mixin text-truncate() {
+@mixin truncate() {
   .text-truncate {
     white-space: nowrap;
     overflow: hidden;
@@ -60,5 +60,5 @@
   @include decoration-helpers();
   @include transform-helpers();
   @include align-helpers();
-  @include text-truncate();
+  @include truncate();
 }

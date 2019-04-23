@@ -45,11 +45,9 @@
 
 @mixin text-truncate() {
   .text-truncate {
-    .text-truncate {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 };
 
@@ -61,5 +59,6 @@
     @include decoration-helpers();
     @include transform-helpers();
     @include align-helpers();
+    @include text-truncate();
   }
 }

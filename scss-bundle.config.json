@@ -6,5 +6,9 @@
   {
     "entry": "./projects/design-system/src/theming/abstracts/_mixins.scss",
     "dest": "dist/design-system/_mixins.scss"
+  },
+  {
+    "entry": "./projects/design-system/src/theming/abstracts/_variables.scss",
+    "dest": "dist/design-system/_variables.scss"
   }
 ]

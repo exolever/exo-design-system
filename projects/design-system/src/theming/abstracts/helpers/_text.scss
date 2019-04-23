@@ -56,9 +56,9 @@
     .upper-first-letter::first-letter {
       text-transform: uppercase;
     }
-    @include decoration-helpers();
-    @include transform-helpers();
-    @include align-helpers();
-    @include text-truncate();
   }
+  @include decoration-helpers();
+  @include transform-helpers();
+  @include align-helpers();
+  @include text-truncate();
 }

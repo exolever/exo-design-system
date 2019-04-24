@@ -10,5 +10,9 @@
   {
     "entry": "./projects/design-system/src/theming/themes/_colors.scss",
     "dest": "dist/design-system/_colors.scss"
+  },
+  {
+    "entry": "./projects/design-system/src/theming/abstracts/_variables.scss",
+    "dest": "dist/design-system/_variables.scss"
   }
 ]

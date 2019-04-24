@@ -30,7 +30,7 @@
 
 @mixin decoration($property: '') {
   .text-decoration-#{$property} {
-    text-decoration: $property
+    text-decoration: $property;
   }
 };
 
@@ -43,13 +43,11 @@
   @include decoration(inherit);
 };
 
-@mixin text-truncate() {
+@mixin truncate() {
   .text-truncate {
-    .text-truncate {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 };
 
@@ -58,8 +56,9 @@
     .upper-first-letter::first-letter {
       text-transform: uppercase;
     }
-    @include decoration-helpers();
-    @include transform-helpers();
-    @include align-helpers();
   }
+  @include decoration-helpers();
+  @include transform-helpers();
+  @include align-helpers();
+  @include truncate();
 }

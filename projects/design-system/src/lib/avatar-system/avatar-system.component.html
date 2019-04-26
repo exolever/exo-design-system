@@ -1,14 +1,22 @@
 <div class="avatar-system__container" [ngClass]="direction">
   <ng-content select="exo-avatar"></ng-content>
-  <div class="avatar-system__data" [ngClass]="direction">
-    <p class="text-truncate"
-       [ngClass]="{'title': avatar.size === 'xl', 'subheading-2': avatar.size === 'lg', 'body-2': avatar.size === 'sm', 'caption-2': avatar.size === 'xs'}"
-       [matTooltip]="name"
+  <div class="avatar-system__data" [ngClass]="[direction, systemTruncate] ">
+    <p class="avatar-system__data--name"
+      [ngClass]="{
+      'title': avatar.size === 'xl',
+      'subheading-2': avatar.size === 'lg',
+      'body-2': avatar.size === 'sm',
+      'caption-2': avatar.size === 'xs',
+      'text-truncate': truncateName === true }"
+       [matTooltip]="truncateName === true ? name : undefined"
     >
       {{ name }}
     </p>
-    <p class="foreground-secondary-text text-truncate"
-       [ngClass]="{'subheading-2': avatar.size === 'xl', 'caption-1': avatar.size !== 'xl'}"
+    <p class="foreground-secondary-text avatar-system__data--description"
+       [ngClass]="{
+      'subheading-2': avatar.size === 'xl',
+      'caption-1': avatar.size !== 'xl',
+      'text-truncate': truncateDescription === true }"
     >
       {{ description }}
     </p>

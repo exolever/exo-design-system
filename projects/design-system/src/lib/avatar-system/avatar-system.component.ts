@@ -29,4 +29,14 @@ export class ExoAvatarSystemComponent {
 
   @ContentChild(ExOAvatarComponent)
   avatar: ExOAvatarComponent;
+
+  @Input()
+  truncateName = false;
+
+  @Input()
+  truncateDescription = false;
+
+  get systemTruncate() {
+    return (this.truncateName || this.truncateDescription) ? 'text-truncate' : '';
+  }
 }

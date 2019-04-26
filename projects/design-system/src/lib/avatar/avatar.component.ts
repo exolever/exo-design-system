@@ -186,7 +186,7 @@ export class ExOAvatarComponent {
   }
 
   get certificateTooltip() {
-    if (this.certificates) {
+    if (this.certificates && this.certificates.length > 0) {
       return this.certificates.map((certificate: Certificate) => {
         if (certificate.name) {
           return `${certificate.name}`;

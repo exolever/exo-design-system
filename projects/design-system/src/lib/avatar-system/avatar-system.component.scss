@@ -1,15 +1,23 @@
 @mixin _exo-avatar-system {
+
+  exo-avatar-system {
+    max-width: 100%;
+  }
+
   .avatar-system__container {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    max-width: 100%;
     &.column {
       flex-direction: column;
     }
     .avatar-system__data {
-      max-width: 100%;
-      p {
+      &.text-truncate {
+        max-width: 100%;
+      }
+      &--name, &--description {
         margin: 0 0 0 #{map-get($spaceMeasures, 'xxs')};
       }
       &.column {

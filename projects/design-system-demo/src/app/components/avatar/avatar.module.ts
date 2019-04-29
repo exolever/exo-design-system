@@ -8,6 +8,7 @@ import { AvatarComponent } from './avatar.component';
 import { URLS } from './avatar.config';
 import { OverviewComponent } from './overview/overview.component';
 import { ExamplesComponent } from './examples/examples.component';
+import { DevDocsComponent } from './dev-docs/dev-docs.component';
 
 const ROUTES: Routes = [
   {
@@ -17,6 +18,7 @@ const ROUTES: Routes = [
       { path: '', pathMatch: 'full', redirectTo: URLS.overview },
       { path: URLS.overview, component: OverviewComponent },
       { path: URLS.examples, component: ExamplesComponent },
+      { path: URLS.devdocs, component: DevDocsComponent },
     ],
   },
 ];
@@ -34,6 +36,7 @@ const ROUTES: Routes = [
     AvatarComponent,
     OverviewComponent,
     ExamplesComponent,
+    DevDocsComponent,
   ],
 })
 export class AvatarModule {}

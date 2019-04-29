@@ -13,6 +13,7 @@ export class AvatarComponent {
     this.navLinks = [
       { path: URLS.overview, label: 'Overview' },
       { path: URLS.examples, label: 'Examples' },
+      { path: URLS.devdocs, label: 'Dev docs' },
     ];
   }
 }

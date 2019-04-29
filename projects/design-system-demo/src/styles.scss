@@ -45,4 +45,11 @@ markdown {
     color: #24292e;
   }
 
+  code {
+    &:not(.language-html) {
+      background-color: rgba(0, 0, 0, 0.06);
+      font-size: 90%;
+      padding: 4px;
+    }
+  }
 }

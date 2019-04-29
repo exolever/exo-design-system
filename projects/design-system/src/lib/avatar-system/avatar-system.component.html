@@ -17,6 +17,7 @@
       'subheading-2': avatar.size === 'xl',
       'caption-1': avatar.size !== 'xl',
       'text-truncate': truncateDescription === true }"
+       [matTooltip]="truncateDescription === true ? description : undefined "
     >
       {{ description }}
     </p>

@@ -1,14 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   templateUrl: './dev-docs.component.html',
-  styleUrls: ['./dev-docs.component.scss']
+  styleUrls: ['./dev-docs.component.scss'],
 })
-export class DevDocsComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class DevDocsComponent {
 }

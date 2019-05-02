@@ -12,6 +12,7 @@ A `Avatar system` is a piece of UI that rendered an image with some extra info, 
 | direction                   | Can be row or column                | ExOAvatarSystemDirectionEnum  |
 | truncateName                | Truncate the input name             | boolean                       |
 | truncateDescription         | Truncate the input description      | boolean                       |
+| connected                   | Show a green indicator near name    | boolean                       |
 
 
 | ContentChild                | Description                         | Type                          | 
@@ -22,7 +23,7 @@ A `Avatar system` is a piece of UI that rendered an image with some extra info, 
 
 Usage:
 ```html
-<exo-avatar-system [name]="user.name" [description]="user.roles" [direction]="column" [truncateDescription]="true">
+<exo-avatar-system [name]="user.name" [description]="user.roles" [direction]="column" [truncateDescription]="true" [connected]="true">
   <exo-avatar [src]="user.bigPicture()" alt="User avatar"></exo-avatar>
 </exo-avatar-system>
 ```

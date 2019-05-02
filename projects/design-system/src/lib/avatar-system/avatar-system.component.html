@@ -7,8 +7,9 @@
       'subheading-2': avatar.size === 'lg',
       'body-2': avatar.size === 'sm',
       'caption-2': avatar.size === 'xs',
-      'text-truncate': truncateName === true }"
-       [matTooltip]="truncateName === true ? name : undefined"
+      'text-truncate': truncateName === true,
+      'connected': connected === true }"
+      [matTooltip]="truncateName === true ? name : undefined"
     >
       {{ name }}
     </p>

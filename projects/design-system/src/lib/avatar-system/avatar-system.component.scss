@@ -20,6 +20,23 @@
       &--name, &--description {
         margin: 0 0 0 #{map-get($spaceMeasures, 'xxs')};
       }
+      &--name {
+        display: inline-block;
+      }
+      .connected {
+        position: relative;
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: map_get($exo-teal, A400);
+          position: absolute;
+          right: -16px;
+          top: 6px;
+        }
+      }
       &.column {
         margin: #{map-get($spaceMeasures, 'xs')} 0 0 -#{map-get($spaceMeasures, 'xxs')};
         text-align: center;

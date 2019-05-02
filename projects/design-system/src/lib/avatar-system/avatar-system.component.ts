@@ -36,6 +36,9 @@ export class ExoAvatarSystemComponent {
   @Input()
   truncateDescription = false;
 
+  @Input()
+  connected = false;
+
   get systemTruncate() {
     return (this.truncateName || this.truncateDescription) ? 'text-truncate' : '';
   }

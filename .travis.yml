@@ -9,6 +9,7 @@ install:
   - npm install
   
 script:
+  - echo "Hi"
   - npm run deploy:gh-pages
 
 deploy:

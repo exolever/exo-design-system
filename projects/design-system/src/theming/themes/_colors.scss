@@ -225,6 +225,8 @@ $exo-blue: (
   A200: #00CFFF,
   A400: #00C5FF,
   A700: #00B4F7,
+  '500-0.08': rgba(#00c5ff, 0.08),
+  '500-0.16': rgba(#00c5ff, 0.16),
   contrast:
   (
     50: $exo-dark-primary-text,
@@ -240,7 +242,9 @@ $exo-blue: (
     A100: $exo-dark-primary-text,
     A200: $exo-light-primary-text,
     A400: $exo-light-primary-text,
-    A700: $exo-light-primary-text
+    A700: $exo-light-primary-text,
+    '500-0.08': $exo-light-primary-text,
+    '500-0.16': $exo-light-primary-text,
   )
 );
 

@@ -11,14 +11,16 @@
       padding: 0 map-get($spaceMeasures, 'xs');
       min-width: map-get($componentMeasure, '2x');
       max-width: map-get($componentMeasure, '6x');
-      height: map-get($componentMeasure, '1x');
       line-height: map-get($componentMeasure, '0.5x');
       font-size: map-get($componentMeasure, '0.3x');
       mat-icon.mat-icon {
         margin-right: map-get($spaceMeasures, 'xxs');
       }
+      height: map-get($componentMeasure, '1x');
+      &.mat-button {
+        height: map-get($componentMeasure, '0.5x');
+      }
     }
-
     border-radius: map-get($componentMeasure, '1x');
     vertical-align: bottom;
     text-transform: uppercase;
@@ -30,6 +32,9 @@
 
   a.mat-button, a.mat-flat-button, a.mat-icon-button {
     line-height: map-get($componentMeasure, '1x') !important;
+    &.mat-button {
+      line-height: map-get($componentMeasure, '0.5x') !important;
+    }
   }
 
   button.mat-button, a.mat-button {

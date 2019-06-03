@@ -21,11 +21,6 @@
       .icon_type {
         margin-right: 8px;
         align-self: flex-start;
-        &.align-with-action {
-          @media #{map-get($mediaqueries, 'gt-xs')} {
-            align-self: center;
-          }
-        }
       }
     }
     .alert__action-button {

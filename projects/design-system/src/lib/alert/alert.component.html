@@ -1,10 +1,10 @@
 <div *ngIf="showMessage" class="alert__container {{typeAlert}}">
   <div class="body-2 alert__description">
     <ng-container [ngSwitch]="typeAlert">
-      <mat-icon *ngSwitchCase="typeAlertEnum.info" class="icon_type" [ngClass]="{'align-with-action': actionButtonText}">info_outline</mat-icon>
-      <mat-icon *ngSwitchCase="typeAlertEnum.success" class="icon_type" [ngClass]="{'align-with-action': actionButtonText}">check_circle</mat-icon>
-      <mat-icon *ngSwitchCase="typeAlertEnum.warning" class="icon_type" [ngClass]="{'align-with-action': actionButtonText}">warning</mat-icon>
-      <mat-icon *ngSwitchCase="typeAlertEnum.danger" class="icon_type" [ngClass]="{'align-with-action': actionButtonText}">cancel</mat-icon>
+      <mat-icon *ngSwitchCase="typeAlertEnum.info" class="icon_type">info_outline</mat-icon>
+      <mat-icon *ngSwitchCase="typeAlertEnum.success" class="icon_type" >check_circle</mat-icon>
+      <mat-icon *ngSwitchCase="typeAlertEnum.warning" class="icon_type">warning</mat-icon>
+      <mat-icon *ngSwitchCase="typeAlertEnum.danger" class="icon_type">cancel</mat-icon>
     </ng-container>
     <div>{{message}}</div>
   </div>

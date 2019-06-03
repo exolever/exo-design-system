@@ -8,5 +8,6 @@ export class ComponentsComponent {
   links: CustomLink[] = [
     { href: './buttons', copy: 'Buttons' },
     { href: './avatars', copy: 'Avatars' },
+    { href: './alerts', copy: 'Alerts' },
   ];
 }

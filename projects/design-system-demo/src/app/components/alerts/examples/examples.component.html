@@ -1,0 +1,60 @@
+<section>
+  <h3>Informative Alert</h3>
+  <exo-alert
+    message="Info Message is used to capture the attention of the user and give valuable information insitu (but not very important)"
+    typeAlert="info"
+    isCloseable="true"
+    closeButtonText="close"
+  ></exo-alert>
+</section>
+
+<section>
+  <h3>Success Alert</h3>
+  <exo-alert
+    message="Success message is used to notify the user about something that has been successfully completed"
+    typeAlert="success"
+    isCloseable="true"
+    closeButtonText="close"
+  ></exo-alert>
+</section>
+
+
+<section>
+  <h3>Warning Alert</h3>
+  <exo-alert
+    message="Warning Message is used to alert the user that he must be carefull and that it is important to read it"
+    typeAlert="warning"
+    isCloseable="true"
+    closeButtonText="close"
+  ></exo-alert>
+</section>
+
+
+<section>
+  <h3>Error Alert</h3>
+  <exo-alert
+    message="Danger Message informs that there is an error or very important information that has or will have consequences for the user"
+    typeAlert="danger"
+    isCloseable="true"
+    closeButtonText="close"
+  ></exo-alert>
+</section>
+
+<section>
+  <h3>Alert not closable</h3>
+  <exo-alert
+    message="This alert can't be closed"
+  ></exo-alert>
+</section>
+
+<section>
+  <h3>Alert with action</h3>
+  <exo-alert
+    message="This alert has an action"
+    actionButtonText="Action"
+    (sendAction)="sendAction()"
+  ></exo-alert>
+</section>
+
+
+

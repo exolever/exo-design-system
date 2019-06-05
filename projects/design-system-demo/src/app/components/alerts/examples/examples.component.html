@@ -13,8 +13,6 @@
   <exo-alert
     message="Success message is used to notify the user about something that has been successfully completed"
     typeAlert="success"
-    [isCloseable]="true"
-    closeButtonText="close"
   ></exo-alert>
 </section>
 
@@ -24,8 +22,6 @@
   <exo-alert
     message="Warning Message is used to alert the user that he must be carefull and that it is important to read it"
     typeAlert="warning"
-    [isCloseable]="true"
-    closeButtonText="close"
   ></exo-alert>
 </section>
 
@@ -35,14 +31,13 @@
   <exo-alert
     message="Danger Message informs that there is an error or very important information that has or will have consequences for the user"
     typeAlert="danger"
-    [isCloseable]="true"
-    closeButtonText="close"
   ></exo-alert>
 </section>
 
 <section>
   <h3>Alert not closable</h3>
   <exo-alert
+    typeAlert="info"
     message="This alert can't be closed"
   ></exo-alert>
 </section>
@@ -50,23 +45,11 @@
 <section>
   <h3>Alert with action</h3>
   <exo-alert
+    typeAlert="info"
     message="This alert has an action"
     actionButtonText="Action"
     (sendAction)="sendAction()"
   ></exo-alert>
 </section>
-
-<section>
-  <h3>Alert closable with action</h3>
-  <exo-alert
-    message="This alert has action and is closable"
-    typeAlert="info"
-    [isCloseable]="true"
-    closeButtonText="close"
-    actionButtonText="Action"
-    (sendAction)="sendAction()"
-  ></exo-alert>
-</section>
-
 
 

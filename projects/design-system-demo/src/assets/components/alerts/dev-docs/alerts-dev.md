@@ -29,7 +29,7 @@ Usage:
 ```html
 <exo-alert
     message="Warning Message is used to alert the user that he must be carefull and that it is important to read it"
-    typeAlert="warning"
+    typeAlert="info"
     [isCloseable]="true"
     closeButtonText="Close"
   ></exo-alert>

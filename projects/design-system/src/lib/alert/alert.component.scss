@@ -6,7 +6,6 @@
   .alert__container{
     flex-direction: row;
     display: flex;
-    max-width: 600px;
     @media #{map-get($mediaqueries, 'lt-sm')} {
       flex-direction: column;
       place-content: flex-start;

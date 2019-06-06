@@ -1,12 +1,5 @@
 openexo-toolkit
 
-@angular/material/button
-
-@angular/material/icon
-
-ngx-markdown
-MIT
-
 @angular/cdk
 MIT
 The MIT License
@@ -269,6 +262,10 @@ THE SOFTWARE.
 
 @angular/material/sidenav
 
+@angular/material/button
+
+@angular/material/tabs
+
 @openexo/design-system
 MIT
 The MIT License
@@ -294,9 +291,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-@angular/material/tabs
-
 @angular/material/tooltip
+
+@angular/material/progress-spinner
+
+@angular/material/icon
+
+ngx-markdown
+MIT
 
 @angular/router
 MIT
@@ -498,5 +500,3 @@ THE SOFTWARE.
 
 
 @angular/material/form-field
-
-@angular/material/progress-spinner

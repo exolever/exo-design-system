@@ -4,15 +4,15 @@
 
 ![alert_01](assets/components/alerts/img/01.png)
 
-- TODO: Define text
+- Spec for default info message
 
 ![alert_02](assets/components/alerts/img/02.png)
 
-- TODO: Define text
+- Spec for messages with action
 
 ![alert_03](assets/components/alerts/img/03.png)
 
-- TODO: Define text
+- Spec for small devices
 
 ![alert_04](assets/components/alerts/img/04.png)
 

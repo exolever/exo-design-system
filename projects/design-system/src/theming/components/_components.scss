@@ -1,9 +1,11 @@
 @import '../../lib/button/button';
 @import '../../lib/avatar/avatar.component';
 @import '../../lib/avatar-system/avatar-system.component';
+@import '../../lib/alert/alert.component';
 
 @mixin exo-mixins-components() {
   @include _exo-button();
   @include _exo-avatar();
   @include _exo-avatar-system();
+  @include _exo-alert();
 }

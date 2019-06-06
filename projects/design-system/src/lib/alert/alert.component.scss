@@ -1,0 +1,82 @@
+@import '../../theming/abstracts/variables';
+@import '../../theming/themes/colors';
+
+@mixin _exo-alert {
+
+  .alert__container{
+    flex-direction: row;
+    display: flex;
+    max-width: 600px;
+    @media #{map-get($mediaqueries, 'xs')} {
+      flex-direction: column;
+      place-content: flex-start;
+      align-items: flex-start;
+    }
+    .alert__description {
+      flex-direction: row;
+      display: flex;
+      place-content: center flex-start;
+      align-items: center;
+      flex: 1 1 100%;
+      .icon_type {
+        margin-right: 8px;
+        align-self: flex-start;
+      }
+    }
+    .alert__action-button {
+      flex: 0 0 auto;
+      @media #{map-get($mediaqueries, 'lt-sm')} {
+        align-self: flex-end;
+      }
+    }
+    .alert__close-icon {
+      display: none;
+      @media #{map-get($mediaqueries, 'gt-xs')} {
+        display: block;
+      }
+      @media #{map-get($mediaqueries, 'lt-sm')} {
+        align-self: flex-start;
+      }
+    }
+
+    .alert__close-button {
+      display: none;
+      @media #{map-get($mediaqueries, 'lt-sm')} {
+        align-self: flex-end;
+        display: block;
+      }
+    }
+
+    border-radius: map-get($spaceMeasures, 'xxs');
+    padding: map-get($spaceMeasures, 'sm');
+    &.info{
+      background-color: mat-color($exo-blue, 500, 0.16);
+      color: mat-color($exo-blue, 700);
+      .mat-icon, .mat-button, .mat-button:hover:not([disabled]) {
+        color: mat-color($exo-blue, 500);
+      }
+    }
+    &.success{
+      background-color: mat-color($exo-teal, A400, 0.16);
+      color: mat-color($exo-teal, A700);
+      .mat-icon, .mat-button, .mat-button:hover:not([disabled]) {
+        color: mat-color($exo-teal, A400);
+      }
+    }
+    &.warning{
+      background-color: mat-color($exo-amber, 500, 0.16);
+      color: mat-color($exo-amber, 800);
+      .mat-icon, .mat-button, .mat-button:hover:not([disabled]) {
+        color: mat-color($exo-amber, 700);
+      }
+    }
+    &.danger{
+      background-color: mat-color($exo-red, 500, 0.16);
+      color: mat-color($exo-red, 700);
+      .mat-icon, .mat-button, .mat-button:hover:not([disabled]) {
+        color: mat-color($exo-red, 500);
+      }
+    }
+  }
+
+}

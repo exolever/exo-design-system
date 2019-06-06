@@ -7,7 +7,7 @@
     flex-direction: row;
     display: flex;
     max-width: 600px;
-    @media #{map-get($mediaqueries, 'xs')} {
+    @media #{map-get($mediaqueries, 'lt-sm')} {
       flex-direction: column;
       place-content: flex-start;
       align-items: flex-start;
@@ -27,6 +27,13 @@
       flex: 0 0 auto;
       @media #{map-get($mediaqueries, 'lt-sm')} {
         align-self: flex-end;
+        margin-top: map-get($spaceMeasures, 'xxs');
+      }
+      &.close {
+        display: none;
+        @media #{map-get($mediaqueries, 'lt-sm')} {
+          display: block;
+        }
       }
     }
     .alert__close-icon {
@@ -36,14 +43,6 @@
       }
       @media #{map-get($mediaqueries, 'lt-sm')} {
         align-self: flex-start;
-      }
-    }
-
-    .alert__close-button {
-      display: none;
-      @media #{map-get($mediaqueries, 'lt-sm')} {
-        align-self: flex-end;
-        display: block;
       }
     }
 

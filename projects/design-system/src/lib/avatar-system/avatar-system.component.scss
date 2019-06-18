@@ -21,7 +21,7 @@
         margin: 0 0 0 #{map-get($spaceMeasures, 'xxs')};
       }
       &--name {
-        display: inline-block;
+        display: inline;
       }
       .connected {
         position: relative;

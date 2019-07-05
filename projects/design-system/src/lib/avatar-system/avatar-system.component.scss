@@ -15,6 +15,7 @@
     }
     .avatar-system__data {
       &.text-truncate {
+        display: grid;
         max-width: 100%;
       }
       &--name, &--description {

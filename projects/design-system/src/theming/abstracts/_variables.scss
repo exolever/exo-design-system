@@ -1,4 +1,4 @@
-$static-root: '/static/';
+$static-root: '/';
 
 // Component Measures
 $componentMeasure: (
@@ -24,4 +24,33 @@ $spaceMeasures: (
   'sm': 24px,
   'lg': 48px,
   'xl': 72px,
+);
+
+//Breakpoints
+$breakpoints: (
+  'xxs': 479px,
+  'xs': 599px,
+  'sm': 959px,
+  'md': 1279px,
+  'lg': 1919px,
+);
+
+//Mediaqueries
+$mediaqueries: (
+  xxs: 'screen and (max-width: #{map-get($breakpoints, 'xxs')} )',
+  xs: 'screen and (min-width: #{map-get($breakpoints, 'xxs') + 1}) and (max-width: #{map-get($breakpoints, 'xs')})',
+  sm: 'screen and (min-width: #{map-get($breakpoints, 'xs') + 1}) and (max-width: #{map-get($breakpoints, 'sm')})',
+  md: 'screen and (min-width: #{map-get($breakpoints, 'sm') + 1}) and (max-width: #{map-get($breakpoints, 'md')})',
+  lg: 'screen and (min-width: #{map-get($breakpoints, 'md') + 1}) and (max-width: #{map-get($breakpoints, 'lg')})',
+  xl: 'screen and (min-width: #{map-get($breakpoints, 'lg') + 1}) and (max-width: #{map-get($breakpoints, 'xl')})',
+  lt-xs: 'screen and (max-width: #{map-get($breakpoints, 'xxs')})',
+  lt-sm: 'screen and (max-width: #{map-get($breakpoints, 'xs')})',
+  lt-md: 'screen and (max-width: #{map-get($breakpoints, 'sm')})',
+  lt-lg: 'screen and (max-width: #{map-get($breakpoints, 'md')})',
+  lt-xl: 'screen and (max-width: #{map-get($breakpoints, 'lg')})',
+  gt-xxs: 'screen and (min-width: #{map-get($breakpoints, 'xxs') + 1})',
+  gt-xs: 'screen and (min-width: #{map-get($breakpoints, 'xs') + 1})',
+  gt-sm: 'screen and (min-width:  #{map-get($breakpoints, 'sm') + 1})',
+  gt-md: 'screen and (min-width: #{map-get($breakpoints, 'md') + 1})',
+  gt-lg: 'screen and (min-width: #{map-get($breakpoints, 'lg') + 1})',
 );

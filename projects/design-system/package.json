@@ -1,6 +1,6 @@
 {
   "name": "@openexo/design-system",
-  "version": "0.3.25-alpha",
+  "version": "0.4.4-alpha",
   "description": "OpenExO design system",
   "keywords": [
     "material",
@@ -10,7 +10,7 @@
     "components",
     "openexo"
   ],
-  "author": "OpenExo",
+  "author": "OpenExO",
   "license": "MIT",
   "homepage": "https://exolever.github.io/exo-design-system",
   "repository": "https://github.com/exolever/exo-design-system",

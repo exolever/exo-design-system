@@ -6,6 +6,14 @@ import { Component } from '@angular/core';
 })
 export class ExamplesComponent {
 
+  certifications5 = [
+    { name: 'ExO Coach', code: 'X' },
+    { name: 'ExO Ambassador', code: 'K' },
+    { name: 'ExO Workshop Trainer', code: 'T' },
+    { name: 'ExO Align Trainer', code: 'I' },
+    { name: 'ExO Foundation', code: 'EF' },
+  ];
+
   certifications4 = [
     { name: 'ExO Coach', code: 'X' },
     { name: 'ExO Ambassador', code: 'K' },

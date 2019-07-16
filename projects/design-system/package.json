@@ -1,6 +1,6 @@
 {
   "name": "@openexo/design-system",
-  "version": "0.4.4-alpha",
+  "version": "0.4.5-alpha",
   "description": "OpenExO design system",
   "keywords": [
     "material",
@@ -19,9 +19,9 @@
     "tslib": "^1.9.3"
   },
   "peerDependencies": {
-    "@angular/cdk": "^7.0.0",
-    "@angular/common": "^7.0.0",
-    "@angular/core": "^7.0.0",
-    "@angular/material": "^7.0.0"
+    "@angular/cdk": "^8.1.0",
+    "@angular/common": "^8.1.0",
+    "@angular/core": "^8.1.0",
+    "@angular/material": "^8.1.0"
   }
 }

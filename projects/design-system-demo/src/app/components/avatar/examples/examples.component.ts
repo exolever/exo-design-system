@@ -11,7 +11,7 @@ export class ExamplesComponent {
     { name: 'ExO Ambassador', code: 'K' },
     { name: 'ExO Workshop Trainer', code: 'T' },
     { name: 'ExO Align Trainer', code: 'I' },
-    { name: 'ExO Foundation', code: 'EF' },
+    { name: 'ExO Advisor', code: 'C' },
   ];
 
   certifications4 = [
@@ -21,18 +21,4 @@ export class ExamplesComponent {
     { name: 'ExO Align Trainer', code: 'I' },
   ];
 
-  certifications3 = [
-    { name: 'ExO Coach', code: 'X' },
-    { name: 'ExO Ambassador', code: 'K' },
-    { name: 'ExO Workshop Trainer', code: 'T' },
-  ];
-
-  certifications2 = [
-    { name: 'ExO Coach', code: 'X' },
-    { name: 'ExO Ambassador', code: 'K' },
-  ];
-
-  certifications1 = [
-    { name: 'ExO Coach', code: 'X' },
-  ];
 }

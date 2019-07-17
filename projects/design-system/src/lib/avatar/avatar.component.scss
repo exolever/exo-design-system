@@ -38,7 +38,10 @@
     .X circle { // For Coach
       stroke: map_get($exo-blue, 800);
     }
-    $max-certifications: 4; // Until now only 4 certifications are allowed
+    .C circle {
+      stroke: map_get($exo-grey, 900);
+    }
+    $max-certifications: 5;
     @for $i from 0 through $max-certifications {
       &.number-certificates-#{$i}{
         @include draw-certificates($i, $sizeCircumference);

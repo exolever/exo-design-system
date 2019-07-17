@@ -27,6 +27,7 @@ enum CertificateEnum {
   Trainer = 'T',
   Ambassador = 'K',
   AlignTrainer = 'I',
+  Foundation = 'C',
 }
 
 @Component({
@@ -103,8 +104,9 @@ export class ExOAvatarComponent {
   onClick = new EventEmitter<boolean>();
 
   sizeAvatar = SizeAvatarEnum;
+  // If we increase a new certificate, we need add the new size of stroke.
   valuesCertification = [
-    100, 47, 30, 22,
+    100, 47, 30, 22, 18,
   ];
 
   /**

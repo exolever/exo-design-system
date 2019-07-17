@@ -50,6 +50,7 @@ A `Avatar` is a piece of UI that rendered an image with the possibility to rende
 |                             | Trainer = 'T',                      |
 |                             | Ambassador = 'K',                   |
 |                             | AlignTrainer = 'I',                 |
+|                             | Foundation = 'C',                 |
 |  SizeAvatarEnum             | xs (24px) |
 |                             | sm (48px) Default value |
 |                             | lg (96px) |

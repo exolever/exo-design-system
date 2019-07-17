@@ -3,10 +3,10 @@
   <div class="avatar-system__data" [ngClass]="[direction, systemTruncate] ">
     <p class="avatar-system__data--name"
       [ngClass]="{
-      'title': avatar.size === 'xl',
-      'subheading-2': avatar.size === 'lg',
-      'body-2': avatar.size === 'sm',
-      'caption-2': avatar.size === 'xs',
+      'title': avatar?.size === 'xl',
+      'subheading-2': avatar?.size === 'lg',
+      'body-2': avatar?.size === 'sm',
+      'caption-2': avatar?.size === 'xs',
       'text-truncate': truncateName === true,
       'connected': connected === true }"
       [matTooltip]="truncateName === true ? name : undefined"
@@ -15,8 +15,8 @@
     </p>
     <p class="foreground-secondary-text avatar-system__data--description"
        [ngClass]="{
-      'subheading-2': avatar.size === 'xl',
-      'caption-1': avatar.size !== 'xl',
+      'subheading-2': avatar?.size === 'xl',
+      'caption-1': avatar?.size !== 'xl',
       'text-truncate': truncateDescription === true }"
        [matTooltip]="truncateDescription === true ? description : undefined "
     >

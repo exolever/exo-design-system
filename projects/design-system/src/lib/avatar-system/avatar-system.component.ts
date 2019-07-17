@@ -27,7 +27,7 @@ export class ExoAvatarSystemComponent {
   @Input()
   direction = ExOAvatarSystemDirectionEnum.row;
 
-  @ContentChild('avatar', { static: false })
+  @ContentChild(ExOAvatarComponent, { static: false })
   avatar !: ExOAvatarComponent;
 
   @Input()

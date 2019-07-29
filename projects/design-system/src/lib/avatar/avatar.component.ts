@@ -24,9 +24,8 @@ interface Certificate {
 
 enum CertificateEnum {
   Coach = 'X',
-  Trainer = 'T',
+  Trainer = 'TR',
   Ambassador = 'K',
-  AlignTrainer = 'I',
   Foundation = 'C',
 }
 

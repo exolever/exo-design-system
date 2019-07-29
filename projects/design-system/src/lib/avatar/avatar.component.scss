@@ -29,7 +29,7 @@
     circle {
       stroke-linecap: round;
     }
-    .T circle, .I circle { // For Trainer, Align Trainer
+    .TR circle { // For Trainer
       stroke: map_get($exo-teal, A100);
     }
     .K circle { // For Ambassador
@@ -38,7 +38,7 @@
     .X circle { // For Coach
       stroke: map_get($exo-blue, 800);
     }
-    .C circle {
+    .C circle { // For Fundations
       stroke: map_get($exo-grey, 900);
     }
     $max-certifications: 5;

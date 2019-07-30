@@ -26,7 +26,7 @@ enum CertificateEnum {
   Coach = 'X',
   Trainer = 'TR',
   Ambassador = 'K',
-  Foundation = 'C',
+  Foundation = 'EF',
 }
 
 @Component({

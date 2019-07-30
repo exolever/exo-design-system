@@ -10,7 +10,7 @@ export class ExamplesComponent {
     { name: 'ExO Coach', code: 'X' },
     { name: 'ExO Ambassador', code: 'K' },
     { name: 'ExO Trainer', code: 'TR' },
-    { name: 'ExO Advisor', code: 'C' },
+    { name: 'ExO Fundations', code: 'EF' },
   ];
 
   certifications4 = [

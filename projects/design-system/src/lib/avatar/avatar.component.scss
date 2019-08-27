@@ -47,7 +47,7 @@
     .BA circle { // For Board Advisor
       stroke: map_get($exo-purple, 500);
     }
-    $max-certifications: 5;
+    $max-certifications: 6;
     @for $i from 0 through $max-certifications {
       &.number-certificates-#{$i}{
         @include draw-certificates($i, $sizeCircumference);

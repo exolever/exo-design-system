@@ -25,6 +25,7 @@ export class ExamplesComponent {
     { name: 'ExO Trainer', code: 'TR' },
     { name: 'ExO Board Advisor', code: 'BA' },
     { name: 'ExO Consultants', code: 'EC' },
+    { name: 'ExO Foundations', code: 'EF' },
   ];
 
 }

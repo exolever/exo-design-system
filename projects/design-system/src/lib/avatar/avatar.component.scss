@@ -1,8 +1,8 @@
 @import '../../theming/abstracts/variables';
 @import '../../theming/themes/colors';
-
+$max-certifications: 6;
 @mixin draw-certificates($current-certifications, $sizeCircumference) {
-  $init-degree: 5;
+  $init-degree: $max-certifications;
   @for $i from 0 through $current-certifications {
     &.certificate-#{$i}{
       @if($i == 0) {
@@ -47,7 +47,6 @@
     .BA circle { // For Board Advisor
       stroke: map_get($exo-purple, 500);
     }
-    $max-certifications: 6;
     @for $i from 0 through $max-certifications {
       &.number-certificates-#{$i}{
         @include draw-certificates($i, $sizeCircumference);

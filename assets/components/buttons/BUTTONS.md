@@ -24,6 +24,13 @@
 
 - Copywriting for buttons can’t have more than 15 text characters.
 
+- You can use the class button-spinner to show a loading over the button.
+```html
+<button [class.button-spinner]="loading" [disabled]="loading" mat-flat-button color="primary">
+    Loading
+</button>
+```
+
 ### Primary Button with Icon
 
 ![primary_button_with_icon](assets/components/buttons/img/06.png)

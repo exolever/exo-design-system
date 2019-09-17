@@ -24,10 +24,11 @@ interface Certificate {
 
 enum CertificateEnum {
   Coach = 'X',
-  Trainer = 'T',
+  Trainer = 'TR',
   Ambassador = 'K',
-  AlignTrainer = 'I',
-  Foundation = 'C',
+  Foundation = 'EF',
+  Consultants = 'EC',
+  BoardAdvisor = 'BA',
 }
 
 @Component({
@@ -106,7 +107,7 @@ export class ExOAvatarComponent {
   sizeAvatar = SizeAvatarEnum;
   // If we increase a new certificate, we need add the new size of stroke.
   valuesCertification = [
-    100, 47, 30, 22, 18,
+    100, 47, 30, 22, 18, 15,
   ];
 
   /**

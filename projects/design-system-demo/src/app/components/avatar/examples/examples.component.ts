@@ -9,16 +9,23 @@ export class ExamplesComponent {
   certifications5 = [
     { name: 'ExO Coach', code: 'X' },
     { name: 'ExO Ambassador', code: 'K' },
-    { name: 'ExO Workshop Trainer', code: 'T' },
-    { name: 'ExO Align Trainer', code: 'I' },
-    { name: 'ExO Advisor', code: 'C' },
+    { name: 'ExO Trainer', code: 'TR' },
+    { name: 'ExO Fundations', code: 'EF' },
   ];
 
   certifications4 = [
     { name: 'ExO Coach', code: 'X' },
     { name: 'ExO Ambassador', code: 'K' },
-    { name: 'ExO Workshop Trainer', code: 'T' },
-    { name: 'ExO Align Trainer', code: 'I' },
+    { name: 'ExO Trainer', code: 'TR' },
+  ];
+
+  certifications6 = [
+    { name: 'ExO Coach', code: 'X' },
+    { name: 'ExO Ambassador', code: 'K' },
+    { name: 'ExO Trainer', code: 'TR' },
+    { name: 'ExO Board Advisor', code: 'BA' },
+    { name: 'ExO Consultants', code: 'EC' },
+    { name: 'ExO Foundations', code: 'EF' },
   ];
 
 }

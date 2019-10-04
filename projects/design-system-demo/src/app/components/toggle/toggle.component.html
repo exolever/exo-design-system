@@ -1,0 +1,11 @@
+<nav mat-tab-nav-bar class="nav__tabs">
+  <a mat-tab-link
+     *ngFor="let link of navLinks"
+     [routerLink]="link.href"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive">
+    {{link.copy}}
+  </a>
+</nav>
+
+<router-outlet></router-outlet>

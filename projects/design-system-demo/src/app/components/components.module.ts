@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ComponentsComponent } from './components.component';
 import { MainLayoutModule } from '../shared/main-layout/main-layout.module';
-import { ExoButtonModule, ExOAvatarModule, ExoAlertModule } from '@openexo/design-system';
+import { ExoButtonModule, ExOAvatarModule, ExoAlertModule, ExoToggleModule } from '@openexo/design-system';
 
 const ROUTES: Routes = [
   {
@@ -14,6 +14,7 @@ const ROUTES: Routes = [
       { path: 'buttons', loadChildren: './buttons/buttons.module#ButtonsModule' },
       { path: 'avatars', loadChildren: './avatar/avatar.module#AvatarModule' },
       { path: 'alerts', loadChildren: './alerts/alerts.module#AlertsModule' },
+      { path: 'toggle', loadChildren: './toggle/toggle.module#ToggleModule' },
     ],
   },
 ];
@@ -26,6 +27,7 @@ const ROUTES: Routes = [
     ExoButtonModule,
     ExOAvatarModule,
     ExoAlertModule,
+    ExoToggleModule
   ],
   declarations: [ComponentsComponent],
   exports: [],

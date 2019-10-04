@@ -1,0 +1,11 @@
+<div
+     class="notification-item"
+>
+  <p class="body-2 notification-name push-none">{{label}}</p>
+  <mat-slide-toggle
+    class="slide-toggle"
+    [checked]="value"
+    (change)="onAction($event)"
+  ></mat-slide-toggle>
+</div>
+

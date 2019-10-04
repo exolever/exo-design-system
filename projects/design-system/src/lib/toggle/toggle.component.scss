@@ -1,0 +1,19 @@
+@import '../../theming/abstracts/variables';
+@import '../../theming/themes/colors';
+
+.notification-item {
+  padding: map-get($spaceMeasures, 'sm');
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  // CSS to change Default/'Accent' color.
+  ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: map_get($exo-blue, 700);
+  }
+
+  ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: map_get($exo-blue, 500);
+  }
+}

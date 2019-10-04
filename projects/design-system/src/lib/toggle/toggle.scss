@@ -1,0 +1,82 @@
+@import '../../theming/abstracts/variables';
+@import '../../theming/themes/colors';
+
+@mixin _exo-button {
+
+  button.mat-button, button.mat-raised-button, button.mat-stroked-button, button.mat-flat-button,
+  button.mat-icon-button, button.mat-fab, button.mat-mini-fab,
+  a.mat-button, a.mat-flat-button, a.mat-icon-button
+  {
+    &:not(.mat-fab):not(.mat-mini-fab):not(.mat-icon-button) {
+      padding: 0 map-get($spaceMeasures, 'xs');
+      min-width: map-get($componentMeasure, '2x');
+      max-width: map-get($componentMeasure, '6x');
+      line-height: map-get($componentMeasure, '0.5x');
+      font-size: map-get($componentMeasure, '0.3x');
+      mat-icon.mat-icon {
+        margin-right: map-get($spaceMeasures, 'xxs');
+      }
+      height: map-get($componentMeasure, '1x');
+      &.mat-button {
+        height: map-get($componentMeasure, '0.5x');
+      }
+    }
+    border-radius: map-get($componentMeasure, '1x');
+    vertical-align: bottom;
+    text-transform: uppercase;
+
+    mat-icon.mat-icon {
+      color:inherit;
+    }
+  }
+
+  a.mat-button, a.mat-flat-button, a.mat-icon-button {
+    line-height: map-get($componentMeasure, '1x') !important;
+    &.mat-button {
+      line-height: map-get($componentMeasure, '0.5x') !important;
+    }
+  }
+
+  button.mat-button, a.mat-button {
+    .mat-button-focus-overlay {
+      background-color: transparent !important;
+    }
+
+    &:hover:not([disabled]) {
+      &[color='primary'], &[ng-reflect-color='primary'] {
+        color: map-get($exo-purple, 700);
+      }
+    }
+  }
+
+  button.mat-flat-button:not([disabled]), a.mat-flat-button:not([disabled]) {
+    &:hover {
+      &[color="primary"], &.mat-primary {
+        background-color: map-get($exo-purple, 700);
+      }
+      &[color="accent"], &.mat-accent {
+        background-color: map-get($exo-indigo, '0.16');
+      }
+    }
+  }
+
+  button.mat-icon-button:not([disabled]) {
+    width: map-get($componentMeasure, '1x');
+    height: map-get($componentMeasure, '1x');
+    &[color="primary"], &.mat-primary {
+      color: white;
+      background-color: map-get($exo-purple, 500);
+      &:hover {
+        background-color: map-get($exo-purple, 700);
+      }
+    }
+
+    &[color="accent"], &.mat-accent {
+      color: map-get($exo-purple, 500);
+      background-color: map-get($exo-indigo, '0.08');
+      &:hover {
+        background-color: map-get($exo-indigo, '0.16');
+      }
+    }
+  }
+}

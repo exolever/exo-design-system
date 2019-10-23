@@ -1,0 +1,39 @@
+@import '../../theming';
+
+.pretty-label {
+  text-transform: capitalize;
+  padding: 0 map-get($spaceMeasures, 'xxs');
+  border-radius: 6px;
+  color:white;
+  height: map-get($componentMeasure, 0.5);
+  width: auto;
+  display: inline-block;
+  &.green {
+    background-color: map_get($exo-teal, A400);
+  }
+  &.red {
+    background-color: map_get($exo-red, 500);
+  }
+  &.orange {
+    background-color: map_get($exo-amber, 700);
+  }
+  &.dark-blue {
+    background-color: map_get($exo-indigo, 900);
+  }
+  &.grey {
+    background-color: map_get($exo-grey, 900);
+  }
+  &.blue {
+    background-color: map_get($exo-blue, 500);
+  }
+  &.purple {
+    background-color: mat-color($exo-purple, 500);
+  }
+}
+
+.new-label {
+  background-color: map_get($exo-blue, A400);
+  border-radius: 1em;
+  color: white;
+  padding: 2px map-get($spaceMeasures, 'xxs');
+}

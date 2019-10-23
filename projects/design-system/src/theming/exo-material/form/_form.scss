@@ -1,0 +1,94 @@
+@import '../../theming';
+
+.mat-error{
+  @include mat-typography-level-to-styles($exo-typography, caption);
+}
+
+.datepicker-container.has-error .md2-datepicker-input{
+  border-color: mat-color($exo-red, A200);
+  color: mat-color($exo-red, A200);
+  .md2-datepicker-placeholder {
+    color: mat-color($exo-red, A200);
+  }
+}
+
+.datepicker-container.has-error md2-datepicker:focus:not(.md2-datepicker-disabled) .md2-datepicker-input {
+  border-color: mat-color($exo-red, A200) !important;
+  color: mat-color($exo-red, A200) !important;
+}
+
+mat-form-field.ng-invalid.has-error {
+  .mat-input-underline{
+    background-color: mat-color($exo-red, A200) !important;
+  }
+}
+
+mat-form-field.ng-invalid.has-error .mat-focused {
+  color: mat-color($exo-red, A200);
+}
+
+mat-form-field.ng-invalid.has-error .mat-input-ripple {
+  background-color: mat-color($exo-red, A200);
+}
+
+// Margin in container of field
+mat-form-field.mat-form-field,
+.datepicker-container,
+.slide-toggle-container {
+  margin-bottom: map-get($spaceMeasures, 'sm');
+}
+
+@media #{map-get($mediaqueries, 'lt-sm')}{
+  // Prevent hint and error overlap other inputs, etc
+  mat-form-field .mat-form-field {
+    &-underline {
+      position: static;
+    }
+    &-subscript-wrapper {
+      position: static;
+    }
+  }
+}
+
+// Fix problem with multiline in md-hint / md-errors
+.mat-input-subscript-wrapper{
+  position: relative !important;
+  margin-top: 10px;
+  font-size: 1em;
+}
+.mat-input-underline{
+  position: relative !important;
+  bottom: 0;
+}
+
+.mat-input-wrapper, .datepicker-wrapper {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+mat-form-field{
+  .mat-input-placeholder:not(.not-transform-text)::first-letter,
+  .mat-hint:not(.not-transform-text)::first-letter,
+  .md2-datepicker-placeholder:not(.not-transform-text)::first-letter
+  .mat-input-element:not(.not-transform-text)::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.mat-form-field{
+  line-height: 1.5;
+}
+
+mat-form-field.input-short {
+  width: 100%;
+  @media #{map-get($mediaqueries, 'gt-sm')}{
+    max-width: 360px;
+  }
+}
+
+mat-form-field.input-large {
+  width: 100%;
+  @media #{map-get($mediaqueries, 'gt-sm')}{
+    max-width: 720px;
+  }
+}
+

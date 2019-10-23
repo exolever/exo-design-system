@@ -1,0 +1,7 @@
+@import '../../../theming';
+@mixin exo-icon-platform-theme($theme) {
+  $foreground: map-get($theme, foreground);
+  .mat-icon{
+    color: mat-color($foreground, 'icon');
+  }
+}

@@ -1,0 +1,6 @@
+@import '../../theming';
+.mat-hint {
+  div.error {
+    color: mat-color($exo-red, A200);
+  }
+}

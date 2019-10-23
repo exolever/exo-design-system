@@ -1,0 +1,42 @@
+@import '../../theming';
+
+@mixin exo-menu-theme($theme) {
+  // config
+  $primary: map-get($theme, primary);
+  $foreground: map-get($theme, foreground);
+  $menu-panel-radius: 6px;
+
+  .mat-menu-panel.exo-platform-light-theme,
+  .mat-menu-panel.exo-platform-dark-theme {
+    border-radius: $menu-panel-radius;
+
+    p {
+      margin: 0 0 map-get($spaceMeasures, 'xxs') 0;
+      padding: map-get($spaceMeasures, 'xs');
+      border-bottom:  1px solid rgba(70, 70, 75, 0.16);
+    }
+
+    button, p {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: mat-color($foreground, secondary-text);
+    }
+
+    .mat-menu-item {
+
+      &.menu-title {
+        color: mat-color($foreground, secondary-text);
+      }
+
+      &.active {
+        color: mat-color($primary);
+
+        .mat-icon{
+          color: mat-color($primary);
+        }
+
+      }
+    }
+  }
+}

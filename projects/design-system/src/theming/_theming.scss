@@ -2,7 +2,7 @@
 @import 'abstracts/abstracts';
 @import 'themes/themes';
 @import 'components/components';
-@import 'components/toggle';
+@import 'exo-material/toggle/toggle';
 
 @include mat-core($exo-typography);
 @include angular-material-theme($light-theme);

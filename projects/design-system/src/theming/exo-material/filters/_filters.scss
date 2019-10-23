@@ -1,0 +1,11 @@
+@import '../../theming';
+
+body {
+  .filter-title {
+    padding: map-get($spaceMeasures, 'sm') map-get($spaceMeasures, 'sm') 0;
+    color: map-get($primary);
+  }
+  mat-card.filters {
+    padding: 0;
+  }
+}

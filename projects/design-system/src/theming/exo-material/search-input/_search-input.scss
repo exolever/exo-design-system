@@ -1,0 +1,30 @@
+@import '../../theming';
+
+mat-form-field.search {
+  width: 100%;
+  margin: 0 0 map-get($spaceMeasures, 'sm');
+
+  .mat-form-field-wrapper {
+    padding-bottom: 0;
+    &:hover {
+      .mat-form-field-underline {
+        opacity: 1;
+        transition: opacity ease-in-out .3s;
+      }
+    }
+    mat-icon {
+      color: mat-color($exo-grey, 900, 0.64);
+      font-size: 18px;
+      margin-right: map-get($spaceMeasures, 'xs');
+    }
+    border-radius: map-get($spaceMeasures, 'xxs') map-get($spaceMeasures, 'xxs') 0 0;
+    overflow: hidden;
+    .mat-form-field-flex {
+      padding: .75em 1.25em;
+    }
+    .mat-form-field-underline {
+      opacity: 0;
+      transition: opacity ease-in-out .3s;
+    }
+  }
+}

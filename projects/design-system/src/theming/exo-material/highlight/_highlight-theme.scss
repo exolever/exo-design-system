@@ -1,0 +1,17 @@
+@import '../../theming';
+@mixin exo-highlight-theme($theme) {
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+  .highlight-edition{
+    .hover:not(.edit-icon):not(.insert-edition-icon){
+      background-color: mat-color($background, 'exo-highlight-hover-background-color');
+      color: mat-color($background, 'exo-highlight-hover-color');
+      mat-icon{
+        color: mat-color($foreground, 'exo-highlight-icon');
+      }
+    }
+    .edit-icon:not(.mat-primary):not(.mat-accent):not(.mat-success):not(.foreground-secondary-text) {
+      color: mat-color($foreground, 'exo-highlight-icon') ;
+    }
+  }
+}

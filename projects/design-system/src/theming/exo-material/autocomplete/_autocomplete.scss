@@ -1,0 +1,14 @@
+.avatar-autocomplete {
+  margin-right: 10px;
+  display: block;
+  max-width: 24px;
+  max-height: 24px;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+}
+.mat-autocomplete-panel{
+  mat-option::first-letter{
+      text-transform: uppercase;
+  }
+}

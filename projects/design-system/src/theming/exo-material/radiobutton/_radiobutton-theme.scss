@@ -1,0 +1,7 @@
+@mixin exo-radiobutton-theme($theme) {
+  .mat-radio-button.mat-primary .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple),
+  .mat-radio-button.mat-primary.mat-radio-checked .mat-radio-persistent-ripple,
+  .mat-radio-button.mat-primary:active .mat-radio-persistent-ripple {
+    background-color: transparent;
+  }
+}

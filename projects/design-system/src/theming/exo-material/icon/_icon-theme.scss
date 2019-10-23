@@ -1,0 +1,26 @@
+@import '../../theming';
+
+@mixin exo-icon-theme($theme) {
+  $foreground: map-get($theme, foreground);
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  .mat-icon.mat-list-avatar{
+    &.mat-primary{
+      background-color: mat-color($primary, 0.26);
+    }
+    &.mat-accent{
+      background-color: mat-color($accent, 0.26);
+    }
+    &.mat-success{
+      $color: mat-color($exo-teal, A400);
+      background-color:  rgba($color, 0.26) !important;
+      color: $color !important;
+    }
+    &:not(.mat-primary):not(.mat-accent):not(.mat-success) {
+      $base-color: mat-color($foreground, 'icon');
+      background-color: rgba($base-color, 0.26);
+    }
+  }
+
+}

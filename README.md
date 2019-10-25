@@ -9,9 +9,9 @@ Our goal is create a library for building reusable components to build faster, m
 #### Available features
 | Feature          | Notes                                                  | Docs  |
 |------------------|--------------------------------------------------------|------ |
-| Button           |                                                        | Docs  |
-| Button-toggle    |                                                        | Docs  |
-| toolbar          |                                                        | Docs  |
+| Button           |                                                        | [Docs](https://exolever.github.io/exo-design-system/components/buttons) |
+| Avatars          |                                                        | [Docs](https://exolever.github.io/exo-design-system/components/avatars)  |
+| Alerts           |                                                        | [Docs](https://exolever.github.io/exo-design-system/components/alerts)  |
 
 #### Contributing
 If you'd like to contribute, you can create an [issue](https://github.com/exolever/exo-design-system/issues) or contribute with a [Pull request](https://github.com/exolever/exo-design-system/pulls)

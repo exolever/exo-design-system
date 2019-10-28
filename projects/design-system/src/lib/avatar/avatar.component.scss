@@ -91,7 +91,7 @@ $max-certifications: 6;
     }
   }
 
-  .material-icons {
+  .material-icons.icon {
     opacity: .64;
     &-size-xs {
       font-size: map-get($componentMeasure, '0.5x');

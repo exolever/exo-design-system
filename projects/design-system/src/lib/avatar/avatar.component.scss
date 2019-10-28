@@ -68,20 +68,20 @@ $max-certifications: 6;
 
   .exo-image {
     &-xs {
-      width: calc(0.5 * #{map-get($componentMeasure, '1x')});
-      height: calc(0.5 * #{map-get($componentMeasure, '1x')});
+      width: map-get($componentMeasure, '0.5x');
+      height: map-get($componentMeasure, '0.5x');
     }
     &-sm {
-      width: #{map-get($componentMeasure, '1x')};
-      height: #{map-get($componentMeasure, '1x')};
+      width: map-get($componentMeasure, '1x');
+      height: map-get($componentMeasure, '1x');
     }
     &-lg {
-      width: calc(2 * #{map-get($componentMeasure, '1x')});
-      height: calc(2 * #{map-get($componentMeasure, '1x')});
+      width: map-get($componentMeasure, '2x');
+      height: map-get($componentMeasure, '2x');
     }
     &-xl {
-      width: calc(3 * #{map-get($componentMeasure, '1x')});
-      height: calc(3 * #{map-get($componentMeasure, '1x')});
+      width: map-get($componentMeasure, '3x');
+      height: map-get($componentMeasure, '3x');
     }
     &-shape-circle {
       -webkit-border-radius: 50%;
@@ -94,16 +94,16 @@ $max-certifications: 6;
   .icon {
     opacity: .64;
     &-size-xs {
-      font-size: calc(0.5 * #{map-get($componentMeasure, '1x')});
+      font-size: map-get($componentMeasure, '0.5x');
     }
     &-size-sm {
-      font-size: #{map-get($componentMeasure, '1x')};
+      font-size: map-get($componentMeasure, '1x');
     }
     &-size-lg {
-      font-size: calc(2 * #{map-get($componentMeasure, '1x')});
+      font-size: map-get($componentMeasure, '2x');
     }
     &-size-xl {
-      font-size: calc(3 * #{map-get($componentMeasure, '1x')});
+      font-size: map-get($componentMeasure, '3x');
     }
   }
 }

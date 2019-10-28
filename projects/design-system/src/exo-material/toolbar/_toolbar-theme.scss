@@ -1,0 +1,29 @@
+@import '../../theming/abstracts/variables';
+@import '../../theming/themes/colors';
+@import '../../theming/theming';
+
+@mixin exo-toolbar-theme($theme) {
+  // config
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+  .mat-toolbar {
+    padding-left: map-get($spaceMeasures, 'lg');
+    padding-right: map-get($spaceMeasures, 'lg');
+    font-family: $font-family;
+    background-color: mat-color($background, 'background');
+    span {
+      color: mat-color($foreground, 'base');
+      &.logotype {
+        font-size: map-get($spaceMeasures, 'md');
+        font-weight: 500;
+        letter-spacing: .8px;
+      }
+    }
+  }
+  @media #{map-get($mediaqueries, 'lt-lg')}{
+    .mat-toolbar {
+      padding-left: map-get($spaceMeasures, 'sm');
+      padding-right: map-get($spaceMeasures, 'sm');
+    }
+  }
+}

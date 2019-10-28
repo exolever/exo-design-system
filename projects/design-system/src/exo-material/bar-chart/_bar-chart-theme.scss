@@ -1,0 +1,41 @@
+@import '../../theming/theming';
+@mixin exo-bar-chart-theme($theme) {
+  $primary: map-get($theme, primary);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+
+  .disabled{
+    .mat-progress-bar-buffer{
+      background-color: mat-color($background, 'exo-progress-bar-buffer');
+    }
+  }
+
+  .bar-chart{
+    .mat-progress-bar-fill::after{
+      background-color: mat-color($background, 'exo-progress-bar-fill');
+    }
+    &.high-level{
+      .label{
+        color: mat-color($primary);
+      }
+      .mat-progress-bar-fill::after{
+        background-color: mat-color($primary);
+      }
+    }
+    &.medium-level{
+      .label{
+        color: mat-color($foreground, 'text');
+      }
+    }
+    &.low-level{
+      .label{
+        color: mat-color($foreground, 'secondary-text');
+      }
+    }
+    .mat-progress-bar{
+      .mat-progress-bar-buffer{
+        background-color: mat-color($background, 'exo-progress-bar-buffer');
+      }
+    }
+  }
+}

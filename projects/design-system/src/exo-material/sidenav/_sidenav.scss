@@ -1,0 +1,50 @@
+@import '../../theming/theming';
+
+@mixin exo-sidenav-theme($theme) {
+  $sidenav-width: 280px;
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+  .sidenav-container {
+    height: 100%;
+    .sidenav, .mat-sidenav, mat-sidenav {
+      padding: 0;
+      box-shadow: none;
+      background-color: mat-color($background, 'background');
+      width: $sidenav-width;
+      * {
+        cursor: pointer;
+      }
+      h3.active-sidenav-link {
+        color: mat-color($exo-amber, 500);
+      }
+      p.active-sidenav-link {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+      hr {
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, .08);
+      }
+      // reset block level elements text
+      h1, h2, h3, p {
+        margin-left: map-get($spaceMeasures, 'lg');
+        &:not(.team-communication-link) {
+          margin-right: map-get($spaceMeasures, 'lg');
+        }
+      }
+      h1, h2, h3, hr {
+        margin-top: map-get($spaceMeasures, 'md');
+        margin-bottom: map-get($spaceMeasures, 'md');
+      }
+      p {
+        margin-top: map-get($spaceMeasures, 'sm');
+      }
+      &.mobile {
+        h1, h2, h3, p {
+          margin-left: map-get($spaceMeasures, 'sm');
+          margin-right: map-get($spaceMeasures, 'sm');
+        }
+      }
+    }
+  }
+}

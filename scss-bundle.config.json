@@ -14,5 +14,9 @@
   {
     "entry": "./projects/design-system/src/theming/abstracts/_variables.scss",
     "dest": "dist/design-system/_variables.scss"
+  },
+  {
+    "entry": "./projects/design-system/src/exo-material/_index.scss",
+    "dest": "dist/design-system/_exo-material.scss"
   }
 ]

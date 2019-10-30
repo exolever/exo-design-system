@@ -40,19 +40,6 @@ enum CertificateEnum {
 export class ExOAvatarComponent {
 
   /**
-   * Number that set the maximum of shown avatars
-   */
-  @Input()
-  maxSetShowed: number;
-
-  /**
-   * Custom array to load.
-   * You need to pass a tuple [{src, tooltip}] in array
-   */
-  @Input()
-  imageSet: {src: string, tooltip: string}[];
-
-  /**
    * Custom src to load.
    * If you send the user, will take from the user.profilePictures array with
    * the size defined on the input size.

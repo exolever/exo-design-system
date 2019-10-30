@@ -1,9 +1,0 @@
-@import '../../theming/themes/colors';
-
-.exo-toggle.mat-checked:not(.mat-disabled) ::ng-deep.mat-slide-toggle-thumb {
-  background-color: map_get($exo-blue, 700);
-}
-
-.exo-toggle.mat-checked:not(.mat-disabled) ::ng-deep.mat-slide-toggle-bar {
-  background-color: map_get($exo-blue, 500);
-}

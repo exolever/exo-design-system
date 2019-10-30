@@ -1,17 +1,15 @@
-<div *ngIf="!imageSet">
-  <figure *ngIf="imageUrl; else icon"
-          (click)="click()"
-          class="avatar__figure"
+<figure *ngIf="imageUrl; else icon"
+        (click)="click()"
+        class="avatar__figure"
+>
+  <img [src]="imageUrl"
+       [matTooltip]="imageTooltip"
+       [matTooltipPosition]="tooltipPosition"
+       [ngStyle]="{width: customizedSize?.width, height: customizedSize?.height}"
+       [ngClass]="['exo-image', 'exo-image-' + size, 'exo-image-shape-' + shape]"
+       [alt]="imageAlt"
   >
-    <img [src]="imageUrl"
-         [matTooltip]="imageTooltip"
-         [matTooltipPosition]="tooltipPosition"
-         [ngStyle]="{width: customizedSize?.width, height: customizedSize?.height}"
-         [ngClass]="['exo-image', 'exo-image-' + size, 'exo-image-shape-' + shape]"
-         [alt]="imageAlt"
-    >
-  </figure>
-</div>
+</figure>
 <ng-template #icon>
   <div>
     <mat-icon [ngClass]="['icon', 'icon-size-' + size]"
@@ -44,25 +42,3 @@
     ></mat-progress-spinner>
   </div>
 </ng-template>
-
-<div *ngIf="imageSet" class="images-set">
-  <div class="avatars">
-      <span *ngIf="maxSetShowed < imageSet.length" class="avatar remain">
-        <span class="number">
-        {{imageSet.length - maxSetShowed}}+
-        </span>
-      </span>
-    <ng-container *ngFor="let item of imageSet; let i = index">
-        <span class="avatar" *ngIf="i < maxSetShowed">
-          <figure *ngIf="item.src; else icon" class="avatar__figure">
-            <img [src]="item.src"
-                 [matTooltip]="item.tooltip"
-                 [matTooltipPosition]="tooltipPosition"
-                 [ngStyle]="{width: customizedSize?.width, height: customizedSize?.height}"
-                 [ngClass]="['exo-image', 'exo-image-' + size, 'exo-image-shape-' + shape]"
-            >
-          </figure>
-        </span>
-    </ng-container>
-  </div>
-</div>

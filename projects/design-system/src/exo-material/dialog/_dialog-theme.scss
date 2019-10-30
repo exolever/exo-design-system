@@ -1,0 +1,25 @@
+@import '../../theming/theming';
+
+@mixin exo-dialog-theme($theme) {
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+
+  mat-dialog-container {
+    div.mat-dialog-title {
+      color: mat-color($foreground, 'base');
+    }
+  }
+
+  .mat-dialog-actions {
+    button {
+      &:not(.mat-primary):not(.mat-accent):not(.mat-success){
+        color: mat-color($foreground, 'secondary-text');
+      }
+      margin-left:  map-get($spaceMeasures, 'xs');
+    }
+  }
+
+  .dark-header {
+    background-color: mat-color($background, 'exo-dark-dialog-header');
+  }
+}

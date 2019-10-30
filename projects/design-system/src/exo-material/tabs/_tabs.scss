@@ -1,0 +1,5 @@
+@import '../../theming/abstracts/variables';
+
+a.mat-tab-link {
+  line-height: map-get($spaceMeasures, 'lg');
+}

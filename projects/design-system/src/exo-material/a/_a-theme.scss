@@ -1,0 +1,8 @@
+@import '../../theming/abstracts/variables';
+@import '../../theming/themes/colors';
+@mixin exo-a-theme($theme) {
+  $foreground: map-get($theme, foreground);
+  a{
+    color: mat-color($foreground, 'exo-a');
+  }
+}

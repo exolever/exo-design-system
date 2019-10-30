@@ -1,0 +1,25 @@
+@import '../../theming/theming';
+
+// config
+  $snippet-size: 25px;
+  $padding: 0 10px;
+  $background: map_get($exo-red, 500);
+
+span.bullet {
+  background-color: $background;
+  height: $snippet-size;
+  line-height: $snippet-size;
+  border-radius: $snippet-size;
+  padding: $padding;
+}
+
+.exo-platform {
+  .filters {
+    span.bullet {
+      /* TODO: Refactor this to get color from theme */
+      background-color: mat-color($purple-primary-text);
+      color: white;
+      font-size: 14px;
+    }
+  }
+}

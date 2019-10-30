@@ -1,0 +1,18 @@
+@import '../../theming/abstracts/variables';
+@import '../../theming/themes/colors';
+@import '../../theming/theming';
+@import '../typographies/platform/exo-platform-mixins';
+
+@mixin exo-tree-theme($theme) {
+  $foreground: map_get($theme, foreground);
+  $background: map-get($theme, background);
+  mat-tree.mat-tree {
+    background-color: mat-color($background, 'background');
+    > mat-nested-tree-node > a {
+      @include service-subheading-2();
+    }
+    mat-icon {
+      color: mat-color($foreground, 'base')
+    }
+  }
+}

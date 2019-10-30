@@ -32,6 +32,86 @@
     padding#{$direction}: 0;
   }
 
+  .pad-horizontal-xxxs {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .pad-horizontal-xxs {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .pad-horizontal {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .pad-horizontal-xs {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .pad-horizontal-sm {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .pad-horizontal-lg {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .pad-horizontal-xl {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .pad-horizontal-none {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .pad-vertical-xxxs {
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+
+  .pad-vertical-xxs {
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+
+  .pad-vertical {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+
+  .pad-vertical-xs {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+
+  .pad-vertical-sm {
+    padding-bottom: 24px;
+    padding-top: 24px;
+  }
+
+  .pad-vertical-lg {
+    padding-bottom: 48px;
+    padding-top: 48px;
+  }
+
+  .pad-vertical-xl {
+    padding-bottom: 72px;
+    padding-top: 72px;
+  }
+
+  .pad-vertical-none {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
 }
 
 @mixin padding-helpers() {

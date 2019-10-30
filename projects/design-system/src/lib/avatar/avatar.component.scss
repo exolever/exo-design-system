@@ -121,3 +121,31 @@ $max-certifications: 6;
     @include avatar-certificate(108px); // 96 (2x - lg) $sizeCircumference + 6 circumference + 6 gap
   }
 }
+
+.images-set {
+  .avatars {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    margin: 0 0 map-get($spaceMeasures, 'xs') map-get($spaceMeasures, 'xs');
+    .avatar {
+      margin-left: -16px;
+      position: relative;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      overflow: hidden;
+      width: map-get($componentMeasure, '1x');
+      height: map-get($componentMeasure, '1x');
+      &.remain {
+        background-color: map-get($exo-purple, 900);
+        color: white;
+        .number {
+          flex-direction: column;
+          display: flex;
+          place-content: center;
+          align-items: center;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

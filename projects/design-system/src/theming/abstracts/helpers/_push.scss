@@ -32,6 +32,86 @@
     margin#{$direction}: 0;
   }
 
+  .push-horizontal-xxxs {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .push-horizontal-xxs {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .push-horizontal {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .push-horizontal-xs {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .push-horizontal-sm {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .push-horizontal-lg {
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+
+  .push-horizontal-xl {
+    margin-left: 72px;
+    margin-right: 72px;
+  }
+
+  .push-horizontal-none {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .push-vertical-xxxs {
+    margin-bottom: 4px;
+    margin-top: 4px;
+  }
+
+  .push-vertical-xxs {
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+  .push-vertical {
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+
+  .push-vertical-xs {
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+
+  .push-vertical-sm {
+    margin-bottom: 24px;
+    margin-top: 24px;
+  }
+
+  .push-vertical-lg {
+    margin-bottom: 48px;
+    margin-top: 48px;
+  }
+
+  .push-vertical-xl {
+    margin-bottom: 72px;
+    margin-top: 72px;
+  }
+
+  .push-vertical-none {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
 }
 
 @mixin pushing-helpers() {

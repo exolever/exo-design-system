@@ -23,6 +23,7 @@
   }
   &.grey {
     background-color: map_get($exo-grey, 900);
+    opacity: 0.64;
   }
   &.blue {
     background-color: map_get($exo-blue, 500);

@@ -45,17 +45,18 @@
   </div>
 </ng-template>
 
-<div *ngIf="imageSet" class="images-set">
-  <div class="avatars">
+<div *ngIf="imageSet" class="images-set" [ngClass]="['exo-image-height-' + size]">
+  <div class="avatars" [ngClass]="{more: maxSetShowed > 1}">
       <span *ngIf="maxSetShowed < imageSet.length" class="avatar remain">
         <span class="number">
         {{imageSet.length - maxSetShowed}}+
         </span>
       </span>
     <ng-container *ngFor="let item of imageSet; let i = index">
-        <span class="avatar" *ngIf="i < maxSetShowed">
+        <span class="avatar" *ngIf="i < maxSetShowed" [ngClass]="['exo-image-' + size]">
           <figure *ngIf="item.src; else icon" class="avatar__figure">
             <img [src]="item.src"
+                 [alt]="item.alt"
                  [matTooltip]="item.tooltip"
                  [matTooltipPosition]="tooltipPosition"
                  [ngStyle]="{width: customizedSize?.width, height: customizedSize?.height}"

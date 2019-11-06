@@ -91,6 +91,21 @@ $max-certifications: 6;
     }
   }
 
+  .exo-image-height {
+    &-xs {
+      height: map-get($componentMeasure, '0.5x');
+    }
+    &-sm {
+      height: map-get($componentMeasure, '1x');
+    }
+    &-lg {
+      height: map-get($componentMeasure, '2x');
+    }
+    &-xl {
+      height: map-get($componentMeasure, '3x');
+    }
+  }
+
   .icon {
     opacity: .64;
     &-size-xs {
@@ -126,15 +141,12 @@ $max-certifications: 6;
   .avatars {
     display: inline-flex;
     flex-direction: row-reverse;
-    margin: 0 0 map-get($spaceMeasures, 'xs') map-get($spaceMeasures, 'xs');
     .avatar {
-      margin-left: -16px;
       position: relative;
       border: 1px solid #fff;
       border-radius: 50%;
       overflow: hidden;
-      width: map-get($componentMeasure, '1x');
-      height: map-get($componentMeasure, '1x');
+
       &.remain {
         background-color: map-get($exo-purple, 900);
         color: white;
@@ -145,6 +157,12 @@ $max-certifications: 6;
           align-items: center;
           height: 100%;
         }
+      }
+    }
+    &.more {
+      margin: 0 0 map-get($spaceMeasures, 'xs') map-get($spaceMeasures, 'xs');
+      .avatar {
+        margin-left: - map-get($spaceMeasures, 'xs');
       }
     }
   }

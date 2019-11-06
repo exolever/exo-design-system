@@ -43,14 +43,14 @@ export class ExOAvatarComponent {
    * Number that set the maximum of shown avatars
    */
   @Input()
-  maxSetShowed: number;
+  maxSetShowed = 1;
 
   /**
    * Custom array to load.
    * You need to pass a tuple [{src, tooltip}] in array
    */
   @Input()
-  imageSet: {src: string, tooltip: string}[];
+  imageSet: {src: string, tooltip: string, alt: string}[];
 
   /**
    * Custom src to load.

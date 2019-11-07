@@ -29,22 +29,22 @@ $max-certifications: 6;
     circle {
       stroke-linecap: round;
     }
-    .EC circle { // For Consultants
+    .CCO circle { // For Consultants
       stroke: map_get($exo-teal, A100);
     }
-    .K circle { // For Ambassador
+    .CEA circle { // For Ambassador
       stroke: map_get($exo-amber, 700);
     }
-    .X circle { // For Sprint Coach
+    .CSC circle { // For Sprint Coach
       stroke: map_get($exo-blue, 800);
     }
-    .EF circle { // For Fundations
+    .CFO circle { // For Foundations
       stroke: map_get($exo-grey, 900);
     }
-    .TR circle { // For Trainer
+    .CTR circle { // For Trainer
       stroke: map_get($exo-indigo, 800);
     }
-    .BA circle { // For Board Advisor
+    .CBA circle { // For Board Advisor
       stroke: map_get($exo-purple, 500);
     }
     @for $i from 0 through $max-certifications {

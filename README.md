@@ -58,7 +58,7 @@ To run the lint you should run `npm run lint`.
 
 We have prettier to enforces a consistent style, you should run `npm run format:check`.
 
-#### Publish & Versions
+## Publish & Versions
 
 ##### Publish:
 To publish you need log in to npm and belong to OpenExO organization.

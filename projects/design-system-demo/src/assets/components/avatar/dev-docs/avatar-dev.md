@@ -46,16 +46,16 @@ A `Avatar` is a piece of UI that rendered an image with the possibility to rende
 
 | Enums                       | Values                              | 
 | --------------------------- | ----------------------------------- | 
-|  CertificateEnum            | Coach = 'X',                        |
-|                             | Trainer = 'TR',                      |
-|                             | Ambassador = 'K',                   |
-|                             | AlignTrainer = 'I',                 |
-|                             | Foundation = 'EF',                 |
-|  SizeAvatarEnum             | xs (24px) |
-|                             | sm (48px) Default value |
-|                             | lg (96px) |
-|                             | xl  (144px)|
-
+|  CertificateEnum            | AMBASSADOR = 'CEA'                  |
+|                             | BOARD_ADVISOR = 'CBA'               |
+|                             | CONSULTANT = 'CCO'                  |
+|                             | FOUNDATION = 'CFO'                  |
+|                             | SPRINT_COACH = 'CSC'                |
+|                             | TRAINER = 'CTR'                     |
+|  SizeAvatarEnum             | xs (24px)                           |
+|                             | sm (48px) Default value             |
+|                             | lg (96px)                           |
+|                             | xl  (144px)                         |
 
 #### Avatar in practice
 

@@ -18,17 +18,17 @@ enum ShapeEnum {
 
 interface Certificate {
   code: CertificateEnum;
-  humanizedCode: string; // Review with Ana difference with name
   name: string;
+  humanizedCode?: string; // Review with Ana difference with name
 }
 
 enum CertificateEnum {
-  Coach = 'X',
-  Trainer = 'TR',
-  Ambassador = 'K',
-  Foundation = 'EF',
-  Consultants = 'EC',
-  BoardAdvisor = 'BA',
+  FOUNDATION = 'CFO',
+  CONSULTANT = 'CCO',
+  SPRINT_COACH = 'CSC',
+  AMBASSADOR = 'CEA',
+  TRAINER = 'CTR',
+  BOARD_ADVISOR = 'CBA',
 }
 
 @Component({

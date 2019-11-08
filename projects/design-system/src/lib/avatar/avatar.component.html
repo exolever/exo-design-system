@@ -1,17 +1,3 @@
-<!--<div *ngIf="!imageSet">-->
-<!--  <figure *ngIf="imageUrl; else icon"-->
-<!--          (click)="click()"-->
-<!--          class="avatar__figure"-->
-<!--  >-->
-<!--    <img [src]="imageUrl"-->
-<!--         [matTooltip]="imageTooltip"-->
-<!--         [matTooltipPosition]="tooltipPosition"-->
-<!--         [ngStyle]="{width: customizedSize?.width, height: customizedSize?.height}"-->
-<!--         [ngClass]="['exo-image', 'exo-image-' + size, 'exo-image-shape-' + shape]"-->
-<!--         [alt]="imageAlt"-->
-<!--    >-->
-<!--  </figure>-->
-<!--</div>-->
 <ng-template #icon>
   <div>
     <mat-icon [ngClass]="['icon', 'icon-size-' + size]"

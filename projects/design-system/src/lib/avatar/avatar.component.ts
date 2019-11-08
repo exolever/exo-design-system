@@ -53,20 +53,6 @@ export class ExOAvatarComponent {
   imageSet: {src?: string, tooltip?: string, alt?: string}[];
 
   /**
-   * Custom src to load.
-   * If you send the user, will take from the user.profilePictures array with
-   * the size defined on the input size.
-   */
-  @Input()
-  src: string;
-
-  /**
-   * If you want add a custom alt to image. If you send the user, will take user.fullName by default.
-   */
-  @Input()
-  alt: string;
-
-  /**
    * The component has defined 4 sizes by default (xs (24px), sm(48px), lg(96px), xl(144px)), but if you need
    * other sizes you can send as { width: '40px', height: '40px'} and will overwrite the default sizes.
    */
@@ -91,12 +77,6 @@ export class ExOAvatarComponent {
    */
   @Input()
   item: any;
-
-  /**
-   * Show tooltip in the image, if you send user will take the user.fullName by default.
-   */
-  @Input()
-  tooltip: string;
 
   /**
    * Position where the tooltip will show. By default is below.

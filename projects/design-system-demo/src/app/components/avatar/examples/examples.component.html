@@ -1,9 +1,7 @@
 <section>
   <h3>Mini</h3>
   <exo-avatar-system name="Nicolas cage" [connected]="true">
-    <exo-avatar src="https://www.placecage.com/100/100"
-                alt="calm cage"
-                tooltip="Calm cage"
+    <exo-avatar [imageSet]="fillSet"
                 tooltipPosition="right"
                 size="xs"
     ></exo-avatar>
@@ -14,7 +12,7 @@
   <h3>Regular</h3>
   <exo-avatar-system name="Fill murray" description="American actor, comedian, and writer" [connected]="true">
     <exo-avatar
-      [imageSet]="imagesSet1"
+      [imageSet]="fillSet"
       tooltipPosition="above"
       [certificates]="certifications4"
     ></exo-avatar>
@@ -24,7 +22,7 @@
 <section>
   <h3>Big</h3>
   <exo-avatar-system name="Steven Seagal" description="actor, producer, screenwriter, martial artist, musician" direction="column">
-    <exo-avatar [imageSet]="imagesSet1"
+    <exo-avatar [imageSet]="stevenSet"
                 size="lg"
                 tooltipPosition="left"
                 [certificates]="certifications5"
@@ -35,7 +33,7 @@
 <section>
   <h3>Super</h3>
   <exo-avatar-system name="Steven Seagal" description="actor, producer, screenwriter, martial artist, musician" direction="column">
-    <exo-avatar [imageSet]="imagesSet1"
+    <exo-avatar [imageSet]="stevenSet"
                 size="xl"
                 [certificates]="certifications4"
     ></exo-avatar>
@@ -44,7 +42,7 @@
 <section>
   <h3>Super</h3>
   <exo-avatar-system name="Rick Sanchez" description="Cartoon, starring @ Rick & Morty" direction="column">
-    <exo-avatar [imageSet]="imagesSet1"
+    <exo-avatar [imageSet]="rickSet"
                 size="lg"
                 [certificates]="certifications6"
     ></exo-avatar>

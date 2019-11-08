@@ -7,11 +7,11 @@ Our goal is create a library for building reusable components to build faster, m
 * **IT:** Build UI components to manage their own state, then compose them to make complex UIs.
 
 #### Available features
-| Feature          | Notes                                                  | Docs  |
-|------------------|--------------------------------------------------------|------ |
-| Button           |                                                        | [Docs](https://exolever.github.io/exo-design-system/components/buttons) |
-| Avatars          |                                                        | [Docs](https://exolever.github.io/exo-design-system/components/avatars)  |
-| Alerts           |                                                        | [Docs](https://exolever.github.io/exo-design-system/components/alerts)  |
+| Feature          |  Docs  |
+|------------------|-------------------------------------------------------- |
+| Button           | [Docs](https://exolever.github.io/exo-design-system/components/buttons)    |
+| Avatars          | [Docs](https://exolever.github.io/exo-design-system/components/avatars)    |
+| Alerts           | [Docs](https://exolever.github.io/exo-design-system/components/alerts)     |
 
 #### Contributing
 If you'd like to contribute, you can create an [issue](https://github.com/exolever/exo-design-system/issues) or contribute with a [Pull request](https://github.com/exolever/exo-design-system/pulls)
@@ -57,4 +57,21 @@ We follow the tslint-airbnb and codelyzer, you can see in tslint.json
 To run the lint you should run `npm run lint`.
 
 We have prettier to enforces a consistent style, you should run `npm run format:check`.
+
+## Publish & Versions
+
+##### Publish:
+To publish you need log in to npm and belong to OpenExO organization.
+- Open your terminal
+- npm login
+- write your credentials
+
+##### New version:
+
+In your MVFs branch the naming will be:
+
+version(same than master) plus -dev.year-month-day-hour-minutes
+
+So for example, if you create a new branch from master with the version 1.0.0, your dev version will be 1.0.0-dev202001201330 (2020-01-20-13-30)
+When your PR be approved, you will update the version in master to the following version (depend if is a minor, major...) 1.0.1 and push the new version and the branch master.
 

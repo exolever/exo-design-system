@@ -50,7 +50,7 @@ export class ExOAvatarComponent {
    * You need to pass a tuple [{src, tooltip}] in array
    */
   @Input()
-  imageSet: {src: string, tooltip: string, alt: string}[];
+  imageSet: {src?: string, tooltip?: string, alt?: string}[];
 
   /**
    * Custom src to load.

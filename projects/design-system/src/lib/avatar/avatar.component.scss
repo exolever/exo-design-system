@@ -125,14 +125,13 @@ $max-certifications: 6;
 
 .certificates {
   .medium-avatar {
-    margin-top: -52px; // $sizeCircumference - gap
-    margin-left: -4px; // gap
+    margin-top: -51px; // $sizeCircumference - gap
+    margin-left: -3px; // gap
     @include avatar-certificate(56px); // 48 (1x - sm) avatar + 4 circumference + 4 gap
   }
 
   .big-avatar {
-    margin-top: -102px; // $sizeCircumference - gap
-    margin-left: -6px; // gap
+    margin-top: -101px; // $sizeCircumference - gap
     @include avatar-certificate(108px); // 96 (2x - lg) $sizeCircumference + 6 circumference + 6 gap
   }
 }

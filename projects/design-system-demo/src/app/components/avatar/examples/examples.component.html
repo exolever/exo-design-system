@@ -13,11 +13,10 @@
 <section>
   <h3>Regular</h3>
   <exo-avatar-system name="Fill murray" description="American actor, comedian, and writer" [connected]="true">
-    <exo-avatar src="https://www.fillmurray.com/150/150"
-                alt="fill murray"
-                tooltip="Fill murray"
-                tooltipPosition="above"
-                [certificates]="certifications4"
+    <exo-avatar
+      [imageSet]="imagesSet1"
+      tooltipPosition="above"
+      [certificates]="certifications4"
     ></exo-avatar>
   </exo-avatar-system>
 </section>
@@ -25,9 +24,7 @@
 <section>
   <h3>Big</h3>
   <exo-avatar-system name="Steven Seagal" description="actor, producer, screenwriter, martial artist, musician" direction="column">
-    <exo-avatar src="https://www.stevensegallery.com/150/150"
-                alt="steven seagal"
-                tooltip="Steven Seagal"
+    <exo-avatar [imageSet]="imagesSet1"
                 size="lg"
                 tooltipPosition="left"
                 [certificates]="certifications5"
@@ -38,9 +35,7 @@
 <section>
   <h3>Super</h3>
   <exo-avatar-system name="Steven Seagal" description="actor, producer, screenwriter, martial artist, musician" direction="column">
-    <exo-avatar src="https://www.stevensegallery.com/200/200"
-                alt="super steven seagal"
-                tooltip="Steven Seagal"
+    <exo-avatar [imageSet]="imagesSet1"
                 size="xl"
                 [certificates]="certifications4"
     ></exo-avatar>
@@ -49,9 +44,7 @@
 <section>
   <h3>Super</h3>
   <exo-avatar-system name="Rick Sanchez" description="Cartoon, starring @ Rick & Morty" direction="column">
-    <exo-avatar src="https://http2.mlstatic.com/afiche-rick-and-morty-rick-sanchez-science-poster-11x-17cm-D_NQ_NP_766488-MCO28150859093_092018-O.webp"
-                alt="super Rick"
-                tooltip="Rick Sanchez"
+    <exo-avatar [imageSet]="imagesSet1"
                 size="lg"
                 [certificates]="certifications6"
     ></exo-avatar>

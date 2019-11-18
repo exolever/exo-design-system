@@ -6,7 +6,7 @@
       <mat-icon *ngSwitchCase="typeAlertEnum.warning" class="icon_type">warning</mat-icon>
       <mat-icon *ngSwitchCase="typeAlertEnum.danger" class="icon_type">cancel</mat-icon>
     </ng-container>
-    <div>{{message}}</div>
+    <div [innerHtml]="message"></div>
   </div>
   <button class="alert__action-button push-left-xs" *ngIf="actionButtonText" mat-button color="primary" (click)="onAction()">{{actionButtonText}}</button>
   <ng-container *ngIf="isCloseable">

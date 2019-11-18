@@ -51,7 +51,7 @@ export class AlertComponent implements OnInit {
   typeAlertEnum = TypeAlertEnum;
 
   constructor(
-    private sanitizer: DomSanitizer
+    private sanitizer: DomSanitizer,
   ) { }
 
   ngOnInit() {

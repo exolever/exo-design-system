@@ -53,12 +53,18 @@
       .mat-icon, .mat-button, .mat-button:hover:not([disabled]) {
         color: mat-color($exo-blue, 500);
       }
+      a {
+        color: mat-color($exo-blue, 700);
+      }
     }
     &.success{
       background-color: mat-color($exo-teal, A400, 0.16);
       color: mat-color($exo-teal, A700);
       .mat-icon, .mat-button, .mat-button:hover:not([disabled]) {
         color: mat-color($exo-teal, A400);
+      }
+      a {
+        color: mat-color($exo-teal, A700);
       }
     }
     &.warning{
@@ -73,6 +79,9 @@
       color: mat-color($exo-red, 700);
       .mat-icon, .mat-button, .mat-button:hover:not([disabled]) {
         color: mat-color($exo-red, 500);
+      }
+      a {
+        color: mat-color($exo-red, 700);
       }
     }
   }

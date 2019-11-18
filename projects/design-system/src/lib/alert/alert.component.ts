@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, Input, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 enum TypeAlertEnum {
   info = 'info',
@@ -49,10 +50,15 @@ export class AlertComponent implements OnInit {
   showMessage = true;
   typeAlertEnum = TypeAlertEnum;
 
+  constructor(
+    private sanitizer: DomSanitizer
+  ) { }
+
   ngOnInit() {
     if (this.isCloseable && !this.closeButtonText) {
       console.error('If the button is closable you need indicates the text for the button in small resolutions');
     }
+    this.message = <string>this.sanitizer.bypassSecurityTrustHtml(this.message);
   }
 
   /**

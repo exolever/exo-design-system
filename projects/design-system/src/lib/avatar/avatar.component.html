@@ -2,6 +2,7 @@
   <figure *ngIf="imageUrl; else icon"
           (click)="click()"
           class="avatar__figure"
+          [ngClass]="['exo-image-' + size]"
   >
     <img [src]="imageUrl"
          [matTooltip]="imageTooltip"

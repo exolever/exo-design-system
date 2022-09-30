@@ -36,3 +36,29 @@
   font-weight: 300;
   src: url('https://s3.amazonaws.com/exolever/static/fonts/HKGrotesk/HKGrotesk-Italic.woff2') format('woff');
 }
+
+// Poppins font
+
+@font-face {
+  font-family: Poppins;
+  src: url('https://openexo.s3.amazonaws.com/static/fonts/Poppins/Poppins-Regular.woff2') format('woff');
+}
+
+@font-face {
+  font-family: PoppinsBold;
+  font-weight: 600;
+  src: url('https://openexo.s3.amazonaws.com/static/fonts/Poppins/Poppins-Bold.woff2') format('woff');
+}
+
+@font-face {
+  font-family: PoppinsLight;
+  font-weight: 300;
+  src: url('https://openexo.s3.amazonaws.com/static/fonts/Poppins/Poppins-Light.woff2') format('woff');
+}
+
+@font-face {
+  font-family: PoppinsSemiBold;
+  font-weight: 300;
+  src: url('https://openexo.s3.amazonaws.com/static/fonts/Poppins/Poppins-SemiBold.woff2') format('woff');
+}
+

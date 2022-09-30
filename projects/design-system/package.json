@@ -16,6 +16,7 @@
   "repository": "https://github.com/exolever/exo-design-system",
   "bugs": "https://github.com/exolever/exo-design-system/issues",
   "dependencies": {
+    "phosphor-icons": "^1.4.2",
     "tslib": "^1.9.3"
   },
   "peerDependencies": {

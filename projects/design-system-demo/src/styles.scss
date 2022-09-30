@@ -1,4 +1,4 @@
-@import '../../../dist/design-system/theming';
+@import '../../design-system/src/theming/theming';
 
 body {
   background-color: rgba(250, 250, 250, 1);
@@ -58,3 +58,4 @@ markdown {
   }
 
 }
+@import "../../../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";

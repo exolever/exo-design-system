@@ -4,7 +4,7 @@ button.mat-menu-item {
   text-transform: initial;
 }
 .mat-menu-item{
-  font-family: $font-family;
+  font-family: $font-family-roboto;
   &.menu-title{
     @include mat-typography-level-to-styles($exo-typography, body-2);
     mat-icon{

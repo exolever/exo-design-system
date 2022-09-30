@@ -1,22 +1,29 @@
 @import '~@angular/material/theming';
+@import '../themes/_colors.scss';
 
 $normal: 400;
 $bold: 700;
 $grotesk: 'HKGrotesk';
 $roboto: 'Roboto';
+$poppins: 'Poppins';
 
 $exo-typography: mat-typography-config(
-  $font-family: $roboto,
-  $display-1: mat-typography-level(48px, 56px, $bold, $grotesk),
-  $headline: mat-typography-level(32px, 1.5, $bold, $grotesk),
-  $title: mat-typography-level(24px, 1.5, $bold, $grotesk),
-  $subheading-2: mat-typography-level(18px, 1.5, $bold, $grotesk),
-  $body-1: mat-typography-level(16px, 1.5, $normal, $roboto),
-  $body-2: mat-typography-level(16px, 1.5, $bold, $roboto),
+  $font-family: $poppins,
+  $display-1: mat-typography-level(36px, 56px, 300, $roboto),
+  $headline: mat-typography-level(32px, 32px, 600, $poppins),
+  $title: mat-typography-level(24px, 1.5, 600, $poppins),
+  $subheading-2: mat-typography-level(15px, 1.5, 400, $poppins),
+  //$h4: mat-typography-level(15px, 1.5, 400, $roboto),
+  $body-1: mat-typography-level(15px, 1.5, $normal, $roboto),
+  //$profile-nav: mat-typography-level(14px, 1.5, 500, $poppins),
+  $body-2: mat-typography-level(14px, 1.5, 400, $poppins),
+  //$h5: mat-typography-level(14px, 1.5, 700, $poppins),
+  //$h6: mat-typography-level(13px, 1.5, 400, $poppins),
+  //$h7: mat-typography-level(13px, 1.2, 700, $poppins),
   // For design people this will be caption-1 instead caption, i create an alias to be able use .caption-1
-  $caption: mat-typography-level(14px, 1.5, $normal, $roboto),
-  $button: mat-typography-level(14px, 1.5, $bold, $grotesk),
-  $input: mat-typography-level(16px, 1.5, 400, $roboto)
+  $caption: mat-typography-level(14px, 1.5, $normal, $poppins),
+  $button: mat-typography-level(16px, 1.5, 500, $poppins),
+  $input: mat-typography-level(14px, 1.5, 400, $poppins)
 );
 
 @include angular-material-typography($exo-typography);
@@ -29,6 +36,8 @@ $exo-typography: mat-typography-config(
   line-height: 1.5em;
   text-transform: uppercase;
   letter-spacing: 4px;
+    color: $base-100;
+
 }
 
 @mixin big-body() {
@@ -36,6 +45,8 @@ $exo-typography: mat-typography-config(
   font-weight: $normal;
   font-size: 20px;
   line-height: 1.5em;
+  color: $base-100;
+
 }
 
 @mixin caption-2() {
@@ -43,36 +54,53 @@ $exo-typography: mat-typography-config(
   font-weight: $bold;
   font-size: 14px;
   line-height: 1.5em;
-}
+  color: $base-100;
 
+}
+// h7
 @mixin mini-caption() {
-  font-family: $roboto;
-  font-weight: $normal;
-  font-size: 12px;
-  line-height: 1.5em;
+  font-family: $poppins;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 120%;
+  color: $base-100;
+
 }
 
 h1, .headline {
   @include mat-typography-level-to-styles($exo-typography, headline);
   margin: 0 0 16px;
+  color: $base-100;
 }
 
 h2, .title {
   @include mat-typography-level-to-styles($exo-typography, title);
   margin: 0 0 16px;
+  color: $base-100;
+
 }
 
 h3, .subheading-2 {
   @include mat-typography-level-to-styles($exo-typography, subheading-2);
   margin: 0 0 16px;
+  color: $base-100;
+
+}
+
+h4, .body-1 {
+  @include mat-typography-level-to-styles($exo-typography, body-1);
+  color: $base-30;
+  margin: 0 0 16px;
 }
 
 p {
-  margin: 0 0 12px
+  margin: 0 0 12px;
+  color: $base-100;
 }
 
 p, .body-1 {
   @include mat-typography-level-to-styles($exo-typography, body-1);
+  color: $base-30;
 }
 
 a {
@@ -82,11 +110,61 @@ a {
 .display-1 {
   @include mat-typography-level-to-styles($exo-typography, display-1);
   margin: 0 0 56px;
+  color: $base-100;
+
 }
 
 .body-2 {
   @include mat-typography-level-to-styles($exo-typography, body-2);
+  color: $base-100;
+
 }
+
+.nav-text {
+  @include mat-typography-level-to-styles($exo-typography, body-2);
+  font-weight: 500;
+  color: $base-60;
+  text-transform: uppercase;
+}
+
+h5 {
+  @include mat-typography-level-to-styles($exo-typography, body-2);
+  font-weight: 700;
+  color: $base-100;
+
+}
+
+h6 {
+  @include mat-typography-level-to-styles($exo-typography, body-2);
+  color: $base-30;
+  font-size: 13px;
+}
+
+.title-roboto {
+  @include mat-typography-level-to-styles($exo-typography, display-1);
+  color: $base-100;
+}
+
+.subtitle-roboto {
+  @include mat-typography-level-to-styles($exo-typography, display-1);
+  color: $base-100;
+  font-size: 24px;
+}
+
+.body-roboto {
+  @include mat-typography-level-to-styles($exo-typography, display-1);
+  color: $base-100;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.description-roboto {
+  @include mat-typography-level-to-styles($exo-typography, display-1);
+  color: $base-100;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 
 .section {
   @include section();

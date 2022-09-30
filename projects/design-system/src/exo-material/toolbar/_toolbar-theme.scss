@@ -9,7 +9,7 @@
   .mat-toolbar {
     padding-left: map-get($spaceMeasures, 'lg');
     padding-right: map-get($spaceMeasures, 'lg');
-    font-family: $font-family;
+    font-family: $font-family-roboto;
     background-color: mat-color($background, 'background');
     span {
       color: mat-color($foreground, 'base');

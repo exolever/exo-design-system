@@ -14,6 +14,7 @@ const ROUTES: Routes = [
       { path: 'buttons', loadChildren: './buttons/buttons.module#ButtonsModule' },
       { path: 'avatars', loadChildren: './avatar/avatar.module#AvatarModule' },
       { path: 'alerts', loadChildren: './alerts/alerts.module#AlertsModule' },
+      { path: 'inputs', loadChildren: './inputs/inputs.module#InputsModule' },
     ],
   },
 ];

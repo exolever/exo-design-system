@@ -40,8 +40,10 @@
     "@angular/platform-browser": "~8.1.0",
     "@angular/platform-browser-dynamic": "^8.0.0",
     "@angular/router": "~8.1.0",
+    "@openexo/design-system": "1.0.1-dev.202001301040",
     "hammerjs": "~2.0.8",
     "ngx-markdown": "^8.1.0",
+    "phosphor-icons": "^1.4.2",
     "rxjs": "~6.5.2",
     "zone.js": "^0.9.1"
   },
